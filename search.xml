@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>NexT主题点击页面链接出现404问题</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/9c66eb6c.html</url>
     <content><![CDATA[<p>我自己在用Hexo+NexT搭建博客的时候碰到两个奇怪的问题，在百度搜不到解决方案，好像只有我自己出了这种情况，所以我在解决之后写两篇博客，或许有可能帮到后来的人。<br>这个问题是，在我新增Menu中的标签、分类等页面之后，再点击主页、标签、分类这些按钮的时候都出现了404的情况，检查之后发现地址栏中在正常的跳转链接之后出现了%20的符号。<br>大概是这个问题过于简单了，大神们没有提到这个问题的解决方案，其实也十分简单。<br>%20的出现是由于在链接后有空格，浏览器解析链接时将空格解析为%20而不是去除，导致了找不到相应页面，因此解决方案就是在主题配置文件中，搜索找到</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || list</span><br><span class="line">  archives: /archives/ || archive</span><br></pre></td></tr></table></figure>
 <p>将所有打开的页面中，||符号前后的空格删掉，就可以避免链接最后错误的出现%20。<br>至此，问题解决。</p>
@@ -16,7 +16,7 @@
   </entry>
   <entry>
     <title>NexT主题中搜索会打开新的空白页问题的解决</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/70ec6284.html</url>
     <content><![CDATA[<p>我自己在用Hexo+NexT搭建博客的时候碰到两个奇怪的问题，在百度搜不到解决方案，好像只有我自己出了这种情况，所以我在解决之后写两篇博客，或许有可能帮到后来的人。<br>这个问题是，我打开local search或者Algolia Search的时候，每次点击搜索都会弹出一个新的空白页<code>about:blank#blocked</code>,而且很奇怪的是这个问题在Chrome上有，在IE上则是正常。<br>检查网页元素发现搜索按钮的前端代码是<code>&lt;a href=&quot;javascript:;&quot; target=&quot;_blank&quot;&gt;</code>，就是这一句<code>target=&quot;_blank</code>打开了新页面，但是由于Chrome和IE在href和target属性上的优先级不同的原因，IE能够正常显示。<br>那么如何解决呢？<br>首先我尝试了将<code>target=&quot;_blank&quot;</code>改成<code>_self</code>或者<code>_parent</code>，会导致搜索页面不能打开，所以最后采用了在标签中加入语句<code>onclick=&quot;return false;&quot;</code>的办法解决，onclick的优先级在两种浏览器的优先级都是最高的，所以可以解决这个问题。<br>为了避免每次进行<code>hexo g</code>操作时都重置前端页面代码导致问题反复，我们需要在主题的配置文件中从根本上解决这个问题。<br>打开<code>\themes\next\layout\_partials\header.swig</code>，搜索找到如下代码：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% elseif theme.local_search.enable || theme.algolia_search.enable %&#125;</span><br><span class="line">    &lt;a href=&quot;javascript:;&quot; class=&quot;popup-trigger&quot;&gt;</span><br></pre></td></tr></table></figure>
 <p>将<code>&lt;a&gt;</code>标签改成<code>&lt;a href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; class=&quot;popup-trigger&quot;&gt;</code>，保存，hexo clean+hexo g+hexo d。<br>至此，问题解决。</p>
@@ -30,7 +30,7 @@
   </entry>
   <entry>
     <title>第一篇博客</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/ff05b5bf.html</url>
     <content><![CDATA[<p>这是我的第一篇博客</p>
 ]]></content>
       <categories>

@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="随笔," />
+  <meta name="keywords" content="Hexo+NexT," />
 
 
 
@@ -83,15 +83,15 @@
 
 
 
-<meta name="description" content="这是我的第一篇博客">
-<meta name="keywords" content="随笔">
+<meta name="description" content="我自己在用Hexo+NexT搭建博客的时候碰到两个奇怪的问题，在百度搜不到解决方案，好像只有我自己出了这种情况，所以我在解决之后写两篇博客，或许有可能帮到后来的人。这个问题是，我打开local search或者Algolia Search的时候，每次点击搜索都会弹出一个新的空白页about:blank#blocked,而且很奇怪的是这个问题在Chrome上有，在IE上则是正常。检查网页元素发现搜索">
+<meta name="keywords" content="Hexo+NexT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;www.luoself.work&#x2F;posts&#x2F;undefined.html">
+<meta property="og:title" content="NexT主题中搜索会打开新的空白页问题的解决">
+<meta property="og:url" content="https:&#x2F;&#x2F;www.luoself.work&#x2F;posts&#x2F;70ec6284.html">
 <meta property="og:site_name" content="洛空间">
-<meta property="og:description" content="这是我的第一篇博客">
+<meta property="og:description" content="我自己在用Hexo+NexT搭建博客的时候碰到两个奇怪的问题，在百度搜不到解决方案，好像只有我自己出了这种情况，所以我在解决之后写两篇博客，或许有可能帮到后来的人。这个问题是，我打开local search或者Algolia Search的时候，每次点击搜索都会弹出一个新的空白页about:blank#blocked,而且很奇怪的是这个问题在Chrome上有，在IE上则是正常。检查网页元素发现搜索">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-16T07:47:51.036Z">
+<meta property="og:updated_time" content="2019-11-17T04:34:07.119Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -122,14 +122,14 @@
 
 
 
-  <link rel="canonical" href="https://www.luoself.work/posts/undefined.html"/>
+  <link rel="canonical" href="https://www.luoself.work/posts/70ec6284.html"/>
 
 
 
 
 <script data-ad-client="ca-pub-8967656414209516" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-  <title>第一篇博客 | 洛空间</title>
+  <title>NexT主题中搜索会打开新的空白页问题的解决 | 洛空间</title>
   
 
 
@@ -300,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.luoself.work/posts/undefined.html">
+    <link itemprop="mainEntityOfPage" href="https://www.luoself.work/posts/70ec6284.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="luo">
@@ -317,7 +317,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第一篇博客</h1>
+          <h1 class="post-title" itemprop="name headline">NexT主题中搜索会打开新的空白页问题的解决</h1>
         
 
         <div class="post-meta">
@@ -329,8 +329,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-16T14:33:10+08:00">
-                2019-11-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-17T11:54:25+08:00">
+                2019-11-17
               </time>
             
 
@@ -352,8 +352,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/%E8%B8%A9%E5%9D%91/" itemprop="url" rel="index">
+                    <span itemprop="name">踩坑</span>
                   </a>
                 </span>
 
@@ -394,7 +394,9 @@
       
 
       
-        <p>这是我的第一篇博客</p>
+        <p>我自己在用Hexo+NexT搭建博客的时候碰到两个奇怪的问题，在百度搜不到解决方案，好像只有我自己出了这种情况，所以我在解决之后写两篇博客，或许有可能帮到后来的人。<br>这个问题是，我打开local search或者Algolia Search的时候，每次点击搜索都会弹出一个新的空白页<code>about:blank#blocked</code>,而且很奇怪的是这个问题在Chrome上有，在IE上则是正常。<br>检查网页元素发现搜索按钮的前端代码是<code>&lt;a href=&quot;javascript:;&quot; target=&quot;_blank&quot;&gt;</code>，就是这一句<code>target=&quot;_blank</code>打开了新页面，但是由于Chrome和IE在href和target属性上的优先级不同的原因，IE能够正常显示。<br>那么如何解决呢？<br>首先我尝试了将<code>target=&quot;_blank&quot;</code>改成<code>_self</code>或者<code>_parent</code>，会导致搜索页面不能打开，所以最后采用了在标签中加入语句<code>onclick=&quot;return false;&quot;</code>的办法解决，onclick的优先级在两种浏览器的优先级都是最高的，所以可以解决这个问题。<br>为了避免每次进行<code>hexo g</code>操作时都重置前端页面代码导致问题反复，我们需要在主题的配置文件中从根本上解决这个问题。<br>打开<code>\themes\next\layout\_partials\header.swig</code>，搜索找到如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% elseif theme.local_search.enable || theme.algolia_search.enable %&#125;</span><br><span class="line">    &lt;a href=&quot;javascript:;&quot; class=&quot;popup-trigger&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>将<code>&lt;a&gt;</code>标签改成<code>&lt;a href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; class=&quot;popup-trigger&quot;&gt;</code>，保存，hexo clean+hexo g+hexo d。<br>至此，问题解决。</p>
 
       
     </div>
@@ -441,7 +443,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag"># 随笔</a>
+            <a href="/tags/Hexo-NexT/" rel="tag"># Hexo+NexT</a>
           
         </div>
       
@@ -454,14 +456,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/posts/ff05b5bf.html" rel="next" title="第一篇博客">
+                <i class="fa fa-chevron-left"></i> 第一篇博客
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/posts/undefined.html" rel="prev" title="NexT主题中搜索会打开新的空白页问题的解决">
-                NexT主题中搜索会打开新的空白页问题的解决 <i class="fa fa-chevron-right"></i>
+              <a href="/posts/9c66eb6c.html" rel="prev" title="NexT主题点击页面链接出现404问题">
+                NexT主题点击页面链接出现404问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
