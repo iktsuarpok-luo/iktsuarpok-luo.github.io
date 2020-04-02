@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="洛空间">
 <meta property="og:description" content="最近在一道笔试题里看到了一个运算结果很大的数，会超过所有类型的最大值，题目要求结果对10^9+7取模，上网搜索这个问题的解决方法才发现这是面试中常有的问题，所以记录一下。为什么要取模？是因为结果不能用任何数字类型来存储，用字符串又不方便运算，所以要进行取模操作。那为什么是10^9+7?首先，10^9+7是一个足够大的质数，对于质数求模操作可能得到的结果要远大于合数，有效避免了蒙中答案的概率。另外1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-02T03:26:59.932Z">
+<meta property="og:updated_time" content="2020-04-02T03:28:58.861Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -395,7 +395,7 @@
 
       
         <p>最近在一道笔试题里看到了一个运算结果很大的数，会超过所有类型的最大值，题目要求结果对<code>10^9+7</code>取模，上网搜索这个问题的解决方法才发现这是面试中常有的问题，所以记录一下。<br>为什么要取模？是因为结果不能用任何数字类型来存储，用字符串又不方便运算，所以要进行取模操作。<br>那为什么是<code>10^9+7</code>?首先，<code>10^9+7</code>是一个足够大的质数，对于质数求模操作可能得到的结果要远大于合数，有效避免了蒙中答案的概率。另外<code>10^9+7</code>有一个很好的特点，相加不超过int，相乘不超过longlong。<br>那么，代码上应该怎么解决呢？<br>很简单，这利用了同余定理</p>
-<script type="math/tex; mode=display">如果a \equiv c(mod p),b \equiv d(mod p),那么有 ac \equiv bd(mod p)</script><p>在代码中，a,b相乘，对p取余，我们取a%p作为a的同余数，b%p作为b的同余数，那么<code>(a * b)%p = (a%p * b%p)%p</code>，根据<code>10^9+7</code>相乘不超过longlong的特点，我们就能避免溢出。<br>相加则类似于b=2的情况。<br>以上。</p>
+<script type="math/tex; mode=display">如果a \equiv c(mod\ \ p),b \equiv d(mod\ \ p),那么有 ac \equiv bd(mod p)</script><p>在代码中，a,b相乘，对p取余，我们取a%p作为a的同余数，b%p作为b的同余数，那么<code>(a * b)%p = (a%p * b%p)%p</code>，根据<code>10^9+7</code>相乘不超过longlong的特点，我们就能避免溢出。<br>相加则类似于b=2的情况。<br>以上。</p>
 
       
     </div>
