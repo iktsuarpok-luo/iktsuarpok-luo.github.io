@@ -3,8 +3,8 @@
   <entry>
     <title>数据结构笔记</title>
     <url>/posts/928debf2.html</url>
-    <content><![CDATA[<pre><code>是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。
-</code></pre><h1 id="名词中英文对照"><a href="#名词中英文对照" class="headerlink" title="名词中英文对照"></a>名词中英文对照</h1><h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
+    <content><![CDATA[<p>　　是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。</p>
+<h1 id="名词中英文对照"><a href="#名词中英文对照" class="headerlink" title="名词中英文对照"></a>名词中英文对照</h1><h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
 <ol>
 <li>$T(N) = O(f(N))$当且仅当存在正常数$c$和$n_0$使得当$N\geq n_0$时，$T(N)\leq c*f(N)$恒成立。</li>
 <li>$T(N) = \Omega(f(N))$当且仅当存在正常数$c$和$n_0$使得当$N\geq n_0$时，$T(N)\geq c*f(N)$恒成立。</li>
@@ -1311,15 +1311,9 @@ n越大，原子能量的绝对值越小，电子离核也越远，即n越大，
   <entry>
     <title>取模10^9+7</title>
     <url>/posts/f2b5c584.html</url>
-    <content><![CDATA[<pre><code>最近在一道笔试题里看到了一个运算结果很大的数，会超过所有类型的最大值，题目要求结果对`10^9+7`取模，上网搜索这个问题的解决方法才发现这是面试中常有的问题，所以记录一下。
-为什么要取模？是因为结果不能用任何数字类型来存储，用字符串又不方便运算，所以要进行取模操作。
-那为什么是`10^9+7`?首先，`10^9+7`是一个足够大的质数，对于质数求模操作可能得到的结果要远大于合数，有效避免了蒙中答案的概率。另外`10^9+7`有一个很好的特点，相加不超过int，相乘不超过longlong。
-那么，代码上应该怎么解决呢？
-很简单，这利用了同余定理
-</code></pre><script type="math/tex; mode=display">如果a \equiv c(mod\ \ p),b \equiv d(mod\ \ p),那么有 ac \equiv bd(mod\ \ p)</script><pre><code>在代码中，a,b相乘，对p取余，我们取a%p作为a的同余数，b%p作为b的同余数，那么`(a * b)%p = (a%p * b%p)%p`，根据`10^9+7`相乘不超过longlong的特点，我们就能避免溢出。
-相加则类似于b=2的情况。
-以上。
-</code></pre>]]></content>
+    <content><![CDATA[<p>　　最近在一道笔试题里看到了一个运算结果很大的数，会超过所有类型的最大值，题目要求结果对<code>10^9+7</code>取模，上网搜索这个问题的解决方法才发现这是面试中常有的问题，所以记录一下。<br>　　为什么要取模？是因为结果不能用任何数字类型来存储，用字符串又不方便运算，所以要进行取模操作。<br>　　那为什么是<code>10^9+7</code>?首先，<code>10^9+7</code>是一个足够大的质数，对于质数求模操作可能得到的结果要远大于合数，有效避免了蒙中答案的概率。另外<code>10^9+7</code>有一个很好的特点，相加不超过int，相乘不超过longlong。<br>　　那么，代码上应该怎么解决呢？<br>　　很简单，这利用了同余定理</p>
+<script type="math/tex; mode=display">如果a \equiv c(mod\ \ p),b \equiv d(mod\ \ p),那么有 ac \equiv bd(mod\ \ p)</script><p>　　在代码中，a,b相乘，对p取余，我们取a%p作为a的同余数，b%p作为b的同余数，那么<code>(a * b)%p = (a%p * b%p)%p</code>，根据<code>10^9+7</code>相乘不超过longlong的特点，我们就能避免溢出。<br>　　相加则类似于b=2的情况。<br>　　以上。</p>
+]]></content>
       <categories>
         <category>数学</category>
       </categories>
