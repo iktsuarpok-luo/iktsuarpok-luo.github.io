@@ -700,7 +700,8 @@ R_H = \frac{1}{nq}</script><p>n为载流子浓度，q为载流子所带电量</p
 <p>相干长度</p>
 </blockquote>
 <p>因为一个原子在某一时刻发出的光波是有限长的波列，因此，光波再次相遇时想要干涉现象，路程差必须小于L0，L0被称为该光源的相干长度。<br>相干长度常用来描述光源相干性的好坏。</p>
-<h2 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h2><p><img src="img/dawu1.jpg"><br><img src="https://bkimg.cdn.bcebos.com/pic/91ef76c6a7efce1bcac6d739a351f3deb58f6557?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt="image"><br>如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。<br>我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为</p>
+<h2 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h2><img src="/posts/c122a607/dawu1.png" class="">
+<p><img src="https://bkimg.cdn.bcebos.com/pic/91ef76c6a7efce1bcac6d739a351f3deb58f6557?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt="image"><br>如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。<br>我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为</p>
 <script type="math/tex; mode=display">
 \delta = r2 - r1 \approx dsin\theta</script><p>式中的 $ \theta $ 是PM与 $ S_1S_2 $ 的中垂线 $ P_0M $ 的夹角。通常实验中，D &gt;&gt; d,D &gt;&gt; x（x为屏幕上P点到屏幕中心P0的距离），所以这一夹角非常小，可以作这样的近似。  </p>
 <p>从波动理论可知，设入射单色光波长为 $ \lambda $ ,那么，当</p>
