@@ -4,14 +4,14 @@
     <title>数据结构笔记</title>
     <url>/posts/928debf2.html</url>
     <content><![CDATA[<p>　　是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。</p>
-<h1 id="名词中英文对照"><a href="#名词中英文对照" class="headerlink" title="名词中英文对照"></a>名词中英文对照</h1><h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
+<h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
 <ol>
 <li>$ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。</li>
 <li>$ T(N) = \Omega(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\geq c*f(N) $ 恒成立。</li>
 <li>$ T(N) = \Theta(f(N)) $ 当且仅当 $ T(N) = O(f(N)) $ 且 $ T(N) = \Omega(f(N)) $ </li>
 <li>$ T(N) = o(f(N)) $ 当且仅当 $ T(N) = O(f(N)) $ 且 $ T(N)=\not\Theta(f(N)) $   </li>
 </ol>
-<p>如果 $ T_1(N) = O(f(N)) $ 并且 $ T_2(N) = O(g(N)) $ ，那么：<br>(a)  $ T_1(N) + T_2(N) = max(O(f(N)),O(g(N))) $<br>(b)  $ T_1(N)<em>T_2(n) = O(f(N)</em>g(N)) $ </p>
+<p>如果 $ T_1(N) = O(f(N)) $ 并且 $ T_2(N) = O(g(N)) $ ，那么：<br>(a)  $ T_1(N) + T_2(N) = max(O(f(N)),O(g(N))) $<br>(b)  $ T_1(N)*T_2(n) = O(f(N)*g(N)) $ </p>
 <blockquote>
 <p>时间复杂度有以下几个层次，从低到高依次为</p>
 </blockquote>
