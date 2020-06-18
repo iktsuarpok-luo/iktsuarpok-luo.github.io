@@ -3,7 +3,7 @@
   <entry>
     <title>数据结构笔记</title>
     <url>/posts/928debf2.html</url>
-    <content><![CDATA[<p>　　是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。  </p>
+    <content><![CDATA[<p>　　是我之前考数据结构之前整理的笔记，下载链接在评论区，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。  </p>
 <h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
 <ol>
 <li>$ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。</li>
@@ -142,7 +142,7 @@ degree(i) = \sum_{j=0}^{n-1}adj\_mat[i][j] \ \ \ \ \ \ \ \ \ \ \     当G是无�
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dijkstra</span><span class="params">(Table T)</span></span>&#123;</span><br><span class="line"><span class="comment">//T is initialized by Figure 9.30 on p.303</span></span><br><span class="line">    Vertex V,W;</span><br><span class="line">    <span class="keyword">for</span>(;;)&#123;</span><br><span class="line">        V=smallest unknown distance vertex;</span><br><span class="line">        <span class="keyword">if</span>(V == NotAVertex)<span class="comment">//没有不知道距离的顶点</span></span><br><span class="line">	        <span class="keyword">break</span>; </span><br><span class="line">        T[V].Known = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span>(each W adjacent to V)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!T[W].Known)&#123;</span><br><span class="line">                <span class="keyword">if</span>(T[V].Dist+Cvw&lt;T[W].Dist)&#123;<span class="comment">//Cvw是从v到w边的权重</span></span><br><span class="line">                    Decrease(T[W].Dist to T[V].Dist+Cvw);</span><br><span class="line">                    T[W].Path = V;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//有负权重边时算法不成立</span></span><br></pre></td></tr></table></figure>
 <p><strong>实现方法一</strong><br>V = smallest unknown distance vertex;//直接遍历表找最小 – O(|V|)<br>算法总的时间复杂度是 $ O(|V|^2+|E|) $<br>适用于比较稠密的图</p>
 <p><strong>实现方法二</strong><br>V = smallest unknown distance vertex;//把距离保存在一个优先队列里，调用DeleteMin来找最小 – O( log|V| )  </p>
-<p>Decrease(T[W].Dist to T[V].Dist + Cvw);<br>\//方法1:改变队列中对应节点的Key值 –O(log|V|)<br>算法总时间复杂度为O(|V|log|V|+|E|log|V|) = O(|E|log|V|)  </p>
+<p>Decrease(T[W].Dist to T[V].Dist + Cvw);<br>//方法1:改变队列中对应节点的Key值 –O(log|V|)<br>算法总时间复杂度为O(|V|log|V|+|E|log|V|) = O(|E|log|V|)  </p>
 <p>\/*方法2:插入一个带有更新后距离的W到优先队列里，必须一直进行DeleteMin操作知道出现一个没有访问过的顶点<br>算法总时间复杂度为O(|E|log|V|)但是需要额外的|E|空间</p>
 <p><strong>其他的优化方法</strong><br>配对堆Pairing heap(Ch.12)和斐波那契堆Fibonacci heap(Ch. 11)</p>
 <blockquote>
@@ -187,7 +187,7 @@ EC(v) = \min_{<v,w>\in E} \{LC[w]-C_{v,w}\}</script><p>松弛时间(Slack Time)�
 <blockquote>
 <p>总是选择经过最少条边的增广路径</p>
 </blockquote>
-<p>时间复杂度=增广时间复杂度 * 找到增广路径的时间复杂度<br>= O(|E|) * O(|E|·|V|)  \//无权重最短路径算法<br>= O(|E|^2·|V|)<br><strong>Note:</strong><br>If every v  { s, t } has either a single incoming edge of capacity 1 or a single outgoing edge of capacity 1, then time bound is reduced to O( |E| |V|1/2 ).<br>The min-cost flow problem is to find, among all maximum flows, the one flow of minimum cost provided that each edge has a cost per unit of flow.</p>
+<p>时间复杂度=增广时间复杂度 * 找到增广路径的时间复杂度<br>= O(|E|) * O(|E|·|V|)  //无权重最短路径算法<br>= O(|E|^2·|V|)<br><strong>Note:</strong><br>If every v  { s, t } has either a single incoming edge of capacity 1 or a single outgoing edge of capacity 1, then time bound is reduced to O( |E| |V|1/2 ).<br>The min-cost flow problem is to find, among all maximum flows, the one flow of minimum cost provided that each edge has a cost per unit of flow.</p>
 <h3 id="图的最小生成树-Minimum-Spanning-Tree"><a href="#图的最小生成树-Minimum-Spanning-Tree" class="headerlink" title="图的最小生成树 Minimum Spanning Tree"></a>图的最小生成树 Minimum Spanning Tree</h3><p>【定义】图G的生成树是指包含V(G)和E(G)子集的树，即包含全部顶点和部分边<br><strong>Note</strong>:<br>最小生成树是树结构，没有环，即边的数量是顶点数量减一<br>当生成树的边的权重和最小时，它是最小生成树<br>生成树包含所有顶点<br>存在最小生成树当且仅当图是连通的<br>向生成树中添加一条非树边，我们就能得到一个环<br>贪心算法<br>在满足以下约束的情况下，每一步都做最好的选择:<br>(1)我们只能使用图中包含的边<br>(2)我们只能使用|V|-1条边<br>(3)我们不能使用会产生环的边</p>
 <blockquote>
 <p>Prim’s Algorithm – grow a tree//跟狄克斯特拉算法很相似</p>
@@ -274,12 +274,11 @@ p = \begin{cases}
 <p>如果TableSize时4k+3形式的质数，那么平方侦测法可以探测整个表  </p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">Position <span class="title">Find</span><span class="params">(ElementType Key,HashTable H)</span></span>&#123;</span><br><span class="line">    Position CurrentPos; </span><br><span class="line">    <span class="keyword">int</span> CollisionNum; </span><br><span class="line">    CollisionNum = <span class="number">0</span>; </span><br><span class="line">    CurrentPos = Hash(Key, H-&gt;TableSize);</span><br><span class="line">    <span class="keyword">while</span>(H-&gt;TheCells[CurrentPos].Info != Empty &amp;&amp; H-&gt;TheCells[CurrentPos].Element != Key)&#123; </span><br><span class="line">	    CurrentPos += <span class="number">2</span> * ++CollisionNum - <span class="number">1</span>; </span><br><span class="line">	    <span class="keyword">if</span>(CurrentPos &gt;= H-&gt;TableSize)</span><br><span class="line">	        CurrentPos -= H-&gt;TableSize; </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> CurrentPos; </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(ElementType Key,HashTable H)</span></span>&#123;</span><br><span class="line">    Position Pos;</span><br><span class="line">    Pos = Find(Key,H);</span><br><span class="line">    <span class="keyword">if</span>(H-&gt;TheCells[Pos].Info != Legitimate)&#123;</span><br><span class="line">    <span class="comment">/* OK to insert here */</span> </span><br><span class="line">	    H-&gt;TheCells[Pos].Info = Legitimate;</span><br><span class="line">	    H-&gt;TheCells[Pos].Element = Key;</span><br><span class="line">	    <span class="comment">/* Probably need strcpy */</span> </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>open addressing不能做删除操作，只能做删除的标记<br>如果很多删除添加操作混杂在一起，速度效率会严重降低<br>哈希值相同的关键词会侦测到同样的空间</p>
-<h4 id="双哈希-Double-Hashing"><a href="#双哈希-Double-Hashing" class="headerlink" title="双哈希 Double Hashing"></a>双哈希 Double Hashing</h4><p>f(i) = i * hash2(x); \//hash2(x)是二重哈希函数<br>hash2(x)不能恒为0<br>要保证能够探测到所有的空间<br><strong>提示</strong>:hash2(x) = R – (x % R)，其中R取比TableSize小的素数，会工作的很好<br><strong>Note</strong>：<br>1 如果双哈希函数正确的实施，模拟表示探测的数量几乎与随机冲突再解决策略一致<br>2 平方探测不使用二重哈希函数，因此更简单并且实际上更快</p>
+<h4 id="双哈希-Double-Hashing"><a href="#双哈希-Double-Hashing" class="headerlink" title="双哈希 Double Hashing"></a>双哈希 Double Hashing</h4><p>f(i) = i * hash2(x); //hash2(x)是二重哈希函数<br>hash2(x)不能恒为0<br>要保证能够探测到所有的空间<br><strong>提示</strong>:hash2(x) = R – (x % R)，其中R取比TableSize小的素数，会工作的很好<br><strong>Note</strong>：<br>1 如果双哈希函数正确的实施，模拟表示探测的数量几乎与随机冲突再解决策略一致<br>2 平方探测不使用二重哈希函数，因此更简单并且实际上更快</p>
 <h4 id="重哈希-Rehashing"><a href="#重哈希-Rehashing" class="headerlink" title="重哈希 Rehashing"></a>重哈希 Rehashing</h4><p>建立另一个两倍大的表<br>扫描原来的整个哈希表找到没有删除的元素<br>用一个新的函数hash这些元素到新的表里<br>如果表里有N个关键词，时间复杂度为O(N)  </p>
 <p>什么时候使用重哈希？<br>只要表半满<br>有一个插入失败<br>表达到一个指定的装载因子</p>
 <p><strong>Note</strong>:<br>通常，在重哈希之间，已经有 N/2 个插入了，所以 O(N) 的重哈希对每一个插入的花费是一个常量<br>但是，在一个交互系统里，插入导致重哈希的用户会看到减速  </p>
 <p><strong>Read Figures 7.23 for detailed implementation of rehashing.</strong></p>
-<p><a href="https://github.com/iktsuarpok-luo/comments/files/4798271/default.pdf" target="_blank" rel="noopener">下载链接</a></p>
 ]]></content>
       <categories>
         <category>笔记</category>
@@ -291,7 +290,7 @@ p = \begin{cases}
   <entry>
     <title>大学物理笔记</title>
     <url>/posts/c122a607.html</url>
-    <content><![CDATA[<p>　　是我之前考大物之前整理的笔记，因为我们学校的大学物理是分两个学期上的，这份笔记只有下学期的内容，所以有些知识可能并不涉及，文末会附下载链接，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。  </p>
+    <content><![CDATA[<p>　　是我之前考大物之前整理的笔记，因为我们学校的大学物理是分两个学期上的，这份笔记只有下学期的内容，所以有些知识可能并不涉及，下载链接在评论区，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。  </p>
 <h1 id="第13章-静电场"><a href="#第13章-静电场" class="headerlink" title="第13章 静电场"></a>第13章 静电场</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="库仑定律"><a href="#库仑定律" class="headerlink" title="库仑定律"></a>库仑定律</h3><script type="math/tex; mode=display">
 \vec F = {1 \over 4\pi\epsilon_0}*{q_1q_2 \over r^2}*vec r</script><p>其中 $ \epsilon_0 $ 称为真空中的电容率，物理意义为单位长度的电容，大小为$\epsilon_0 = 8.85 * 10 ^ {-15} C ^ 2 / ( N * m ^ 2 )$<br>$ \vec r $是指由$q_1$指向$q_2$的单位矢量。<br>在同一位置的库仑力有可加性，用矢量加法计算。  </p>
 <h3 id="电场强度"><a href="#电场强度" class="headerlink" title="电场强度"></a>电场强度</h3><p>点电荷的电场强度公式</p>
@@ -1211,7 +1210,6 @@ L_z = m_l \overline h</script><p>式中 $ m_l $ 称为轨道角动量磁量子�
 <script type="math/tex; mode=display">
 S=\sqrt{s(s+1)} \ \overline h</script><p>式中s称为自旋角动量量子数，简称自旋量子数。</p>
 <p>由量子力学计算可得 $ s = \frac{1}{2} $ ，故电子自旋角动量的量值为 $ S=\sqrt{\frac{3}{4}}\overline h = \frac{\sqrt3}{2}\overline h $ </p>
-<p><a href="https://github.com/iktsuarpok-luo/comments/files/4796488/default.pdf" target="_blank" rel="noopener">下载链接</a></p>
 ]]></content>
       <categories>
         <category>笔记</category>

@@ -83,16 +83,16 @@
 
 
 
-<meta name="description" content="是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。   算法分析T(N)为计算得出的函数时间复杂度    $ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。 $ T(N) =">
+<meta name="description" content="是我之前考数据结构之前整理的笔记，下载链接在评论区，自行取用。　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。   算法分析T(N)为计算得出的函数时间复杂度    $ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。 $ T(N) =">
 <meta name="keywords" content="分享 数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构笔记">
 <meta property="og:url" content="https:&#x2F;&#x2F;www.luoself.work&#x2F;posts&#x2F;928debf2.html">
 <meta property="og:site_name" content="洛空间">
-<meta property="og:description" content="是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。   算法分析T(N)为计算得出的函数时间复杂度    $ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。 $ T(N) =">
+<meta property="og:description" content="是我之前考数据结构之前整理的笔记，下载链接在评论区，自行取用。　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。   算法分析T(N)为计算得出的函数时间复杂度    $ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。 $ T(N) =">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:&#x2F;&#x2F;images2015.cnblogs.com&#x2F;blog&#x2F;1127778&#x2F;201705&#x2F;1127778-20170522164811617-1347222143.png">
-<meta property="og:updated_time" content="2020-06-18T11:46:38.331Z">
+<meta property="og:updated_time" content="2020-06-18T11:50:40.697Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;images2015.cnblogs.com&#x2F;blog&#x2F;1127778&#x2F;201705&#x2F;1127778-20170522164811617-1347222143.png">
 
@@ -396,7 +396,7 @@
       
 
       
-        <p>　　是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。  </p>
+        <p>　　是我之前考数据结构之前整理的笔记，下载链接在评论区，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。  </p>
 <h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
 <ol>
 <li>$ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。</li>
@@ -535,7 +535,7 @@ degree(i) = \sum_{j=0}^{n-1}adj\_mat[i][j] \ \ \ \ \ \ \ \ \ \ \     当G是无�
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dijkstra</span><span class="params">(Table T)</span></span>&#123;</span><br><span class="line"><span class="comment">//T is initialized by Figure 9.30 on p.303</span></span><br><span class="line">    Vertex V,W;</span><br><span class="line">    <span class="keyword">for</span>(;;)&#123;</span><br><span class="line">        V=smallest unknown distance vertex;</span><br><span class="line">        <span class="keyword">if</span>(V == NotAVertex)<span class="comment">//没有不知道距离的顶点</span></span><br><span class="line">	        <span class="keyword">break</span>; </span><br><span class="line">        T[V].Known = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span>(each W adjacent to V)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!T[W].Known)&#123;</span><br><span class="line">                <span class="keyword">if</span>(T[V].Dist+Cvw&lt;T[W].Dist)&#123;<span class="comment">//Cvw是从v到w边的权重</span></span><br><span class="line">                    Decrease(T[W].Dist to T[V].Dist+Cvw);</span><br><span class="line">                    T[W].Path = V;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//有负权重边时算法不成立</span></span><br></pre></td></tr></table></figure>
 <p><strong>实现方法一</strong><br>V = smallest unknown distance vertex;//直接遍历表找最小 – O(|V|)<br>算法总的时间复杂度是 $ O(|V|^2+|E|) $<br>适用于比较稠密的图</p>
 <p><strong>实现方法二</strong><br>V = smallest unknown distance vertex;//把距离保存在一个优先队列里，调用DeleteMin来找最小 – O( log|V| )  </p>
-<p>Decrease(T[W].Dist to T[V].Dist + Cvw);<br>\//方法1:改变队列中对应节点的Key值 –O(log|V|)<br>算法总时间复杂度为O(|V|log|V|+|E|log|V|) = O(|E|log|V|)  </p>
+<p>Decrease(T[W].Dist to T[V].Dist + Cvw);<br>//方法1:改变队列中对应节点的Key值 –O(log|V|)<br>算法总时间复杂度为O(|V|log|V|+|E|log|V|) = O(|E|log|V|)  </p>
 <p>\/*方法2:插入一个带有更新后距离的W到优先队列里，必须一直进行DeleteMin操作知道出现一个没有访问过的顶点<br>算法总时间复杂度为O(|E|log|V|)但是需要额外的|E|空间</p>
 <p><strong>其他的优化方法</strong><br>配对堆Pairing heap(Ch.12)和斐波那契堆Fibonacci heap(Ch. 11)</p>
 <blockquote>
@@ -580,7 +580,7 @@ EC(v) = \min_{<v,w>\in E} \{LC[w]-C_{v,w}\}</script><p>松弛时间(Slack Time)�
 <blockquote>
 <p>总是选择经过最少条边的增广路径</p>
 </blockquote>
-<p>时间复杂度=增广时间复杂度 * 找到增广路径的时间复杂度<br>= O(|E|) * O(|E|·|V|)  \//无权重最短路径算法<br>= O(|E|^2·|V|)<br><strong>Note:</strong><br>If every v  { s, t } has either a single incoming edge of capacity 1 or a single outgoing edge of capacity 1, then time bound is reduced to O( |E| |V|1/2 ).<br>The min-cost flow problem is to find, among all maximum flows, the one flow of minimum cost provided that each edge has a cost per unit of flow.</p>
+<p>时间复杂度=增广时间复杂度 * 找到增广路径的时间复杂度<br>= O(|E|) * O(|E|·|V|)  //无权重最短路径算法<br>= O(|E|^2·|V|)<br><strong>Note:</strong><br>If every v  { s, t } has either a single incoming edge of capacity 1 or a single outgoing edge of capacity 1, then time bound is reduced to O( |E| |V|1/2 ).<br>The min-cost flow problem is to find, among all maximum flows, the one flow of minimum cost provided that each edge has a cost per unit of flow.</p>
 <h3 id="图的最小生成树-Minimum-Spanning-Tree"><a href="#图的最小生成树-Minimum-Spanning-Tree" class="headerlink" title="图的最小生成树 Minimum Spanning Tree"></a>图的最小生成树 Minimum Spanning Tree</h3><p>【定义】图G的生成树是指包含V(G)和E(G)子集的树，即包含全部顶点和部分边<br><strong>Note</strong>:<br>最小生成树是树结构，没有环，即边的数量是顶点数量减一<br>当生成树的边的权重和最小时，它是最小生成树<br>生成树包含所有顶点<br>存在最小生成树当且仅当图是连通的<br>向生成树中添加一条非树边，我们就能得到一个环<br>贪心算法<br>在满足以下约束的情况下，每一步都做最好的选择:<br>(1)我们只能使用图中包含的边<br>(2)我们只能使用|V|-1条边<br>(3)我们不能使用会产生环的边</p>
 <blockquote>
 <p>Prim’s Algorithm – grow a tree//跟狄克斯特拉算法很相似</p>
@@ -667,12 +667,11 @@ p = \begin{cases}
 <p>如果TableSize时4k+3形式的质数，那么平方侦测法可以探测整个表  </p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Position <span class="title">Find</span><span class="params">(ElementType Key,HashTable H)</span></span>&#123;</span><br><span class="line">    Position CurrentPos; </span><br><span class="line">    <span class="keyword">int</span> CollisionNum; </span><br><span class="line">    CollisionNum = <span class="number">0</span>; </span><br><span class="line">    CurrentPos = Hash(Key, H-&gt;TableSize);</span><br><span class="line">    <span class="keyword">while</span>(H-&gt;TheCells[CurrentPos].Info != Empty &amp;&amp; H-&gt;TheCells[CurrentPos].Element != Key)&#123; </span><br><span class="line">	    CurrentPos += <span class="number">2</span> * ++CollisionNum - <span class="number">1</span>; </span><br><span class="line">	    <span class="keyword">if</span>(CurrentPos &gt;= H-&gt;TableSize)</span><br><span class="line">	        CurrentPos -= H-&gt;TableSize; </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> CurrentPos; </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(ElementType Key,HashTable H)</span></span>&#123;</span><br><span class="line">    Position Pos;</span><br><span class="line">    Pos = Find(Key,H);</span><br><span class="line">    <span class="keyword">if</span>(H-&gt;TheCells[Pos].Info != Legitimate)&#123;</span><br><span class="line">    <span class="comment">/* OK to insert here */</span> </span><br><span class="line">	    H-&gt;TheCells[Pos].Info = Legitimate;</span><br><span class="line">	    H-&gt;TheCells[Pos].Element = Key;</span><br><span class="line">	    <span class="comment">/* Probably need strcpy */</span> </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>open addressing不能做删除操作，只能做删除的标记<br>如果很多删除添加操作混杂在一起，速度效率会严重降低<br>哈希值相同的关键词会侦测到同样的空间</p>
-<h4 id="双哈希-Double-Hashing"><a href="#双哈希-Double-Hashing" class="headerlink" title="双哈希 Double Hashing"></a>双哈希 Double Hashing</h4><p>f(i) = i * hash2(x); \//hash2(x)是二重哈希函数<br>hash2(x)不能恒为0<br>要保证能够探测到所有的空间<br><strong>提示</strong>:hash2(x) = R – (x % R)，其中R取比TableSize小的素数，会工作的很好<br><strong>Note</strong>：<br>1 如果双哈希函数正确的实施，模拟表示探测的数量几乎与随机冲突再解决策略一致<br>2 平方探测不使用二重哈希函数，因此更简单并且实际上更快</p>
+<h4 id="双哈希-Double-Hashing"><a href="#双哈希-Double-Hashing" class="headerlink" title="双哈希 Double Hashing"></a>双哈希 Double Hashing</h4><p>f(i) = i * hash2(x); //hash2(x)是二重哈希函数<br>hash2(x)不能恒为0<br>要保证能够探测到所有的空间<br><strong>提示</strong>:hash2(x) = R – (x % R)，其中R取比TableSize小的素数，会工作的很好<br><strong>Note</strong>：<br>1 如果双哈希函数正确的实施，模拟表示探测的数量几乎与随机冲突再解决策略一致<br>2 平方探测不使用二重哈希函数，因此更简单并且实际上更快</p>
 <h4 id="重哈希-Rehashing"><a href="#重哈希-Rehashing" class="headerlink" title="重哈希 Rehashing"></a>重哈希 Rehashing</h4><p>建立另一个两倍大的表<br>扫描原来的整个哈希表找到没有删除的元素<br>用一个新的函数hash这些元素到新的表里<br>如果表里有N个关键词，时间复杂度为O(N)  </p>
 <p>什么时候使用重哈希？<br>只要表半满<br>有一个插入失败<br>表达到一个指定的装载因子</p>
 <p><strong>Note</strong>:<br>通常，在重哈希之间，已经有 N/2 个插入了，所以 O(N) 的重哈希对每一个插入的花费是一个常量<br>但是，在一个交互系统里，插入导致重哈希的用户会看到减速  </p>
 <p><strong>Read Figures 7.23 for detailed implementation of rehashing.</strong></p>
-<p><a href="https://github.com/iktsuarpok-luo/comments/files/4798271/default.pdf" target="_blank" rel="noopener">下载链接</a></p>
 
       
     </div>
@@ -1517,7 +1516,7 @@ p = \begin{cases}
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
@@ -1525,5 +1524,5 @@ p = \begin{cases}
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>
