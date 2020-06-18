@@ -237,11 +237,10 @@
     <url>/posts/c122a607.html</url>
     <content><![CDATA[<p>　　是我之前考大物之前整理的笔记，因为我们学校的大学物理是分两个学期上的，这份笔记只有下学期的内容，所以有些知识可能并不涉及，文末会附下载链接，自行取用。</p>
 <h1 id="第13章-静电场"><a href="#第13章-静电场" class="headerlink" title="第13章 静电场"></a>第13章 静电场</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h5 id="库仑定律"><a href="#库仑定律" class="headerlink" title="库仑定律"></a>库仑定律</h5><script type="math/tex; mode=display">
-\vec F = {1 \over 4\pi\epsilon_0}*{q_1q_2 \over r^2}*\vec r</script><p>其中 $ \epsilon_0 $ 称为真空中的电容率，物理意义为单位长度的电容，大小为$\epsilon_0 = 8.85 <em> 10 ^ {-15} C ^ 2 / ( N </em> m ^ 2 )$</p>
-<p>$ \vec r $是指由$q_1$指向$q_2$的单位矢量。<br>在同一位置的库仑力有可加性，用矢量加法计算。  </p>
+\vec F = {1 \over 4\pi\epsilon_0}\*{q_1q_2 \over r^2}\*\vec r</script><p>其中 $ \epsilon_0 $ 称为真空中的电容率，物理意义为单位长度的电容，大小为$\epsilon_0 = 8.85 * 10 ^ {-15} C ^ 2 / ( N * m ^ 2 )$<br>$ \vec r $是指由$q_1$指向$q_2$的单位矢量。<br>在同一位置的库仑力有可加性，用矢量加法计算。  </p>
 <h5 id="电场强度"><a href="#电场强度" class="headerlink" title="电场强度"></a>电场强度</h5><p>点电荷的电场强度公式</p>
 <script type="math/tex; mode=display">
-\vec E = {1 \over 4\pi\epsilon_0}*{q \over r^2}*\vec r</script><p>E被称为电场强度，当点电荷电量q为正时，E背离电荷，q为负时，E指向电荷  </p>
+\vec E = {1 \over 4\pi\epsilon_0}\*{q \over r^2}\*\vec r</script><p>E被称为电场强度，当点电荷电量q为正时，E背离电荷，q为负时，E指向电荷  </p>
 <blockquote>
 <p>电场叠加原理：电场中某点的总场强等于场中每一电荷单独在该点产生场强的矢量和  </p>
 </blockquote>
@@ -412,7 +411,7 @@ C = 4\pi\epsilon_0\frac{R_AR_B}{R_B-R_A}</script><p>$R_A$为内径，$R_B$为外
 ##### 电流
 我们用单位时间内通过某一截面的电量来定量地表征电流</script><p>I = \frac{dq}{dt}</p>
 <script type="math/tex; mode=display">
-我们取正电荷载流子的流动方向为电流的方向。电流单位是安[培]，记为A  
+我们取正电荷载流子的流动方向为电流的方向。电流单位是安\[培\]，记为A  
 因为电流在截面上的分布可以是不均匀的，所以我们引入了电流密度矢量j的概念</script><p>j = \frac{dI}{dScos\theta}</p>
 <p>\theta是截面元dS的法线\vec n与电流方向所成的夹角</p>
 <script type="math/tex; mode=display">
@@ -455,11 +454,11 @@ j的方向是该点正电荷载流子的速度方向。
 磁力本质上是运动电荷之间的一个基本力  
 两根平行导线之间产生的相互作用力磁力为</script><p>F_m = \frac{\mu_0I_1I_2}{2\pi b}</p>
 <script type="math/tex; mode=display">
-其中 $ \mu_0 $ 称为磁学常量，大小为 $ 4\pi * 10^{-7} N/A^2 $ 
+其中 $ \mu_0 $ 称为磁学常量，大小为 $ 4\pi \* 10^{-7} N/A^2 $ 
 ##### 磁场
 磁场的强弱用磁感应强度B表示，我们用试探电荷在磁场中运动时不受力的运动方向规定为B的方向，将运动电荷收到的最大磁力与qv值的比值定义为磁感应强度的大小</script><p>B = \frac{F_{m,max}}{qv}</p>
 <script type="math/tex; mode=display">
-磁感应强度B的单位是特[斯拉],用T表示  
+磁感应强度B的单位是特\[斯拉\],用T表示  
 磁场中某点的磁感应强度B等于场中每一运动电荷或电流单独产生的磁场 $ B_i $ 的矢量和  
 
 运动电荷产生的磁感应强度公式为</script><p>\vec B = \frac{\mu_0}{4\pi}\frac{q(\vec v\times\vec r)}{r^2}</p>
@@ -484,7 +483,7 @@ j的方向是该点正电荷载流子的速度方向。
 ##### 磁场的高斯定理
 通过任意闭合曲面的磁通量为0</script><p>\oint_S \vec B d\vec S = 0</p>
 <script type="math/tex; mode=display">
-我们定义磁感线通过某一曲面的通量为 $ \Phi_B  = \oint_S \vec B d\vec S $ ,单位是韦[伯]，Wb
+我们定义磁感线通过某一曲面的通量为 $ \Phi_B  = \oint_S \vec B d\vec S $ ,单位是韦\[伯\]，Wb
 ##### 安培环路定理
 磁感应强度B沿任意闭合环路的线积分，等于穿过该环路所有电流的代数和的 $ \mu_0 $ 倍</script><p>\oint_L \vec B · d\vec l = \mu_0\sum_{(L内)} I</p>
 <script type="math/tex; mode=display">
@@ -600,7 +599,7 @@ M类似于P
 L为自感系数，只与线圈的性质有关。而线圈的自感电动势为</script><p>\epsilon_L = -L\frac{dI}{dt}</p>
 <script type="math/tex; mode=display">
 符号表示，自感电动势将反抗回路中电流的改变。  
-自感系数的单位定义为，当线圈通有1A电流时，产生的总磁通量为1Wb，这是的自感称为1亨[特]，用H表示。</script><p>1H = \frac{1Wb}{1A}</p>
+自感系数的单位定义为，当线圈通有1A电流时，产生的总磁通量为1Wb，这是的自感称为1亨\[特\]，用H表示。</script><p>1H = \frac{1Wb}{1A}</p>
 <script type="math/tex; mode=display">
 对于密绕螺线管</script><p>L = \frac{\Psi}{I} = \mu_0n^2V</p>
 <script type="math/tex; mode=display">
@@ -1036,18 +1035,18 @@ k为衍射级次，N为总缝数，因此提高光栅某一级谱线的分辨本
 
 黑体的辐射出射度与黑体温度的四次方成正比</script><p>M_0(T) = \int_0^\infty M_{0,\lambda}(T)d\lambda =\sigma T^4</p>
 <script type="math/tex; mode=display">
-式中的 $ \sigma = 5.67*10^{-8} W/(m^2·K^4) $ 为普适常量,称为斯特藩-玻尔兹曼常量
+式中的 $ \sigma = 5.67\*10^{-8} W/(m^2·K^4) $ 为普适常量,称为斯特藩-玻尔兹曼常量
 >维恩位移定律
 
 在任一温度下， $ M_{0,\lambda}(T) $ 都有一个最大值，该最大值对应的波长称为波峰波长，记为 $ \lambda_m $ ,波峰波长与温度成反比</script><p>T·\lambda_m = b</p>
 <script type="math/tex; mode=display">
-式中 $ b = 2.898 * 10^{-3} m·K $ 
+式中 $ b = 2.898 \* 10^{-3} m·K $ 
 ##### 经典物理学的困难
 静电物理学对辐射波长分布的公式都只能符合实际实验曲线的一部分。这些失败暴露的经典物理学的缺陷。
 ##### 普朗克量子假说
 普朗克总结前人失败的教训，得到一个与实验完全相符的公式，即</script><p>M_{0,\lambda}(T) = 2\pi hc^2\lambda^{-5}\frac{1}{e^{\frac{hc}{\lambda kT}}-1}</p>
 <script type="math/tex; mode=display">
-其中c为光速，k为玻尔兹曼常量，h为普朗克常量， $ h = 6.626*10^{-34}J·s $   
+其中c为光速，k为玻尔兹曼常量，h为普朗克常量， $ h = 6.626\*10^{-34}J·s $   
 
 为了推出上式，普朗克提出了违背静电物理学的量子假设：  
 1 黑体是由许多带电的线性谐振子组成的，频率为 $ \nu $ 的谐振子只能取如下的能量不连续值，即</script><p>E_n = nh\nu    n=0,1,2…</p>
@@ -1105,11 +1104,11 @@ A=0.00242nm
 #### 氢原子光谱的规律性
 巴耳末发现了氢原子光谱可见光区域谱线波长的规律</script><p>\lambda = B\frac{n^2}{n^2-4}    n=3,4,5…</p>
 <script type="math/tex; mode=display">
-其中 $ B = 3.6456*10^{-7} m $ 这称为巴耳末公式  
+其中 $ B = 3.6456\*10^{-7} m $ 这称为巴耳末公式  
 
 里德伯发现，不用波长，而用波长的倒数,即单位长度内波的数量称为波数来表示，可以将公式变得更简洁易于推广。</script><p>\widetilde\nu = \frac{1}{\lambda} = R_H(\frac{1}{2^2}-\frac{1}{n^2})   n=3,4,5…</p>
 <script type="math/tex; mode=display">
-其中 $ R_H = \frac{4}{B} = 1.0967758*10^7 m^{-1} $ ,称为氢的里德伯常量。  
+其中 $ R_H = \frac{4}{B} = 1.0967758\*10^7 m^{-1} $ ,称为氢的里德伯常量。  
 上式中对应的氢原子谱线系叫做巴耳末系。进一步研究后，里德伯把氢原子的所有光谱线系用同一个公式表示</script><p>\widetilde\nu = R_H(\frac{1}{m^2}-\frac{1}{n^2})</p>
 <p>m=1,2,3…;n=m+1,m+2,…</p>
 <script type="math/tex; mode=display">
@@ -1204,11 +1203,11 @@ n越大，原子能量的绝对值越小，电子离核也越远，即n越大，
 <script type="math/tex; mode=display">
 这个表达式为归一化条件，满足这个条件式的叫做归一化函数，我们假定，我们讨论的波函数都是归一化的。
 
-其中 $ |\Psi|^2 = \Psi^*\Psi $ 表示粒子t时刻在(x,y,z)处单位体积内出现的概率，称为密度。
+其中 $ |\Psi|^2 = \Psi^\*\Psi $ 表示粒子t时刻在(x,y,z)处单位体积内出现的概率，称为密度。
 
-在稳定场中</script><p>\Psi^<em>\Psi = \psi^</em>\psi</p>
+在稳定场中</script><p>\Psi^*\Psi = \psi^*\psi</p>
 <script type="math/tex; mode=display">
-于是概率密度为 $ \psi^*\psi $ ，与时间无关
+于是概率密度为 $ \psi^\*\psi $ ，与时间无关
 #### 能量的量子化
 我们定义一维无限深势阱，这是势能在势阱内为零，在势阱外为无穷大的情况。
 则在势阱外及势阱两边波函数等于零，发现粒子的概率为0  
