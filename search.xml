@@ -236,394 +236,997 @@
     <title>大学物理笔记</title>
     <url>/posts/c122a607.html</url>
     <content><![CDATA[<p>　　是我之前考大物之前整理的笔记，因为我们学校的大学物理是分两个学期上的，这份笔记只有下学期的内容，所以有些知识可能并不涉及，文末会附下载链接，自行取用。</p>
-<h1 id="第13章-静电场"><a href="#第13章-静电场" class="headerlink" title="第13章 静电场"></a>第13章 静电场</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h5 id="库仑定律"><a href="#库仑定律" class="headerlink" title="库仑定律"></a>库仑定律</h5><p> $  $<br>\vec F = {1 \over 4\pi\epsilon_0}<em>{q_1q_2 \over r^2}</em>\vec r<br> $  $<br>其中 $ \epsilon_0 $ 称为真空中的电容率，物理意义为单位长度的电容，大小为 $ \epsilon_0 = 8.85 <em> 10^{-15} C^2/(N</em>m^2) $ 。 $ \vec r是指由q_1指向q_2的单位矢量 $ 。<br>在同一位置的库仑力有可加性，用矢量加法计算。  </p>
-<h5 id="电场强度"><a href="#电场强度" class="headerlink" title="电场强度"></a>电场强度</h5><p>点电荷的电场强度公式<br> $  $<br>\vec E = {1 \over 4\pi\epsilon_0}<em>{q \over r^2}</em>\vec r<br> $  $<br>E被称为电场强度，当点电荷电量q为正时，E背离电荷，q为负时，E指向电荷  </p>
+<h1 id="第13章-静电场"><a href="#第13章-静电场" class="headerlink" title="第13章 静电场"></a>第13章 静电场</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h5 id="库仑定律"><a href="#库仑定律" class="headerlink" title="库仑定律"></a>库仑定律</h5><script type="math/tex; mode=display">
+\vec F = {1 \over 4\pi\epsilon_0}*{q_1q_2 \over r^2}*\vec r</script><p>其中 $ \epsilon_0 $ 称为真空中的电容率，物理意义为单位长度的电容，大小为 $ \epsilon_0 = 8.85 <em> 10 ^ {-15} C ^ 2 / ( N </em> m ^ 2 ) $。 $ \vec r是指由q_1指向q_2的单位矢量 $。<br>在同一位置的库仑力有可加性，用矢量加法计算。  </p>
+<h5 id="电场强度"><a href="#电场强度" class="headerlink" title="电场强度"></a>电场强度</h5><p>点电荷的电场强度公式</p>
+<script type="math/tex; mode=display">
+\vec E = {1 \over 4\pi\epsilon_0}*{q \over r^2}*\vec r</script><p>E被称为电场强度，当点电荷电量q为正时，E背离电荷，q为负时，E指向电荷  </p>
 <blockquote>
 <p>电场叠加原理：电场中某点的总场强等于场中每一电荷单独在该点产生场强的矢量和  </p>
 </blockquote>
-<h5 id="高斯定理"><a href="#高斯定理" class="headerlink" title="高斯定理"></a>高斯定理</h5><p> $  $<br>\oint_S\vec E·d\vec S = {1 \over \epsilon_0}\sum_i q_{i(内)}<br> $  $ </p>
-<blockquote>
+<h5 id="高斯定理"><a href="#高斯定理" class="headerlink" title="高斯定理"></a>高斯定理</h5><script type="math/tex; mode=display">
+\oint_S\vec E·d\vec S = {1 \over \epsilon_0}\sum_i q_{i(内)}</script><blockquote>
 <p>高斯定理表述为：通过任意一个闭合曲面S的电通量等于闭合面内所有电荷的代数和 $ \sum_i q_i  $ 除以 $ \epsilon_0 $ ,与闭合曲面外的电荷无关  </p>
 </blockquote>
-<h5 id="电势"><a href="#电势" class="headerlink" title="电势"></a>电势</h5><p>以无穷远处为电势零点，则电场中某点电势为<br> $  $<br>V_a = \int_a^\infty \vec E·d\vec l<br> $  $<br>电场中一点的电势等于把单位正电荷从该点移到无穷远处时静电力所做的功。电势是标量。但有或正或负的量值。</p>
+<h5 id="电势"><a href="#电势" class="headerlink" title="电势"></a>电势</h5><p>以无穷远处为电势零点，则电场中某点电势为</p>
+<script type="math/tex; mode=display">
+V_a = \int_a^\infty \vec E·d\vec l</script><p>电场中一点的电势等于把单位正电荷从该点移到无穷远处时静电力所做的功。电势是标量。但有或正或负的量值。</p>
 <blockquote>
 <p>除了选择无穷远处为电势零点外，根据需要，可以选择空间中任一参考点作为电势零点 </p>
 </blockquote>
-<p>点电荷在某点产生的电势可以通过电势的定义得出另一个公式<br> $  $<br>V = \frac{1}{4\pi\epsilon_0}\frac{q}{r}<br> $  $<br>式中的r是指所求点到点电荷的距离</p>
+<p>点电荷在某点产生的电势可以通过电势的定义得出另一个公式</p>
+<script type="math/tex; mode=display">
+V = \frac{1}{4\pi\epsilon_0}\frac{q}{r}</script><p>式中的r是指所求点到点电荷的距离</p>
 <blockquote>
 <p>电场中某点的电势等于场中各点电荷单独存在时产生的电势的代数和</p>
 </blockquote>
-<p>静电场中，任意两点之间的电势差成为电压。<br> $  $<br>V_a - V_b = \int_a^b \vec E·\vec l<br> $  $<br>且任一电荷 $ q_0 $ 在静电场中从a点移动到b点，静电力所作的功可以用电势差表示为：<br> $  $<br>W_{ab} = q_0(V_a - V_b)<br> $  $ </p>
-<blockquote>
+<p>静电场中，任意两点之间的电势差成为电压。  </p>
+<script type="math/tex; mode=display">
+V_a - V_b = \int_a^b \vec E·\vec l</script><p>且任一电荷 $ q_0 $ 在静电场中从a点移动到b点，静电力所作的功可以用电势差表示为：</p>
+<script type="math/tex; mode=display">
+W_{ab} = q_0(V_a - V_b)</script><blockquote>
 <p>静电场中静电力所做的功仅与电荷大小 $ q_0 $ 和始末位置有关，与路径无关。因此，静电力是保守力</p>
 </blockquote>
-<h5 id="电势梯度"><a href="#电势梯度" class="headerlink" title="电势梯度"></a>电势梯度</h5><p> $  $<br>\vec F = -\nabla U = -(\frac{\partial U}{\partial x}\vec i + \frac{\partial U}{\partial y}\vec j + \frac{\partial U}{\partial z}\vec k)<br> $  $<br>静电力与电势能的梯度有关，电场与电势的梯度有关。<br> $  $<br>\vec E = -\nabla V = -(\frac{\partial V}{\partial x}\vec i + \frac{\partial V}{\partial y}\vec j + \frac{\partial V}{\partial z}\vec k)<br> $  $<br>与此类似，矢量E在任意方向l上的分量，都等于电势V对l的导数的负值，即：<br> $  $<br>\vec E_l = -\frac{\partial V}{\partial l}<br> $  $ </p>
-<h2 id="公式在特殊情况下的应用"><a href="#公式在特殊情况下的应用" class="headerlink" title="公式在特殊情况下的应用"></a>公式在特殊情况下的应用</h2><h5 id="电偶极子"><a href="#电偶极子" class="headerlink" title="电偶极子"></a>电偶极子</h5><p>电偶极子是指两个等值异号电荷+q和-q所组成的系统，两个电荷之间的距离l远小于所求场点到它们连线中心的距离r，即l &lt;&lt; r<br>取电偶极子的电量q和距离l的乘积称为电偶极矩，即 $  \vec p = q\vec l  $ ,其方向与l的方向相同，由负电荷指向正电荷。  </p>
-<p>在延长线上的场强为<br> $  $<br>E = \frac{1}{4\pi\epsilon_0}\frac{2p}{r^3}<br> $  $<br>场强E的方向与电偶极矩p的方向相同  </p>
-<p>在中垂线上的场强为<br> $  $<br>E = \frac{1}{4\pi\epsilon_0}\frac{ql}{(r^2+\frac{l^2}{4})^\frac{3}{2}} \approx \frac{1}{4\pi\epsilon_0}\frac{p}{r^3}<br> $  $<br>场强E方向与电偶极矩p的方向相反  </p>
+<h5 id="电势梯度"><a href="#电势梯度" class="headerlink" title="电势梯度"></a>电势梯度</h5><script type="math/tex; mode=display">
+\vec F = -\nabla U = -(\frac{\partial U}{\partial x}\vec i + \frac{\partial U}{\partial y}\vec j + \frac{\partial U}{\partial z}\vec k)</script><p>静电力与电势能的梯度有关，电场与电势的梯度有关。</p>
+<script type="math/tex; mode=display">
+\vec E = -\nabla V = -(\frac{\partial V}{\partial x}\vec i + \frac{\partial V}{\partial y}\vec j + \frac{\partial V}{\partial z}\vec k)</script><p>与此类似，矢量E在任意方向l上的分量，都等于电势V对l的导数的负值，即：</p>
+<script type="math/tex; mode=display">
+\vec E_l = -\frac{\partial V}{\partial l}</script><h2 id="公式在特殊情况下的应用"><a href="#公式在特殊情况下的应用" class="headerlink" title="公式在特殊情况下的应用"></a>公式在特殊情况下的应用</h2><h5 id="电偶极子"><a href="#电偶极子" class="headerlink" title="电偶极子"></a>电偶极子</h5><p>电偶极子是指两个等值异号电荷+q和-q所组成的系统，两个电荷之间的距离l远小于所求场点到它们连线中心的距离r，即l &lt;&lt; r<br>取电偶极子的电量q和距离l的乘积称为电偶极矩，即 $  \vec p = q\vec l  $ ,其方向与l的方向相同，由负电荷指向正电荷。  </p>
+<p>在延长线上的场强为</p>
+<script type="math/tex; mode=display">
+E = \frac{1}{4\pi\epsilon_0}\frac{2p}{r^3}</script><p>场强E的方向与电偶极矩p的方向相同  </p>
+<p>在中垂线上的场强为</p>
+<script type="math/tex; mode=display">
+E = \frac{1}{4\pi\epsilon_0}\frac{ql}{(r^2+\frac{l^2}{4})^\frac{3}{2}} \approx \frac{1}{4\pi\epsilon_0}\frac{p}{r^3}</script><p>场强E方向与电偶极矩p的方向相反  </p>
 <h5 id="利用高斯定律计算电场"><a href="#利用高斯定律计算电场" class="headerlink" title="利用高斯定律计算电场"></a>利用高斯定律计算电场</h5><blockquote>
-<p>均匀带电球壳<br> $  $<br>E = \begin{cases}<br>0 &amp; r&lt;R\ <br>\frac{1}{4\pi\epsilon_0}\frac{q}{r^2} &amp; r \geq R\\<br>\end{cases}<br> $  $<br>r为所求场点到球心的距离，R为球的半径，下同<br>均匀带电球体<br> $  $<br>E = \begin{cases}<br>\frac{1}{4\pi\epsilon_0}\frac{qr}{R^3} &amp; r&lt;R\\<br>\frac{1}{4\pi\epsilon_0}\frac{q}{r^2} &amp; r \geq R\\<br>\end{cases}<br> $  $<br>无限长圆柱体或圆柱面<br> $  $<br>E = \frac{\lambda}{2\pi\epsilon_0r}<br> $  $<br> $ \lambda $ 为单位长度上所带电荷，r为该点到圆柱体轴线的垂直距离<br>无限大均匀带电平面<br> $  $<br>E = \frac{\sigma}{2\epsilon_0}<br> $  $<br> $ \sigma $ 是指带电平面单位面积上的电荷量<br>两块等量异号电荷的平行平板<br> $  $<br>E = \begin{cases}<br>0 &amp; 两板外\\<br>\frac{\sigma}{\epsilon_0} &amp; 两板间\\<br>\end{cases}<br> $  $ </p>
-<h5 id="电势的计算"><a href="#电势的计算" class="headerlink" title="电势的计算"></a>电势的计算</h5><p>均匀带电球壳（无限远处为电势零点）<br> $  $<br>V = \begin{cases}<br>\frac{1}{4\pi\epsilon_0}\frac{q}{R} &amp; r&lt;R\\<br>\frac{1}{4\pi\epsilon_0}\frac{q}{r} &amp; r\geq R<br>\end{cases}<br> $  $<br>r为所求点到球心的距离，R为球的半径<br>均匀带电圆环轴线<br> $  $<br>V = \frac{q}{4\pi\epsilon_0(x^2+R^2)^\frac{1}{2}}<br> $  $<br>x为所求点到圆环圆心的距离<br>均匀带电圆盘轴线<br> $  $<br>V = \frac{\sigma}{2\pi}(\sqrt{z^2+R^2}-z)<br> $  $<br>外径R1，内径R2的均匀带电圆环<br> $  $<br>V = \frac{\sigma}{2\pi}(\sqrt{z^2+R_1^2}-\sqrt{z^2-R_2^2})<br> $  $ </p>
-<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>电场中由电势相等的点组成的面叫做等势面<br>1.等势面与电厂线处处正交<br>2.等势面密集处场强大，等势面稀疏处场强小</p>
+<p>均匀带电球壳  </p>
+<script type="math/tex; mode=display">
+E = \begin{cases}
+0 & r<R\\  
+\frac{1}{4\pi\epsilon_0}\frac{q}{r^2} & r \geq R\\
+\end{cases}</script><p>r为所求场点到球心的距离，R为球的半径，下同<br>均匀带电球体</p>
+<script type="math/tex; mode=display">
+E = \begin{cases}
+\frac{1}{4\pi\epsilon_0}\frac{qr}{R^3} & r<R\\
+\frac{1}{4\pi\epsilon_0}\frac{q}{r^2} & r \geq R\\
+\end{cases}</script><p>无限长圆柱体或圆柱面</p>
+<script type="math/tex; mode=display">
+E = \frac{\lambda}{2\pi\epsilon_0r}</script><p> $ \lambda $ 为单位长度上所带电荷，r为该点到圆柱体轴线的垂直距离<br>无限大均匀带电平面</p>
+<script type="math/tex; mode=display">
+E = \frac{\sigma}{2\epsilon_0}</script><p> $ \sigma $ 是指带电平面单位面积上的电荷量<br>两块等量异号电荷的平行平板</p>
+<script type="math/tex; mode=display">
+E = \begin{cases}
+0 & 两板外\\
+\frac{\sigma}{\epsilon_0} & 两板间\\
+\end{cases}</script><h5 id="电势的计算"><a href="#电势的计算" class="headerlink" title="电势的计算"></a>电势的计算</h5><p>均匀带电球壳（无限远处为电势零点）</p>
+<script type="math/tex; mode=display">
+V = \begin{cases}
+\frac{1}{4\pi\epsilon_0}\frac{q}{R} & r<R\\
+\frac{1}{4\pi\epsilon_0}\frac{q}{r} & r\geq R
+\end{cases}</script><p>r为所求点到球心的距离，R为球的半径<br>均匀带电圆环轴线</p>
+<script type="math/tex; mode=display">
+V = \frac{q}{4\pi\epsilon_0(x^2+R^2)^\frac{1}{2}}</script><p>x为所求点到圆环圆心的距离<br>均匀带电圆盘轴线</p>
+<script type="math/tex; mode=display">
+V = \frac{\sigma}{2\pi}(\sqrt{z^2+R^2}-z)</script><p>外径R1，内径R2的均匀带电圆环</p>
+<script type="math/tex; mode=display">
+V = \frac{\sigma}{2\pi}(\sqrt{z^2+R_1^2}-\sqrt{z^2-R_2^2})</script><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>电场中由电势相等的点组成的面叫做等势面<br>1.等势面与电厂线处处正交<br>2.等势面密集处场强大，等势面稀疏处场强小</p>
 </blockquote>
-<h1 id="第14章-静电场中的导体和电介质"><a href="#第14章-静电场中的导体和电介质" class="headerlink" title="第14章 静电场中的导体和电介质"></a>第14章 静电场中的导体和电介质</h1><h2 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h2><h5 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h5><p>孤立导体电容<br> $  $<br>C = \frac{q}{V}<br> $  $<br>电容器电容<br> $  $<br>C = \frac{q}{V_A-V_B}<br> $  $<br>单位是C/V，称之为法[拉]，记为F</p>
-<h5 id="电容器的串并联"><a href="#电容器的串并联" class="headerlink" title="电容器的串并联"></a>电容器的串并联</h5><p>串联时<br> $  $<br>\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} + … + \frac{1}{C_n}<br> $  $<br>并联时<br> $  $<br>C = C_1 + C_2 + … + C_n<br> $  $ </p>
-<h5 id="电解质的极化"><a href="#电解质的极化" class="headerlink" title="电解质的极化"></a>电解质的极化</h5><p>我们取单位体积内的电偶极矩矢量和来表征电解质极化的程度<br> $  $<br>\vec P = \frac{\sum \vec p_{分子}}{\Delta V}<br> $  $<br>其中 $ \vec P $ 表示电介质的极化强度，简称电极化强度，单位是 $ C/m^2 $ 。而 $ \vec p_{分子} $ 是指分子形成的电偶极子系统的电偶极矩，计算方法同前所讲的电偶极子。<br>方向与外电场方向相同</p>
-<h5 id="面束缚电荷和体束缚电荷"><a href="#面束缚电荷和体束缚电荷" class="headerlink" title="面束缚电荷和体束缚电荷"></a>面束缚电荷和体束缚电荷</h5><p> $  $<br>\sigma’ = Pcos\theta = P_n<br> $  $<br>公式表示，电介质极化时产生的束缚电荷面密度等于电解质强度沿电介质相应表面外法线方向的分量。<br> $  $<br>\oint_S \vec P · d\vec S = -\sum_{(S内)}q’ = -\int_V \rho’dV<br> $  $<br>公式表示，任取一个闭合曲面S，电极化强度 $ \vec P $ 通过闭合曲面的通量，等于该闭合曲面所包围的体积内的净余束缚电荷的负值。<br> $ \rho’ $ 即为体积元 $ dV $ 处的束缚电荷体密度。</p>
-<h5 id="电介质中的静电场"><a href="#电介质中的静电场" class="headerlink" title="电介质中的静电场"></a>电介质中的静电场</h5><p>取 $ E_0 $ 表示外电荷产生的电场， $ E’ $ 表示束缚电荷产生的电场，那么电介质中的电场为外电荷电场与束缚电荷电场的矢量和，即<br> $  $<br>\vec E = \vec E_0 + \vec E’<br> $  $<br>对于任意类型的各向同性电介质，同一点的极化强度和电场强度有如下关系<br> $  $<br>\vec P = \chi_e \epsilon_0 \vec E<br> $  $<br>其中的 $ \chi_e $ 是电介质的极化率，与场强无关，只与电介质的种类有关</p>
-<p>我们取 $ q_0 $ 表示自由电荷， $ q’ $ 表示束缚电荷，则电介质中的高斯定理可写作<br> $  $<br>\oint_S \vec E · d\vec S = \frac{1}{\epsilon_0}\sum_{(S内)}(q_0 + q’)<br> $  $<br>由束缚电荷体密度的计算公式可得<br> $  $<br>\oint_S \vec P · d\vec S = -\sum_{(S内)}q’<br> $  $<br>两式联立可得<br> $  $<br>\oint_S (\epsilon_0 \vec E + \vec P) · d\vec S = \sum_{(S内)}q_0<br> $  $<br>我们取 $ \vec D = \epsilon_0 \vec E + \vec P $ ,则上式可写作<br> $  $<br>\oint_S \vec D · d\vec S = \sum_{(S内)}q_0<br> $  $<br>其中 $ \vec D $ 被称为电位移矢量<br>由上述的公式，可以推出几个量之间的关系，首先我们取 $ \epsilon_r = \chi_e + 1 $ ，称为电介质的相对介电常数，或简称介电常数，则有<br> $  $<br>\vec D = \epsilon_r\epsilon_0\vec E</p>
-<p>\vec P = \chi_e\epsilon_0\vec E</p>
-<p>\vec D = \epsilon_0\vec E_0</p>
-<p>\vec P = -\epsilon_0\vec E’</p>
-<p>\vec E_0 = \epsilon_r\vec E</p>
-<p>\vec E’ = -\chi_e\vec E = (1 - \epsilon_r)\vec E<br> $  $ </p>
-<h5 id="电场的能量"><a href="#电场的能量" class="headerlink" title="电场的能量"></a>电场的能量</h5><p>电场单位体积的能量与电场强度有关<br> $  $<br>u_e = \frac{1}{2}\epsilon_0\epsilon_rE^2<br> $  $<br>因此可以通过积分计算能量<br> $  $<br>U_e = \int_V u_edV = \int_V\frac{1}{2}\epsilon_0\epsilon_rE^2dV<br> $  $ </p>
-<h2 id="公式在特殊情况下的应用-1"><a href="#公式在特殊情况下的应用-1" class="headerlink" title="公式在特殊情况下的应用"></a>公式在特殊情况下的应用</h2><h5 id="求电容"><a href="#求电容" class="headerlink" title="求电容"></a>求电容</h5><blockquote>
-<p>孤立导体球的电容<br> $  $<br>C = 4\pi\epsilon_0R<br> $  $<br>平行板电容器<br> $  $<br>C = \frac{q}{Ed} = \frac{\epsilon_0S}{d}<br> $  $<br>同心球形电容器<br> $  $<br>C = 4\pi\epsilon_0\frac{R_AR_B}{R_B-R_A}</p>
+<h1 id="第14章-静电场中的导体和电介质"><a href="#第14章-静电场中的导体和电介质" class="headerlink" title="第14章 静电场中的导体和电介质"></a>第14章 静电场中的导体和电介质</h1><h2 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h2><h5 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h5><p>孤立导体电容</p>
+<script type="math/tex; mode=display">
+C = \frac{q}{V}</script><p>电容器电容</p>
+<script type="math/tex; mode=display">
+C = \frac{q}{V_A-V_B}</script><p>单位是C/V，称之为法[拉]，记为F</p>
+<h5 id="电容器的串并联"><a href="#电容器的串并联" class="headerlink" title="电容器的串并联"></a>电容器的串并联</h5><p>串联时</p>
+<script type="math/tex; mode=display">
+\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} + ... + \frac{1}{C_n}</script><p>并联时</p>
+<script type="math/tex; mode=display">
+C = C_1 + C_2 + ... + C_n</script><h5 id="电解质的极化"><a href="#电解质的极化" class="headerlink" title="电解质的极化"></a>电解质的极化</h5><p>我们取单位体积内的电偶极矩矢量和来表征电解质极化的程度</p>
+<script type="math/tex; mode=display">
+\vec P = \frac{\sum \vec p_{分子}}{\Delta V}</script><p>其中 $ \vec P $ 表示电介质的极化强度，简称电极化强度，单位是 $ C/m^2 $ 。而 $ \vec p_{分子} $ 是指分子形成的电偶极子系统的电偶极矩，计算方法同前所讲的电偶极子。<br>方向与外电场方向相同</p>
+<h5 id="面束缚电荷和体束缚电荷"><a href="#面束缚电荷和体束缚电荷" class="headerlink" title="面束缚电荷和体束缚电荷"></a>面束缚电荷和体束缚电荷</h5><script type="math/tex; mode=display">
+\sigma' = Pcos\theta = P_n</script><p>公式表示，电介质极化时产生的束缚电荷面密度等于电解质强度沿电介质相应表面外法线方向的分量。</p>
+<script type="math/tex; mode=display">
+\oint_S \vec P · d\vec S = -\sum_{(S内)}q' = -\int_V \rho'dV</script><p>公式表示，任取一个闭合曲面S，电极化强度 $ \vec P $ 通过闭合曲面的通量，等于该闭合曲面所包围的体积内的净余束缚电荷的负值。<br> $ \rho’ $ 即为体积元 $ dV $ 处的束缚电荷体密度。</p>
+<h5 id="电介质中的静电场"><a href="#电介质中的静电场" class="headerlink" title="电介质中的静电场"></a>电介质中的静电场</h5><p>取 $ E_0 $ 表示外电荷产生的电场， $ E’ $ 表示束缚电荷产生的电场，那么电介质中的电场为外电荷电场与束缚电荷电场的矢量和，即</p>
+<script type="math/tex; mode=display">
+\vec E = \vec E_0 + \vec E'</script><p>对于任意类型的各向同性电介质，同一点的极化强度和电场强度有如下关系</p>
+<script type="math/tex; mode=display">
+\vec P = \chi_e \epsilon_0 \vec E</script><p>其中的 $ \chi_e $ 是电介质的极化率，与场强无关，只与电介质的种类有关</p>
+<p>我们取 $ q_0 $ 表示自由电荷， $ q’ $ 表示束缚电荷，则电介质中的高斯定理可写作</p>
+<script type="math/tex; mode=display">
+\oint_S \vec E · d\vec S = \frac{1}{\epsilon_0}\sum_{(S内)}(q_0 + q')</script><p>由束缚电荷体密度的计算公式可得</p>
+<script type="math/tex; mode=display">
+\oint_S \vec P · d\vec S = -\sum_{(S内)}q'</script><p>两式联立可得</p>
+<script type="math/tex; mode=display">
+\oint_S (\epsilon_0 \vec E + \vec P) · d\vec S = \sum_{(S内)}q_0</script><p>我们取 $ \vec D = \epsilon_0 \vec E + \vec P $ ,则上式可写作</p>
+<script type="math/tex; mode=display">
+\oint_S \vec D · d\vec S = \sum_{(S内)}q_0</script><p>其中 $ \vec D $ 被称为电位移矢量<br>由上述的公式，可以推出几个量之间的关系，首先我们取 $ \epsilon_r = \chi_e + 1 $ ，称为电介质的相对介电常数，或简称介电常数，则有</p>
+<script type="math/tex; mode=display">
+\vec D = \epsilon_r\epsilon_0\vec E
+
+\vec P = \chi_e\epsilon_0\vec E
+
+\vec D = \epsilon_0\vec E_0
+
+\vec P = -\epsilon_0\vec E'
+
+\vec E_0 = \epsilon_r\vec E
+
+\vec E' = -\chi_e\vec E = (1 - \epsilon_r)\vec E</script><h5 id="电场的能量"><a href="#电场的能量" class="headerlink" title="电场的能量"></a>电场的能量</h5><p>电场单位体积的能量与电场强度有关</p>
+<script type="math/tex; mode=display">
+u_e = \frac{1}{2}\epsilon_0\epsilon_rE^2</script><p>因此可以通过积分计算能量</p>
+<script type="math/tex; mode=display">
+U_e = \int_V u_edV = \int_V\frac{1}{2}\epsilon_0\epsilon_rE^2dV</script><h2 id="公式在特殊情况下的应用-1"><a href="#公式在特殊情况下的应用-1" class="headerlink" title="公式在特殊情况下的应用"></a>公式在特殊情况下的应用</h2><h5 id="求电容"><a href="#求电容" class="headerlink" title="求电容"></a>求电容</h5><blockquote>
+<p>孤立导体球的电容</p>
+<script type="math/tex; mode=display">
+C = 4\pi\epsilon_0R</script><p>平行板电容器</p>
+<script type="math/tex; mode=display">
+C = \frac{q}{Ed} = \frac{\epsilon_0S}{d}</script><p>同心球形电容器</p>
+<p>$$<br>C = 4\pi\epsilon_0\frac{R_AR_B}{R_B-R_A}</p>
 </blockquote>
-<p>R_A为内径，R_B为外径<br> $  $ </p>
-<blockquote>
-<p>同轴圆柱形电容器<br> $  $<br>C = \frac{2\pi\epsilon_0l}{ln\frac{R_B}{R_A}}</p>
-</blockquote>
-<p>R_A为内径，R_B为外径<br> $  $ </p>
-<h5 id="电场能量"><a href="#电场能量" class="headerlink" title="电场能量"></a>电场能量</h5><p>对带电导体的能量可以看作，讲电荷聚集到一个不带电的导体上，外力克服静电斥力所做的功<br> $  $<br>U_e = \frac{1}{2}\frac{q^2}{C} = \frac{1}{2}CV^2 = \frac{1}{2}qV<br> $  $<br>对电容器的能量可以看作，将一块板上的电荷移到另一块板上，使正负电荷分离所做的功<br> $  $<br>U_e = \frac{1}{2}\frac{q^2}{C} = \frac{1}{2}CV_{12}^2 = \frac{1}{2}qV_{12}<br> $  $ </p>
-<h2 id="Tips-1"><a href="#Tips-1" class="headerlink" title="Tips"></a>Tips</h2><h5 id="静电平衡"><a href="#静电平衡" class="headerlink" title="静电平衡"></a>静电平衡</h5><blockquote>
-<p>1.静电平衡时导体内部场强处处为0<br>2.静电平衡时导体表面上每一点处的场强处处与它的表面垂直</p>
-<h5 id="导体性质"><a href="#导体性质" class="headerlink" title="导体性质"></a>导体性质</h5><p>导体表面上的面电荷密度与表面附近场强的关系如下<br> $  $<br>E = \frac{\sigma}{\epsilon_0}<br> $  $<br>导体表面曲率越大的地方，面电荷密度越大</p>
-<h5 id="电介质在电容器中的作用"><a href="#电介质在电容器中的作用" class="headerlink" title="电介质在电容器中的作用"></a>电介质在电容器中的作用</h5><p>增大电容量，减小体积</p>
-</blockquote>
-<p>在电容器断开电源的情况下，在两板间充满电介质<br> $  $<br>D = \sigma_0</p>
+<p>R_A为内径，R_B为外径</p>
+<script type="math/tex; mode=display">
+>同轴圆柱形电容器</script><p>C = \frac{2\pi\epsilon_0l}{ln\frac{R_B}{R_A}}</p>
+<p>R_A为内径，R_B为外径</p>
+<script type="math/tex; mode=display">
+##### 电场能量
+对带电导体的能量可以看作，讲电荷聚集到一个不带电的导体上，外力克服静电斥力所做的功</script><p>U_e = \frac{1}{2}\frac{q^2}{C} = \frac{1}{2}CV^2 = \frac{1}{2}qV</p>
+<script type="math/tex; mode=display">
+对电容器的能量可以看作，将一块板上的电荷移到另一块板上，使正负电荷分离所做的功</script><p>U_e = \frac{1}{2}\frac{q^2}{C} = \frac{1}{2}CV_{12}^2 = \frac{1}{2}qV_{12}</p>
+<script type="math/tex; mode=display">
+## Tips
+##### 静电平衡
+>1.静电平衡时导体内部场强处处为0  
+>2.静电平衡时导体表面上每一点处的场强处处与它的表面垂直
+##### 导体性质
+>导体表面上的面电荷密度与表面附近场强的关系如下</script><p>E = \frac{\sigma}{\epsilon_0}</p>
+<script type="math/tex; mode=display">
+>导体表面曲率越大的地方，面电荷密度越大
+##### 电介质在电容器中的作用
+>增大电容量，减小体积
+
+
+在电容器断开电源的情况下，在两板间充满电介质</script><p>D = \sigma_0</p>
 <p>P = \sigma’</p>
 <p>E = \frac{E_0}{\epsilon_r}</p>
-<p>C = \epsilon_rC_0<br> $  $<br>相同体积的电容器，电介质的介电常数越大，电容量越大。相同电容量的电容器，若电介质的介电常数越大，电容器的体积就越小。</p>
-<p>==拓展==</p>
-<p>在电容器不断开电源的情况下，在两板间充满电介质<br> $  $<br>E = \frac{V}{d} = E_0 = \frac{E_0’}{\epsilon_r}</p>
-<p>C = \epsilon_rC_0<br> $  $<br>==在断开电源时，电容器极板上的电荷 $ q_0 $ 不变，在不断开电源时，电容器极板间电压V不变==</p>
-<blockquote>
-<p>提高极限电压，增大耐压能力</p>
-</blockquote>
-<p>电介质比空气的击穿场强更高，因此能提到电容器的耐压能力</p>
-<h1 id="第15章-电流与磁场"><a href="#第15章-电流与磁场" class="headerlink" title="第15章 电流与磁场"></a>第15章 电流与磁场</h1><h2 id="公式-2"><a href="#公式-2" class="headerlink" title="公式"></a>公式</h2><h5 id="电流"><a href="#电流" class="headerlink" title="电流"></a>电流</h5><p>我们用单位时间内通过某一截面的电量来定量地表征电流<br> $  $<br>I = \frac{dq}{dt}<br> $  $<br>我们取正电荷载流子的流动方向为电流的方向。电流单位是安[培]，记为A<br>因为电流在截面上的分布可以是不均匀的，所以我们引入了电流密度矢量j的概念<br> $  $<br>j = \frac{dI}{dScos\theta}</p>
-<p>\theta是截面元dS的法线\vec n与电流方向所成的夹角<br> $  $<br>j的方向是该点正电荷载流子的速度方向。<br>知道了电流密度矢量，就可以求出通过任意截面的电流<br> $  $<br>I = \int_S\vec j·d\vec S<br> $  $ </p>
-<h5 id="欧姆定律的微分形式"><a href="#欧姆定律的微分形式" class="headerlink" title="欧姆定律的微分形式"></a>欧姆定律的微分形式</h5><p>欧姆定律表示为<br> $  $<br>I = \frac{U}{R}<br> $  $<br>同样的，我们知道电阻R与导体本身性质和形状有关<br> $  $<br>R = \rho\frac{l}{S}<br> $  $<br>其中 $ \rho $ 为导体的电阻率，单位是 $ \Omega·m $ ，我们取其倒数称为电导率，记作 $ \gamma = \frac{1}{\rho} $ ,单位是西门子/米（ $ S/m $ ）  </p>
-<p>又有电阻率与温度的关系为<br> $  $<br>\rho_t = \rho_0(1+\alpha t)<br> $  $ </p>
-<blockquote>
-<p>某些金属，合金或者化合物在温度降低到某一数值 $ T_c $ 时，电阻率会突然减小或接近到0，这种现象被称为超导现象</p>
-</blockquote>
-<p>那么我们在导体中取一小段圆柱体，这段导体元两端的电势差为<br> $  $<br>\Delta U = E\Delta l = \Delta I\Delta R</p>
+<p>C = \epsilon_rC_0</p>
+<script type="math/tex; mode=display">
+相同体积的电容器，电介质的介电常数越大，电容量越大。相同电容量的电容器，若电介质的介电常数越大，电容器的体积就越小。
+
+==拓展==
+
+在电容器不断开电源的情况下，在两板间充满电介质</script><p>E = \frac{V}{d} = E_0 = \frac{E_0’}{\epsilon_r}</p>
+<p>C = \epsilon_rC_0</p>
+<script type="math/tex; mode=display">
+==在断开电源时，电容器极板上的电荷 $ q_0 $ 不变，在不断开电源时，电容器极板间电压V不变==
+>提高极限电压，增大耐压能力
+
+电介质比空气的击穿场强更高，因此能提到电容器的耐压能力
+
+# 第15章 电流与磁场
+## 公式
+##### 电流
+我们用单位时间内通过某一截面的电量来定量地表征电流</script><p>I = \frac{dq}{dt}</p>
+<script type="math/tex; mode=display">
+我们取正电荷载流子的流动方向为电流的方向。电流单位是安[培]，记为A  
+因为电流在截面上的分布可以是不均匀的，所以我们引入了电流密度矢量j的概念</script><p>j = \frac{dI}{dScos\theta}</p>
+<p>\theta是截面元dS的法线\vec n与电流方向所成的夹角</p>
+<script type="math/tex; mode=display">
+j的方向是该点正电荷载流子的速度方向。  
+知道了电流密度矢量，就可以求出通过任意截面的电流</script><p>I = \int_S\vec j·d\vec S</p>
+<script type="math/tex; mode=display">
+##### 欧姆定律的微分形式
+欧姆定律表示为</script><p>I = \frac{U}{R}</p>
+<script type="math/tex; mode=display">
+同样的，我们知道电阻R与导体本身性质和形状有关</script><p>R = \rho\frac{l}{S}</p>
+<script type="math/tex; mode=display">
+其中 $ \rho $ 为导体的电阻率，单位是 $ \Omega·m $ ，我们取其倒数称为电导率，记作 $ \gamma = \frac{1}{\rho} $ ,单位是西门子/米（ $ S/m $ ）  
+
+又有电阻率与温度的关系为</script><p>\rho_t = \rho_0(1+\alpha t)</p>
+<script type="math/tex; mode=display">
+>某些金属，合金或者化合物在温度降低到某一数值 $ T_c $ 时，电阻率会突然减小或接近到0，这种现象被称为超导现象
+
+那么我们在导体中取一小段圆柱体，这段导体元两端的电势差为</script><p>\Delta U = E\Delta l = \Delta I\Delta R</p>
 <p>\Delta I = j\Delta S</p>
-<p>j = \frac{\Delta l}{\Delta R\Delta S}E = \frac{1}{\rho}E = \gamma E<br> $  $<br>我们就此得到了欧姆定律的微分形式，对于变化不太大的非稳恒电场也适用<br> $  $<br>\vec j = \vec \gamma E<br> $  $ </p>
-<h5 id="电动势"><a href="#电动势" class="headerlink" title="电动势"></a>电动势</h5><p>将单位正电荷从电源负极通过电源内部移动到正极时，非静电力所做的功为电源的电动势<br> $  $<br>\epsilon = \frac{W}{q}<br> $  $<br>我们将非静电力等效看作一种非静电场强的作用，即<br> $  $<br>\vec F_{非} = q\vec E_k<br> $  $<br>则非静电力所作的功为<br> $  $<br>W_{AB} = q\int_A^B \vec E_k ·d\vec l<br> $  $<br>则电源电动势为<br> $  $<br>\epsilon_{AB} = \int_A^B \vec E_k ·d\vec l<br> $  $ </p>
-<blockquote>
-<p>上述积分过程都是在电源内部</p>
-</blockquote>
-<p>电源内部的合场强<br> $  $<br>\vec E = \vec E_0 + \vec E_k<br> $  $<br>路端电压（电源外部电势差）<br> $  $<br>U = \epsilon - Ir<br> $  $ </p>
-<h5 id="磁力"><a href="#磁力" class="headerlink" title="磁力"></a>磁力</h5><p>磁力本质上是运动电荷之间的一个基本力<br>两根平行导线之间产生的相互作用力磁力为<br> $  $<br>F_m = \frac{\mu_0I_1I_2}{2\pi b}<br> $  $<br>其中 $ \mu_0 $ 称为磁学常量，大小为 $ 4\pi * 10^{-7} N/A^2 $ </p>
-<h5 id="磁场"><a href="#磁场" class="headerlink" title="磁场"></a>磁场</h5><p>磁场的强弱用磁感应强度B表示，我们用试探电荷在磁场中运动时不受力的运动方向规定为B的方向，将运动电荷收到的最大磁力与qv值的比值定义为磁感应强度的大小<br> $  $<br>B = \frac{F_{m,max}}{qv}<br> $  $<br>磁感应强度B的单位是特[斯拉],用T表示<br>磁场中某点的磁感应强度B等于场中每一运动电荷或电流单独产生的磁场 $ B_i $ 的矢量和  </p>
-<p>运动电荷产生的磁感应强度公式为<br> $  $<br>\vec B = \frac{\mu_0}{4\pi}\frac{q(\vec v\times\vec r)}{r^2}<br> $  $<br>其中 $ \vec r $ 是运动电荷指向所求场点的单位矢量，r是运动电荷到所求场点的距离  </p>
-<p>运动电荷产生的电场，在速度远小于光速时，每一时刻的电场与位于该时刻运动电荷所在点的静止电荷产生的静电场没有区别。<br>但是当运动电荷速度可以与光速c相比时<br> $  $<br>E = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}\frac{1-v^2/c^2}{[1-(v^2-c^2)sin^2\theta]^{3/2}}<br> $  $<br> $ \theta $ 是运动电荷指向所求场点的矢量与运动方向的夹角  </p>
-<h5 id="毕奥-萨伐尔定律"><a href="#毕奥-萨伐尔定律" class="headerlink" title="毕奥-萨伐尔定律"></a>毕奥-萨伐尔定律</h5><p>电流元产生的磁场适用毕奥-萨伐尔定律，导线中任意电流元产生的磁场强度为<br> $  $<br>d\vec B = \frac{\mu_0}{4\pi}\frac{ Id\vec l\times \vec r}{r^2}</p>
-<p>\vec B = \oint d\vec B<br> $  $ </p>
-<h5 id="磁偶极子"><a href="#磁偶极子" class="headerlink" title="磁偶极子"></a>磁偶极子</h5><p>场点到场源的距离远大于线圈尺寸的载流线圈<br>称为磁偶极子<br>在线圈圆心所在轴上的场强为<br> $  $<br>\vec B = \frac{\mu_0IS}{2\pi r_0^3}</p>
+<p>j = \frac{\Delta l}{\Delta R\Delta S}E = \frac{1}{\rho}E = \gamma E</p>
+<script type="math/tex; mode=display">
+我们就此得到了欧姆定律的微分形式，对于变化不太大的非稳恒电场也适用</script><p>\vec j = \vec \gamma E</p>
+<script type="math/tex; mode=display">
+##### 电动势
+将单位正电荷从电源负极通过电源内部移动到正极时，非静电力所做的功为电源的电动势</script><p>\epsilon = \frac{W}{q}</p>
+<script type="math/tex; mode=display">
+我们将非静电力等效看作一种非静电场强的作用，即</script><p>\vec F_{非} = q\vec E_k</p>
+<script type="math/tex; mode=display">
+则非静电力所作的功为</script><p>W_{AB} = q\int_A^B \vec E_k ·d\vec l</p>
+<script type="math/tex; mode=display">
+则电源电动势为</script><p>\epsilon_{AB} = \int_A^B \vec E_k ·d\vec l</p>
+<script type="math/tex; mode=display">
+>上述积分过程都是在电源内部
+
+电源内部的合场强</script><p>\vec E = \vec E_0 + \vec E_k</p>
+<script type="math/tex; mode=display">
+路端电压（电源外部电势差）</script><p>U = \epsilon - Ir</p>
+<script type="math/tex; mode=display">
+##### 磁力
+磁力本质上是运动电荷之间的一个基本力  
+两根平行导线之间产生的相互作用力磁力为</script><p>F_m = \frac{\mu_0I_1I_2}{2\pi b}</p>
+<script type="math/tex; mode=display">
+其中 $ \mu_0 $ 称为磁学常量，大小为 $ 4\pi * 10^{-7} N/A^2 $ 
+##### 磁场
+磁场的强弱用磁感应强度B表示，我们用试探电荷在磁场中运动时不受力的运动方向规定为B的方向，将运动电荷收到的最大磁力与qv值的比值定义为磁感应强度的大小</script><p>B = \frac{F_{m,max}}{qv}</p>
+<script type="math/tex; mode=display">
+磁感应强度B的单位是特[斯拉],用T表示  
+磁场中某点的磁感应强度B等于场中每一运动电荷或电流单独产生的磁场 $ B_i $ 的矢量和  
+
+运动电荷产生的磁感应强度公式为</script><p>\vec B = \frac{\mu_0}{4\pi}\frac{q(\vec v\times\vec r)}{r^2}</p>
+<script type="math/tex; mode=display">
+其中 $ \vec r $ 是运动电荷指向所求场点的单位矢量，r是运动电荷到所求场点的距离  
+
+运动电荷产生的电场，在速度远小于光速时，每一时刻的电场与位于该时刻运动电荷所在点的静止电荷产生的静电场没有区别。  
+但是当运动电荷速度可以与光速c相比时</script><p>E = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}\frac{1-v^2/c^2}{[1-(v^2-c^2)sin^2\theta]^{3/2}}</p>
+<script type="math/tex; mode=display">
+ $ \theta $ 是运动电荷指向所求场点的矢量与运动方向的夹角  
+##### 毕奥-萨伐尔定律
+电流元产生的磁场适用毕奥-萨伐尔定律，导线中任意电流元产生的磁场强度为</script><p>d\vec B = \frac{\mu_0}{4\pi}\frac{ Id\vec l\times \vec r}{r^2}</p>
+<p>\vec B = \oint d\vec B </p>
+<script type="math/tex; mode=display">
+##### 磁偶极子
+场点到场源的距离远大于线圈尺寸的载流线圈
+称为磁偶极子  
+在线圈圆心所在轴上的场强为</script><p>\vec B = \frac{\mu_0IS}{2\pi r_0^3}</p>
 <p>磁偶极矩\vec p_m = I\vec S</p>
-<p>\vec B = \frac{\mu_0\vec p_m}{2\pi r_0^3}<br> $  $ </p>
-<h5 id="磁场的高斯定理"><a href="#磁场的高斯定理" class="headerlink" title="磁场的高斯定理"></a>磁场的高斯定理</h5><p>通过任意闭合曲面的磁通量为0<br> $  $<br>\oint_S \vec B d\vec S = 0<br> $  $<br>我们定义磁感线通过某一曲面的通量为 $ \Phi_B  = \oint_S \vec B d\vec S $ ,单位是韦[伯]，Wb</p>
-<h5 id="安培环路定理"><a href="#安培环路定理" class="headerlink" title="安培环路定理"></a>安培环路定理</h5><p>磁感应强度B沿任意闭合环路的线积分，等于穿过该环路所有电流的代数和的 $ \mu_0 $ 倍<br> $  $<br>\oint_L \vec B · d\vec l = \mu_0\sum_{(L内)} I<br> $  $<br>上式中，电流I的正负规定为：当穿过闭合环路L的电流方向与环路的绕行方向服从右手定则时，I为正，反之，I为负  </p>
-<h5 id="洛伦兹力"><a href="#洛伦兹力" class="headerlink" title="洛伦兹力"></a>洛伦兹力</h5><p>运动电荷在磁场中受到洛伦兹力的作用<br> $  $<br>F_m = q\vec v \times \vec B<br> $  $ </p>
-<h5 id="安培定律"><a href="#安培定律" class="headerlink" title="安培定律"></a>安培定律</h5><p>载流导线在磁场中要受到安培力的作用，每一电流元受到安培力为<br> $  $<br>d\vec F = Id\vec l \times \vec B</p>
-<p>\vec F = \oint d\vec F<br> $  $ </p>
-<h5 id="均匀磁场对载流线圈的作用"><a href="#均匀磁场对载流线圈的作用" class="headerlink" title="均匀磁场对载流线圈的作用"></a>均匀磁场对载流线圈的作用</h5><blockquote>
-<p>载流线圈在均匀磁场中所受合力为零</p>
-</blockquote>
-<p>载流线圈在均匀磁场中受到磁力矩的作用，磁力矩总是试图把线圈的磁矩转到磁感应强度B的方向<br> $  $<br>\vec M = IS(\vec n \times \vec B)<br> $  $<br>n的方向与线圈中电流的绕行方向满足右手螺旋定则，S为载流线圈面积<br>我们认为式中的 $ IS\vec n $ 是线圈的磁矩，记为 $ \vec p_m $<br>则磁力矩可以写成<br> $  $<br>\vec M = \vec p_m \times \vec B<br> $  $ </p>
-<h2 id="公式在特殊情况下的应用-2"><a href="#公式在特殊情况下的应用-2" class="headerlink" title="公式在特殊情况下的应用"></a>公式在特殊情况下的应用</h2><h5 id="磁感应强度计算"><a href="#磁感应强度计算" class="headerlink" title="磁感应强度计算"></a>磁感应强度计算</h5><blockquote>
-<p>载流直导线<br> $  $<br>B = \frac{\mu_0I}{4\pi r_0}(cos\theta_1 - cos\theta_2)<br> $  $<br> $ \theta_1 $ 和 $ \theta_2 $ 分别为电流元计算公式中 $ \theta $ 角在导线两端的数值, $ \theta_1 $ 为电流方向的始端， $ \theta_2 $ 为电流方向的末端。而 $ r_0 $ 则是所求场点到导线的垂直距离。<br>无限长直导线<br> $  $<br>B = \frac{\mu_0I}{2\pi r_0}<br> $  $<br>载流圆线圈轴线<br> $  $<br>B = \frac{\mu_0}{2}\frac{IR^2}{(R^2 + r_0^2)^{3/2}}</p>
-</blockquote>
+<p>\vec B = \frac{\mu_0\vec p_m}{2\pi r_0^3}</p>
+<script type="math/tex; mode=display">
+##### 磁场的高斯定理
+通过任意闭合曲面的磁通量为0</script><p>\oint_S \vec B d\vec S = 0</p>
+<script type="math/tex; mode=display">
+我们定义磁感线通过某一曲面的通量为 $ \Phi_B  = \oint_S \vec B d\vec S $ ,单位是韦[伯]，Wb
+##### 安培环路定理
+磁感应强度B沿任意闭合环路的线积分，等于穿过该环路所有电流的代数和的 $ \mu_0 $ 倍</script><p>\oint_L \vec B · d\vec l = \mu_0\sum_{(L内)} I</p>
+<script type="math/tex; mode=display">
+上式中，电流I的正负规定为：当穿过闭合环路L的电流方向与环路的绕行方向服从右手定则时，I为正，反之，I为负  
+##### 洛伦兹力
+运动电荷在磁场中受到洛伦兹力的作用</script><p>F_m = q\vec v \times \vec B</p>
+<script type="math/tex; mode=display">
+##### 安培定律
+载流导线在磁场中要受到安培力的作用，每一电流元受到安培力为</script><p>d\vec F = Id\vec l \times \vec B</p>
+<p>\vec F = \oint d\vec F</p>
+<script type="math/tex; mode=display">
+##### 均匀磁场对载流线圈的作用
+>载流线圈在均匀磁场中所受合力为零
+
+载流线圈在均匀磁场中受到磁力矩的作用，磁力矩总是试图把线圈的磁矩转到磁感应强度B的方向</script><p>\vec M = IS(\vec n \times \vec B)</p>
+<script type="math/tex; mode=display">
+n的方向与线圈中电流的绕行方向满足右手螺旋定则，S为载流线圈面积  
+我们认为式中的 $ IS\vec n $ 是线圈的磁矩，记为 $ \vec p_m $   
+则磁力矩可以写成</script><p>\vec M = \vec p_m \times \vec B</p>
+<script type="math/tex; mode=display">
+## 公式在特殊情况下的应用
+##### 磁感应强度计算
+>载流直导线</script><p>B = \frac{\mu_0I}{4\pi r_0}(cos\theta_1 - cos\theta_2)</p>
+<script type="math/tex; mode=display">
+ $ \theta_1 $ 和 $ \theta_2 $ 分别为电流元计算公式中 $ \theta $ 角在导线两端的数值, $ \theta_1 $ 为电流方向的始端， $ \theta_2 $ 为电流方向的末端。而 $ r_0 $ 则是所求场点到导线的垂直距离。
+>无限长直导线</script><p>B = \frac{\mu_0I}{2\pi r_0}</p>
+<script type="math/tex; mode=display">
+>载流圆线圈轴线</script><p>B = \frac{\mu_0}{2}\frac{IR^2}{(R^2 + r_0^2)^{3/2}}</p>
 <p>圆心处<br>B = \frac{\mu_0I}{2R}</p>
 <p>当所求场点远离线圈，即r_0&gt;&gt;R</p>
 <p>B = \frac{\mu_0}{2\pi}\frac{IS}{r_0^3}</p>
 <p>\vec p_m = IS\vec n</p>
-<p>\vec B = \frac{\mu_0}{2\pi}\frac{\vec p_m}{r_0^3}<br> $  $<br>式中 $ r_0 $ 是所求场点到载流线圈圆心的距离。</p>
-<blockquote>
-<p>均匀载流无限长圆柱导线<br> $  $<br>B = \begin{cases}<br>\frac{\mu_0I}{2\pi r} &amp; r&gt;R \\<br>\frac{\mu_0I}{2\pi R^2}r &amp; r&lt;R<br>\end{cases}<br> $  $<br>式中r为所求点到圆柱轴线的垂直距离，R为圆柱半径。<br>载流长直螺线管<br> $  $<br>B = \frac{\mu_0}{2}nI(cos\beta_2 - cos\beta_1)<br> $  $<br>式中，n为螺线管单位长度上的线圈匝数, $ \beta $ 角是所求场点到两端线圈的矢量与磁感应强度B的夹角， $ \beta_2 $ 为B方向的末端， $ \beta_1 $ 为B 方向的始端。</p>
-<p>无限长载流长直螺线管<br> $  $<br>B = \mu_0nI<br> $  $<br>载流密绕螺绕环<br> $  $<br>B = \frac{\mu_0NI}{2\pi r}<br> $  $<br>N为线圈总匝数，r为所求场点到环圆心的距离（所求场点要在螺绕环的线圈管内）<br>当螺绕环的半径远大于线圈直径时，可以将r近似为螺绕环半径R<br> $  $<br>B = \frac{\mu_0NI}{2\pi R} = \mu_0nI<br> $  $<br>式中n为单位长度上的线圈匝数<br>无限大载流导体薄板<br> $  $<br>B = \frac{\mu_0}{2}j<br> $  $<br>式中，j表示面电流密度，即在X方向的单位长度上，沿着Y方向流过的电流</p>
-<h1 id="第16章-物质中的磁场"><a href="#第16章-物质中的磁场" class="headerlink" title="第16章 物质中的磁场"></a>第16章 物质中的磁场</h1><h2 id="公式-3"><a href="#公式-3" class="headerlink" title="公式"></a>公式</h2><p>有磁介质的情况下，产生合磁场<br> $  $<br>\vec B = \vec B_0 + \vec B’<br> $  $<br> $ B_0 $ 为原磁场， $ B’ $ 为束缚磁场<br>磁介质的磁化程度用单位体积内的磁矩来表征，称为磁化强度，用M表示<br> $  $<br>\vec M = \frac{\sum\vec p_m}{\Delta V}<br> $  $ </p>
-<h5 id="束缚电流与磁化强度的关系"><a href="#束缚电流与磁化强度的关系" class="headerlink" title="束缚电流与磁化强度的关系"></a>束缚电流与磁化强度的关系</h5><p>设 $ j_m $ 为磁介质表面单位长度上的束缚电流，称为面束缚电流密度,那么表面的总束缚电流为<br> $  $<br>I_m = j_ml<br> $  $<br>由磁矩的定义，该段磁介质的总磁矩为<br> $  $<br>|\sum p_m| = I_mS = j_mlS</p>
-</blockquote>
-<p>M = \frac{\sum p_m}{\Delta V} = \frac{j_mlS}{lS} = j_m<br> $  $<br>然后，我们就能得出束缚电流与磁化强度的关系<br> $  $<br>\oint_L \vec M · d\vec l = I_m(L内)<br> $  $<br>磁化强度M对闭合回路的线积分等于通过回路所包围的束缚电流， $ I_m $ 为束缚电流  </p>
-<p>M类似于P</p>
-<h5 id="磁介质中的安培环路定理"><a href="#磁介质中的安培环路定理" class="headerlink" title="磁介质中的安培环路定理"></a>磁介质中的安培环路定理</h5><p> $  $<br>\oint_L \vec B · d\vec l = \mu_0(\sum_{(L内)}I+\sum_{(L内)}I_m)</p>
+<p>\vec B = \frac{\mu_0}{2\pi}\frac{\vec p_m}{r_0^3}</p>
+<script type="math/tex; mode=display">
+式中 $ r_0 $ 是所求场点到载流线圈圆心的距离。
+>均匀载流无限长圆柱导线</script><p>B = \begin{cases}<br>\frac{\mu_0I}{2\pi r} &amp; r&gt;R \\<br>\frac{\mu_0I}{2\pi R^2}r &amp; r&lt;R<br>\end{cases}</p>
+<script type="math/tex; mode=display">
+式中r为所求点到圆柱轴线的垂直距离，R为圆柱半径。
+>载流长直螺线管</script><p>B = \frac{\mu_0}{2}nI(cos\beta_2 - cos\beta_1)</p>
+<script type="math/tex; mode=display">
+式中，n为螺线管单位长度上的线圈匝数, $ \beta $ 角是所求场点到两端线圈的矢量与磁感应强度B的夹角， $ \beta_2 $ 为B方向的末端， $ \beta_1 $ 为B 方向的始端。
+
+>无限长载流长直螺线管</script><p>B = \mu_0nI</p>
+<script type="math/tex; mode=display">
+>载流密绕螺绕环</script><p>B = \frac{\mu_0NI}{2\pi r}</p>
+<script type="math/tex; mode=display">
+N为线圈总匝数，r为所求场点到环圆心的距离（所求场点要在螺绕环的线圈管内）   
+当螺绕环的半径远大于线圈直径时，可以将r近似为螺绕环半径R</script><p>B = \frac{\mu_0NI}{2\pi R} = \mu_0nI</p>
+<script type="math/tex; mode=display">
+式中n为单位长度上的线圈匝数
+>无限大载流导体薄板</script><p>B = \frac{\mu_0}{2}j</p>
+<script type="math/tex; mode=display">
+式中，j表示面电流密度，即在X方向的单位长度上，沿着Y方向流过的电流
+# 第16章 物质中的磁场
+## 公式
+有磁介质的情况下，产生合磁场</script><p>\vec B = \vec B_0 + \vec B’</p>
+<script type="math/tex; mode=display">
+ $ B_0 $ 为原磁场， $ B' $ 为束缚磁场  
+磁介质的磁化程度用单位体积内的磁矩来表征，称为磁化强度，用M表示</script><p>\vec M = \frac{\sum\vec p_m}{\Delta V}</p>
+<script type="math/tex; mode=display">
+##### 束缚电流与磁化强度的关系
+设 $ j_m $ 为磁介质表面单位长度上的束缚电流，称为面束缚电流密度,那么表面的总束缚电流为</script><p>I_m = j_ml</p>
+<script type="math/tex; mode=display">
+由磁矩的定义，该段磁介质的总磁矩为</script><p>|\sum p_m| = I_mS = j_mlS</p>
+<p>M = \frac{\sum p_m}{\Delta V} = \frac{j_mlS}{lS} = j_m</p>
+<script type="math/tex; mode=display">
+然后，我们就能得出束缚电流与磁化强度的关系</script><p>\oint_L \vec M · d\vec l = I_m(L内)</p>
+<script type="math/tex; mode=display">
+磁化强度M对闭合回路的线积分等于通过回路所包围的束缚电流， $ I_m $ 为束缚电流  
+
+M类似于P
+##### 磁介质中的安培环路定理</script><p>\oint_L \vec B · d\vec l = \mu_0(\sum_{(L内)}I+\sum_{(L内)}I_m)</p>
 <p>推导得出</p>
-<p>\oint_L(\frac{\vec B}{\mu_0}-\vec M) · d\vec l = \sum_{(L内)}I<br> $  $<br>我们定义一个新的物理量，称为磁场强度H（类似于D）,单位是安培/米（A/m）<br> $  $<br>\vec H = \frac{\vec B}{\mu_0} - \vec M<br> $  $<br>因此我们可以将有磁介质时的安培环路定理表示为<br> $  $<br>\oint_L \vec H · d\vec l = \sum_{(L内)}I<br> $  $ </p>
-<h5 id="磁导率"><a href="#磁导率" class="headerlink" title="磁导率"></a>磁导率</h5><p>对于各向同性的磁介质，磁化强度与磁场强度成正比，即<br> $  $<br>\vec M = \chi_m\vec H<br> $  $<br>其中 $ \chi_m $ 被称为磁化率，只与磁介质的种类有关，我们取 $ \mu_r = 1 + \chi_m $ ,称为相对磁导率，我们就可以得出各个变量之间的关系<br> $  $<br>\vec H = \frac{\vec B}{\mu_0} - \chi_m\vec H</p>
+<p>\oint_L(\frac{\vec B}{\mu_0}-\vec M) · d\vec l = \sum_{(L内)}I</p>
+<script type="math/tex; mode=display">
+我们定义一个新的物理量，称为磁场强度H（类似于D）,单位是安培/米（A/m）</script><p>\vec H = \frac{\vec B}{\mu_0} - \vec M</p>
+<script type="math/tex; mode=display">
+因此我们可以将有磁介质时的安培环路定理表示为</script><p>\oint_L \vec H · d\vec l = \sum_{(L内)}I</p>
+<script type="math/tex; mode=display">
+##### 磁导率
+对于各向同性的磁介质，磁化强度与磁场强度成正比，即</script><p>\vec M = \chi_m\vec H</p>
+<script type="math/tex; mode=display">
+其中 $ \chi_m $ 被称为磁化率，只与磁介质的种类有关，我们取 $ \mu_r = 1 + \chi_m $ ,称为相对磁导率，我们就可以得出各个变量之间的关系</script><p>\vec H = \frac{\vec B}{\mu_0} - \chi_m\vec H</p>
 <p>即</p>
 <p>\vec H = \frac{\vec B}{\mu_0\mu_r}</p>
-<p>\vec M = \chi_m\vec H<br> $  $ </p>
-<h2 id="第17章-电磁感应"><a href="#第17章-电磁感应" class="headerlink" title="第17章 电磁感应"></a>第17章 电磁感应</h2><h5 id="法拉第定律与楞次定律"><a href="#法拉第定律与楞次定律" class="headerlink" title="法拉第定律与楞次定律"></a>法拉第定律与楞次定律</h5><p>法拉第定律：导体回路中的感应电动势 $ \epsilon $ 等于通过回路的磁通量随时间变化的负值<br> $  $<br>\epsilon = -\frac{d\Phi_B}{dt}<br> $  $<br>如果回路是多匝线圈，我们取 $ \Psi = N\Phi_B $ ,叫做磁通匝链数  </p>
-<p>楞次定律：闭合回路中感应电流的方向，总是使感应电流所产生的通过回路面积的磁通量，去反抗引起感应电流的磁通量的变化<br>楞次定律只适用于闭合回路，如果回路不闭合，将其设想成闭合回路  </p>
-<p>对于一个电阻为R的闭合回路，感应电流为<br> $  $<br>I=-\frac{1}{R}{d\Phi_B}{dt}<br> $  $ </p>
-<h5 id="动生电动势"><a href="#动生电动势" class="headerlink" title="动生电动势"></a>动生电动势</h5><p> $  $<br>\epsilon = \int_a^b(\vec v \times \vec B)·d\vec l<br> $  $ </p>
-<h5 id="发电机"><a href="#发电机" class="headerlink" title="发电机"></a>发电机</h5><p> $  $<br>\epsilon = \epsilon_0sin\omega t</p>
-<p>\epsilon_0 = BS\omega<br> $  $ </p>
-<h5 id="感生电动势"><a href="#感生电动势" class="headerlink" title="感生电动势"></a>感生电动势</h5><p>变化的磁场产生的感应电场称为涡旋电场<br> $  $<br>\epsilon = \oint_L\vec E_旋 · d\vec l = -\frac{d\Phi_B}{dt}<br> $  $ </p>
-<h5 id="自感现象"><a href="#自感现象" class="headerlink" title="自感现象"></a>自感现象</h5><p>由线圈自身电流变化产生感应电动势，叫做自感电动势。<br>由于磁感应强度与产生该磁场的电流成正比，因此线圈回路的磁通匝链数为<br> $  $<br>\Psi = LI<br> $  $<br>L为自感系数，只与线圈的性质有关。而线圈的自感电动势为<br> $  $<br>\epsilon_L = -L\frac{dI}{dt}<br> $  $<br>符号表示，自感电动势将反抗回路中电流的改变。<br>自感系数的单位定义为，当线圈通有1A电流时，产生的总磁通量为1Wb，这是的自感称为1亨[特]，用H表示。<br> $  $<br>1H = \frac{1Wb}{1A}<br> $  $<br>对于密绕螺线管<br> $  $<br>L = \frac{\Psi}{I} = \mu_0n^2V<br> $  $<br>其中n是单位长度上线圈匝数，V是螺绕管体积  </p>
-<h5 id="涡旋电流及其应用"><a href="#涡旋电流及其应用" class="headerlink" title="涡旋电流及其应用"></a>涡旋电流及其应用</h5><p>整块的导体涡旋电流很大，硅钢片可以有效减小涡旋电流<br>涡旋电流可以用来发热<br>涡旋电流可用于电磁阻尼<br>涡旋电流有趋肤效应，频率不太高时可以用相互绝缘的细导线编织成辫线解决</p>
-<h5 id="LR电路"><a href="#LR电路" class="headerlink" title="LR电路"></a>LR电路</h5><p>在一个由自感和电阻组成的LR电路切断或者接通时，由于自感的作用，电流不会瞬间突变，而是逐渐趋于稳定。  </p>
-<p>接通时<br> $  $<br>I = \frac{\epsilon}{R}(1-e^{-\frac{R}{L}t})<br> $  $<br>切断时<br> $  $<br>I = I_0 e^{-\frac{R}{L}t}</p>
-<p>I_0 = \frac{\epsilon}{R}<br> $  $ </p>
-<h5 id="磁场的能量"><a href="#磁场的能量" class="headerlink" title="磁场的能量"></a>磁场的能量</h5><p>电流从零增加到稳定值I，线圈逐步建立起磁场，过程中电源反抗自感电动势所做的功，即为电流激发的磁场能量<br> $  $<br>U_m = \frac{1}{2}LI^2<br> $  $<br>我们试图用磁场本身的物理量来表示磁场能量，以长直螺线管计算，得到单位体积的磁能，即磁能密度<br> $  $<br>u_m = \frac{1}{2}\frac{B^2}{\mu_0\mu_r}=\frac{1}{2}\mu_0\mu_rH^2=\frac{1}{2}HB<br> $  $<br>磁场的总能量为磁能密度的体积分<br> $  $<br>U_m = \int_V u_mdV<br> $  $ </p>
-<h2 id="第18章-麦克斯韦方程·电磁波"><a href="#第18章-麦克斯韦方程·电磁波" class="headerlink" title="第18章 麦克斯韦方程·电磁波"></a>第18章 麦克斯韦方程·电磁波</h2><h5 id="位移电流"><a href="#位移电流" class="headerlink" title="位移电流"></a>位移电流</h5><p>恒定电流下，磁场满足安培环路定理，即<br> $  $<br>\oint_L\vec H·d\vec l = I<br> $  $<br>但是在电流不恒定的情况下，上式要进行修订<br> $  $<br>\oint_L\vec H·d\vec l = I + \frac{d\Phi_D}{dt}<br> $  $<br>其中 $ I_D = \frac{d\Phi_D}{dt} $ 称为位移电流，是电位移通量的时间变化率。  </p>
-<p>一般来说，导体内的E和D都远比两极板之间小，所以忽略导体中的位移电流。  </p>
-<p>针对位移电流，我们引入位移电流密度 $ j_D $ ,<br> $  $<br>\vec j_D = \frac{d\vec D}{dt}<br> $  $<br>变化电场某点的位移电流密度等于该点电位移对时间的变化率。</p>
-<p>我们将任意截面的传导电流和位移电流之和称为通过该截面的全电流。<br> $  $<br>\oint_L\vec H ·d\vec l = I+I_D=I_全<br> $  $ </p>
-<h5 id="麦克斯韦方程"><a href="#麦克斯韦方程" class="headerlink" title="麦克斯韦方程"></a>麦克斯韦方程</h5><blockquote>
-<p>电学的高斯定理——麦克斯韦第一方程<br> $  $<br>\oint_S \vec D·d\vec S = \sum_i q_i<br> $  $<br>在任何电场中，通过任何闭合曲面的电位移通量等于该闭合曲面内自由电荷的代数和<br>磁学的高斯定理——麦克斯韦第二方程<br> $  $<br>\oint_S \vec B·d\vec S = 0<br> $  $<br>在任何磁场中，通过闭合曲面的磁通量为零<br>法拉第电磁感应定律——麦克斯韦第三方程<br> $  $<br>\oint_L \vec E·d\vec l = -\frac{d\Phi_B}{dt}<br> $  $<br>在任何电场中，电场强度沿任意闭合回路的线积分等于该回路中磁通量对时间的变化率的负值<br>普遍的安培环路定理——麦克斯韦第四方程<br> $  $<br>\oint_L \vec H·d\vec l = I + \frac{d\Phi_D}{dt}<br> $  $<br>在任意磁场中，磁场强度沿任意闭合回路的线积分等于通过回路的全电流。</p>
-<h2 id="第19章-带电粒子在电场和磁场中的运动"><a href="#第19章-带电粒子在电场和磁场中的运动" class="headerlink" title="第19章 带电粒子在电场和磁场中的运动"></a>第19章 带电粒子在电场和磁场中的运动</h2><h5 id="带电粒子在均匀磁场中的运动"><a href="#带电粒子在均匀磁场中的运动" class="headerlink" title="带电粒子在均匀磁场中的运动"></a>带电粒子在均匀磁场中的运动</h5><p>当带电粒子的速度v垂直于磁场B时<br> $  $<br>qvB = m\frac{v^2}{R}</p>
-</blockquote>
+<p>\vec M = \chi_m\vec H</p>
+<script type="math/tex; mode=display">
+## 第17章 电磁感应
+##### 法拉第定律与楞次定律
+法拉第定律：导体回路中的感应电动势 $ \epsilon $ 等于通过回路的磁通量随时间变化的负值</script><p>\epsilon = -\frac{d\Phi_B}{dt}</p>
+<script type="math/tex; mode=display">
+如果回路是多匝线圈，我们取 $ \Psi = N\Phi_B $ ,叫做磁通匝链数  
+
+楞次定律：闭合回路中感应电流的方向，总是使感应电流所产生的通过回路面积的磁通量，去反抗引起感应电流的磁通量的变化  
+楞次定律只适用于闭合回路，如果回路不闭合，将其设想成闭合回路  
+
+对于一个电阻为R的闭合回路，感应电流为</script><p>I=-\frac{1}{R}{d\Phi_B}{dt}</p>
+<script type="math/tex; mode=display">
+##### 动生电动势</script><p>\epsilon = \int_a^b(\vec v \times \vec B)·d\vec l</p>
+<script type="math/tex; mode=display">
+##### 发电机</script><p>\epsilon = \epsilon_0sin\omega t</p>
+<p>\epsilon_0 = BS\omega</p>
+<script type="math/tex; mode=display">
+##### 感生电动势
+变化的磁场产生的感应电场称为涡旋电场</script><p>\epsilon = \oint_L\vec E_旋 · d\vec l = -\frac{d\Phi_B}{dt}</p>
+<script type="math/tex; mode=display">
+##### 自感现象
+由线圈自身电流变化产生感应电动势，叫做自感电动势。  
+由于磁感应强度与产生该磁场的电流成正比，因此线圈回路的磁通匝链数为</script><p>\Psi = LI</p>
+<script type="math/tex; mode=display">
+L为自感系数，只与线圈的性质有关。而线圈的自感电动势为</script><p>\epsilon_L = -L\frac{dI}{dt}</p>
+<script type="math/tex; mode=display">
+符号表示，自感电动势将反抗回路中电流的改变。  
+自感系数的单位定义为，当线圈通有1A电流时，产生的总磁通量为1Wb，这是的自感称为1亨[特]，用H表示。</script><p>1H = \frac{1Wb}{1A}</p>
+<script type="math/tex; mode=display">
+对于密绕螺线管</script><p>L = \frac{\Psi}{I} = \mu_0n^2V</p>
+<script type="math/tex; mode=display">
+其中n是单位长度上线圈匝数，V是螺绕管体积  
+##### 涡旋电流及其应用
+整块的导体涡旋电流很大，硅钢片可以有效减小涡旋电流  
+涡旋电流可以用来发热  
+涡旋电流可用于电磁阻尼  
+涡旋电流有趋肤效应，频率不太高时可以用相互绝缘的细导线编织成辫线解决
+##### LR电路
+在一个由自感和电阻组成的LR电路切断或者接通时，由于自感的作用，电流不会瞬间突变，而是逐渐趋于稳定。  
+
+接通时</script><p>I = \frac{\epsilon}{R}(1-e^{-\frac{R}{L}t})</p>
+<script type="math/tex; mode=display">
+切断时</script><p>I = I_0 e^{-\frac{R}{L}t}</p>
+<p>I_0 = \frac{\epsilon}{R}</p>
+<script type="math/tex; mode=display">
+##### 磁场的能量
+电流从零增加到稳定值I，线圈逐步建立起磁场，过程中电源反抗自感电动势所做的功，即为电流激发的磁场能量</script><p>U_m = \frac{1}{2}LI^2</p>
+<script type="math/tex; mode=display">
+我们试图用磁场本身的物理量来表示磁场能量，以长直螺线管计算，得到单位体积的磁能，即磁能密度</script><p>u_m = \frac{1}{2}\frac{B^2}{\mu_0\mu_r}=\frac{1}{2}\mu_0\mu_rH^2=\frac{1}{2}HB</p>
+<script type="math/tex; mode=display">
+磁场的总能量为磁能密度的体积分</script><p>U_m = \int_V u_mdV</p>
+<script type="math/tex; mode=display">
+## 第18章 麦克斯韦方程·电磁波
+##### 位移电流
+恒定电流下，磁场满足安培环路定理，即</script><p>\oint_L\vec H·d\vec l = I</p>
+<script type="math/tex; mode=display">
+但是在电流不恒定的情况下，上式要进行修订</script><p>\oint_L\vec H·d\vec l = I + \frac{d\Phi_D}{dt}</p>
+<script type="math/tex; mode=display">
+其中 $ I_D = \frac{d\Phi_D}{dt} $ 称为位移电流，是电位移通量的时间变化率。  
+
+一般来说，导体内的E和D都远比两极板之间小，所以忽略导体中的位移电流。  
+
+针对位移电流，我们引入位移电流密度 $ j_D $ ,</script><p>\vec j_D = \frac{d\vec D}{dt}</p>
+<script type="math/tex; mode=display">
+变化电场某点的位移电流密度等于该点电位移对时间的变化率。
+
+我们将任意截面的传导电流和位移电流之和称为通过该截面的全电流。</script><p>\oint_L\vec H ·d\vec l = I+I_D=I_全</p>
+<script type="math/tex; mode=display">
+##### 麦克斯韦方程
+>电学的高斯定理——麦克斯韦第一方程</script><p>\oint_S \vec D·d\vec S = \sum_i q_i</p>
+<script type="math/tex; mode=display">
+在任何电场中，通过任何闭合曲面的电位移通量等于该闭合曲面内自由电荷的代数和
+>磁学的高斯定理——麦克斯韦第二方程</script><p>\oint_S \vec B·d\vec S = 0</p>
+<script type="math/tex; mode=display">
+在任何磁场中，通过闭合曲面的磁通量为零
+>法拉第电磁感应定律——麦克斯韦第三方程</script><p>\oint_L \vec E·d\vec l = -\frac{d\Phi_B}{dt}</p>
+<script type="math/tex; mode=display">
+在任何电场中，电场强度沿任意闭合回路的线积分等于该回路中磁通量对时间的变化率的负值
+>普遍的安培环路定理——麦克斯韦第四方程</script><p>\oint_L \vec H·d\vec l = I + \frac{d\Phi_D}{dt}</p>
+<script type="math/tex; mode=display">
+在任意磁场中，磁场强度沿任意闭合回路的线积分等于通过回路的全电流。
+## 第19章 带电粒子在电场和磁场中的运动
+##### 带电粒子在均匀磁场中的运动
+当带电粒子的速度v垂直于磁场B时</script><p>qvB = m\frac{v^2}{R}</p>
 <p>R = \frac{mv}{qB}</p>
 <p>T = \frac{2\pi R}{v}=\frac{2\pi m}{qB}</p>
-<p>频率\nu = \frac{1}{T} = \frac{B}{2\pi}\frac{q}{m}<br> $  $<br>当带电粒子速度v不垂直于磁场B时，垂直于磁场的方向为匀速圆周运动，平行方向为匀速直线运动，合运动为等间距的螺旋线运动，螺距为<br> $  $<br>h=v_{平行}T=\frac{2\pi nv_{平行}}{qB}<br> $  $ </p>
-<h5 id="带电粒子加速器"><a href="#带电粒子加速器" class="headerlink" title="带电粒子加速器"></a>带电粒子加速器</h5><blockquote>
-<p>回旋加速器</p>
-</blockquote>
-<p>带电粒子在磁场中运动半个圆周，电场方向刚好改变，即电场周期与粒子运动周期一致<br> $  $<br>T = \frac{2\pi n}{qB}<br> $  $<br>粒子会在加速器中一直加速，知道例子运动轨迹到加速器边缘。则粒子最终离开的速度时<br> $  $<br>v = \frac{qBR}{m}<br> $  $ </p>
-<blockquote>
-<p>电子感应加速器</p>
-</blockquote>
-<p>利用变化的磁场激发涡旋电场来加速电子<br>为了使电子能在与其速度无关的恒定半径R的圆周上不断加速，电子运动轨道上的磁感应强度 $ B_R $ 应等于轨道所包围的圆面积内的平均磁场 $ \overline B $ 的一半<br> $  $<br>B_R = \frac{1}{2}\overline B<br> $  $<br>使用交变电流提供变化的磁场，只在第一个1/4周期内能够给电子加速，因此加速器是以脉冲形式工作的</p>
-<h5 id="霍尔效应"><a href="#霍尔效应" class="headerlink" title="霍尔效应"></a>霍尔效应</h5><p>霍尔电势差为<br> $  $<br>V_H = R_H\frac{IB}{d}<br> $  $<br>式中的比例系数 $ R_H $ 称为霍尔系数<br> $  $<br>R_H = \frac{1}{nq}<br> $  $<br>n为载流子浓度，q为载流子所带电量</p>
-<p>n型半导体中，载流子带负电，p型半导体中，载流子带正电  </p>
-<h2 id="第20章-光的干涉"><a href="#第20章-光的干涉" class="headerlink" title="第20章 光的干涉"></a>第20章 光的干涉</h2><h6 id="光的相干性"><a href="#光的相干性" class="headerlink" title="光的相干性"></a>光的相干性</h6><p>干涉现象表现为在可见光波的叠加区域内，有些地方较亮，有些地方较暗，从而形成一系列有规则的明暗相间的条纹  </p>
-<p>发生干涉现象的条件：<br>两列光频率相同，振动方向相同，相位差恒定  </p>
-<p>为了获得两束相干光，将一光源同一点发出的光分为两部分，并沿不同的路径传播，然后再让他们相遇，这样两束光波能够满足干涉条件。<br>把从光源同一点发出的光分为两束的方法有两种，即分波阵面法和分振幅法</p>
-<p>分波阵面法是将从一点（线）光源发出的光波在其波阵面上分离为两部分。后面的杨氏双缝实验、洛埃镜干涉等实验就是利用分波阵面法获得相干光的。<br>分振幅法是通过部分反射和部分投射，将一束光分为若干部分的方法，薄膜干涉就是利用分振幅法得到相干光的。</p>
-<blockquote>
-<p>相干长度</p>
-</blockquote>
-<p>因为一个原子在某一时刻发出的光波是有限长的波列，因此，光波再次相遇时想要干涉现象，路程差必须小于L0，L0被称为该光源的相干长度。<br>相干长度常用来描述光源相干性的好坏。</p>
-<h5 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h5><p><img src="https://bkimg.cdn.bcebos.com/pic/91ef76c6a7efce1bcac6d739a351f3deb58f6557?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt="image"><br>如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。<br>我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为<br> $  $<br>\delta = r2 - r1 \approx dsin\theta<br> $  $<br>式中的 $ \theta $ 是PM与 $ S_1S_2 $ 的中垂线 $ P_0M $ 的夹角。通常实验中，D &gt;&gt; d,D &gt;&gt; x（x为屏幕上P点到屏幕中心P0的距离），所以这一夹角非常小，可以作这样的近似。  </p>
-<p>从波动理论可知，设入射单色光波长为 $ \lambda $ ,那么，当<br> $  $<br>\delta = dsin\theta = \pm k\lambda     k=0,1,2,……<br> $  $<br>时，P点因两光波干涉相互加强而成为亮点，在P点处会出现一条明纹。其中k称为条纹的层级，对应k=0的明条纹称为零级明条纹或称中央明纹。<br>如果<br> $  $<br>\delta = dsin\theta = \pm (2k-1)\frac{\lambda}{2}     k=1,2,3,……<br> $  $<br>则P点因为两光波干涉相互减弱而成为暗点，在P点出现一条暗纹，k称为条纹的层级，依次为第一级，第二级……暗条纹。  </p>
-<p>若对上述两条件都不满足，则介于最亮和最暗之间</p>
-<p>各级明条纹中心的位置为<br> $  $<br>x_k = \pm k\frac{D}{d}\lambda   k=0,1,2,……<br> $  $<br>各级暗条纹中心的位置为<br> $  $<br>x_k = \pm(2k-1)\frac{D}{2d}\lambda   k=1,2,……<br> $  $<br>相邻两条明纹或相邻两条暗纹之间的距离为<br> $  $<br>\Delta x = \frac{D}{d}\lambda<br> $  $ </p>
-<h5 id="洛埃镜实验·半波损失"><a href="#洛埃镜实验·半波损失" class="headerlink" title="洛埃镜实验·半波损失"></a>洛埃镜实验·半波损失</h5><p>光从光疏介质（折射率小）射向光密介质（折射率大）时，在界面处的反射光有相位 $ \pi $ 的突变，即相当于有 $ \lambda/2 $ 的路程改变，所有通常称为“半波损失”<br>洛埃镜实验证实了这一结论  </p>
-<h5 id="光程和光程差"><a href="#光程和光程差" class="headerlink" title="光程和光程差"></a>光程和光程差</h5><p>在光通过不同介质时，由于光波波长在不同介质中不相同，所以使用几何路程计算相位差是不方便的，所以我们引入光程的概念。<br>设有一频率为 $ \nu $ 的单色光，它在真空中的波长为 $ \lambda_0 $ ，传播速度为c；在折射率为n的介质中，速度为<br> $  $<br>v = \frac{c}{n}<br> $  $<br>波长为<br> $  $<br>\lambda_n = \frac{v}{\nu} = \frac{c}{n\nu} = \frac{\lambda_0}{n}<br> $  $<br>当该单色光在折射率为n的介质中所经过的几何路程为x时，相应的相位变化为<br> $  $<br>\Delta \varphi = \frac{2\pi}{\lambda_n}x = \frac{2\pi}{\lambda_0}nx<br> $  $<br>其中nx即为光程差  </p>
-<p>相位差和光程差的关系是<br> $  $<br>相位差 = \frac{光程差}{\lambda_0}2\pi<br> $  $<br>上式说明，如果两束相干光在不同介质中传播，对干涉起决定作用的是两束光的光程差，而不是他们的几何路程差。</p>
-<blockquote>
-<p>一束平行光经过透镜后会聚于焦平面上某一点，此时平行光的光程是相等的，透镜的存在不引起附加的光程差</p>
-</blockquote>
-<h5 id="薄膜干涉"><a href="#薄膜干涉" class="headerlink" title="薄膜干涉"></a>薄膜干涉</h5><p>由薄膜两表面的反射光或透射光所形成的干涉称为薄膜干涉。我们下面分别讨论厚度均匀的薄膜所产生的等倾干涉以及厚度不均匀的薄膜所产生的等厚干涉。</p>
-<blockquote>
-<p>匀厚薄膜干涉(等倾干涉)<br><img src="https://wkretype.bdimg.com/retype/zoom/e25970224431b90d6c85c772?pn=3&amp;o=jpg_6&amp;md5sum=aee2dd3c2faa72521cd7ba598fc84456&amp;sign=a873f54016&amp;png=8347-21809&amp;jpg=249306-387236" alt="image"></p>
-</blockquote>
-<p>将厚度为e，折射率为n2的薄膜放在折射率为n1的介质（图中为空气）中，在薄膜上下表面反射得到的双条平行光线2、3，它们从同一条光线分离出来，所以满足相干光的条件；又因为它们的能量也是从同一条光线中分离出来的。而能量和振幅有关，所以这种产生相干光的方法称为分振幅法。<br>经过透镜，在P点相交发生干涉。P点的光强取决于两光束的光程差。<br>从C点作垂直于光线2的垂线CD，则两光线的光程差为<br> $  $<br>\delta = n_2(AB+BC)-n_1AD+\frac{\lambda}{2}<br> $  $<br>式中的 $ \lambda/2 $ 是由半波损失产生的光程差，无论是n1 &gt; n2还是n2 &gt; n1，两表面反射光之间由于相位突变引起的光程差均为 $ \lambda/2 $<br>利用入射角、折射角及折射角定律<br> $  $<br>n_1sini = n_2sin\gamma<br> $  $<br>代入上式可得<br> $  $<br>\delta = 2n_2ecos\gamma + \frac{\lambda}{2}<br> $  $<br>或<br> $  $<br>\delta = 2e\sqrt{n_2^2 - n_1^2sin^2i}+\frac{\lambda}{2}<br> $  $<br>所以反射光出现明纹和暗纹的条件是<br> $  $<br>\delta = \begin{cases}<br>k\lambda &amp;&amp; k=1,2,…明纹 \\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2…暗纹<br>\end{cases}<br> $  $<br>因此光程差完全由入射角i决定。利用特殊的装置，可以将许多不同入射角的光线的干涉情况都显示在屏上，会出现干涉圆环。内疏外密，明暗相间。  </p>
-<p>由于入射角i越小，干涉圆环条纹半径就越小，因此i=0对应的是中央环心。<br>i=0时 $ \delta $ 取最大值，相应的k取最大值，所以中央环心级次最高<br>如果实验中可以让膜慢慢变厚，则随着e增大，环心的级次k也增大，这时可以观察到所有的圆环在扩大，在环心处不断有新的环出现<br>如果慢慢减小膜的厚度，则所有圆环都向中心收缩，并不断在中心处消失。</p>
-<p>除了反射光有干涉，两条透射光也有干涉现象，类似于反射光，透射光的光程差为<br> $  $<br>\delta = 2e\sqrt{n_2^2-n_1^2sin^2i}</p>
-<p>=\begin{cases}<br>k\lambda &amp;&amp; k=0,1,2…明纹 \\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2… 暗纹<br>\end{cases}<br> $  $<br>对同一方向的入射光来说，当它们的反射光相互加强时，透射光相互减弱，反射光相互减弱时，透射光相互加强。他们的干涉环纹互补。</p>
-<blockquote>
-<p>劈尖干涉（等厚干涉）</p>
-</blockquote>
-<p>我们来讨论膜厚度不均匀的情况。膜的上表面略有倾斜，与下表面构成劈尖。当入射角很小时，将在膜的表面产生干涉。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1578458240001&amp;di=2125255cd454f3e14e6e5db60d1db8bf&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D3530825908%2C822854596%26fm%3D214%26gp%3D0.jpg" alt="image"><br>我们设折射率为n2的膜放在折射率为n1的介质（这里时空气）中。为了方便分析，我们考虑一波长为 $ \lambda $ 的光线垂直入射，设此处膜厚度为e。<br>则上下两表面的反射光线1，2光程差为<br> $  $<br>\delta = 2ne + \frac{\lambda}{2}<br> $  $<br>其中 $ \frac{\lambda}{2} $ 来自反射光的半波损失。因此反射光出现干涉条纹明纹暗纹的条件是<br> $  $<br>\delta = \begin{cases}<br>k\lambda &amp;&amp; k =1,2,…明纹\\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2…暗纹<br>\end{cases}<br> $  $<br>由上式可知，反射光的光程差完全由膜的厚度决定，厚度相同则光程差相同，有相同的k级，构成同一级干涉条纹，因此称为等厚干涉。<br><img src="https://appwk.baidu.com/naapi/doc/view?ih=810&amp;o=jpg_6&amp;iw=1080&amp;ix=0&amp;iy=0&amp;aimw=1080&amp;rn=1&amp;doc_id=1b7f8a521fb91a37f111f18583d049649b660e2d&amp;pn=1&amp;sign=ee261cd2d9240a8df8dec6d9d9730c09&amp;type=1&amp;app_ver=2.9.8.2&amp;ua=bd_800_800_IncredibleS_2.9.8.2_2.3.7&amp;bid=1&amp;app_ua=IncredibleS&amp;uid=&amp;cuid=&amp;fr=3&amp;Bdi_bear=WIFI&amp;from=3_10000&amp;bduss=&amp;pid=1&amp;screen=800_800&amp;sys_ver=2.3.7" alt="image"><br>在实验中，观察等厚干涉的装置如左图所示，用薄纸或其他物品撑起两玻璃片一侧，构成空气劈尖。通过显微镜T观察。<br>在劈尖处，e等于0，是暗条纹，这是半波损失的另一有力证据。</p>
-<p>设第k和第k+1级暗条纹处的厚度分别为 $ e_k $ 和 $ e_{k+1} $ ,则<br> $  $<br>\Delta e = e_{k+1}-e_k = \frac{\lambda}{2n_2}<br> $  $<br>则两条纹之间距离为<br> $  $<br>l=\frac{\Delta e}{sin\theta}=\frac{\lambda}{2n_2sin\theta}<br> $  $<br>可以看出，条纹间距与膜的厚度无关，条纹是等距离的。</p>
-<h5 id="牛顿环"><a href="#牛顿环" class="headerlink" title="牛顿环"></a>牛顿环</h5><p><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAE8AfQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopN1G6gBaKTdRuoAWik3UbqAFopu72pwOaACiikPSgA3D1oyKZS0rjsPBzRTV6GnUxBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVHJPFEpaR1RR1LHAoAkoqCS8gjt3naRREilmbPAGM5qDSdUtdZ0231CylEttOgeN/UUAXqKKKACiiigAooooAKO1FHagBlH40UVNxh+NH40UUXGH40fjRRRcBKevSm9qVegpoljqQ9DS0UwI6U0/A9KMUrDGr0NOoopiCiiigAoqOWeKGNpJHVEUZZmOABXnniH4xeHtKla100y6xeg48qzXco+rdPyoA9GJxVa71C0sITLd3UFvGOrzSBB+ZrwbxB468bXEbS6jqdh4XtHUeXb/AOsuHB/2Rlgf++a4tRYa3dhvJ8ReKb0/e5McZI/76b+VAH0JqHxV8GaaD5uu20jAkbYMyHj6Vz8vx68KKcQw6jOccCO36n05NeZx+Htfs3hkTwz4e0KJQD52oTI7gDH3g7k/koq2b6/tJgbj4kaHaKo3bbK33AeoARevpQB3Nx8f/D8LBF0nV3Yjp5Krg+nLU2H4+aY0QMvhzWxJj51SJWC/jkfyrgJNV0+cKl18V5GKvvRhp0pxg5HO3Oc1bt9alaVvs3xfiChThprWRDn3yvSgDvLb49+E5bhY5kv7dT1kkh4H5Gu003xz4Z1fyxZa3ZSM/wB1DKFY/gea8XgvPEFxE1tY+IvCGuqcl/tUSKwB+oGaq6j4fvvM8zWvhzaz2xwhuNBmIPQnIAZv1AoA+j45o5QCjqwPdTmpK+aNJvbHTJdvh7xdqfh25kfJsdZi3Rkjp8wG0DtzXbWnxI8V6AqyeI9Jg1LTT01LSXDqB6kAn39KAPYaK5rw7478OeKEB0zVIpJO8L/JIP8AgJ5/KukDA96AFooooAKKKKACiiigAooooAMUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAIelefa1Ln4mWo1qdINHhsmktVlbEcs5bBzngsB0B9a9CpjwpIBvUNg5GRmgDAl0vTpPDeqRwQg215HJJIvIDErg49BxXLfBK4dfBI02ZNktpJkLnqkgEin8mrv8AUgE0m8x08h//AEE1xfhpBpOtaMOVh1LR0TPYyxAEfjtY/lQB6BRQKKACiiigAooooAKO1FHagBlFFFSUFFFFIAooooAO1KvQUnalXoKpEsdRRRTAKKKKACiio5pkgieWV1SNAWZmOAAO9ADmcKMmuM8V/EjSvD0w063STUtYk4isrUbm3f7R/hGa8u+Ifxre+nl0Xw1MYLctsl1Duw6EL6D39q4bSbvUp7G5tvDsZtLfZm+1a4baz+uXP3B6KOT70AdJ4p8T3OpTvN4w1WSKPaTFoemP8wz/AM9X6D8ST7Cs7S5NVudPElq9l4S8Pycm4ziSYD0b78h+mBWZoGkS3WoyQeGrE6tcpy+o3ceIYf8AaAPA+rdfSta9Xwp4fvGufEOoyeKdYOd9tA+2CNvQv3H04oAdYXWhJdPH4Z8NX3ifUeQb3UVLID6iMf8As1bN1pnjB7WP/hIvFGmeFrIDclrAyxvjH9yPBP4ms+3vviB4ztBFpNpHoOiqpBaFfs0AU+rnluPSsubw34M0SQt4g8WSandA/Nb6Yu8H2MhOKAGXCfD21meTUNa1zXZs9YYxGpOf7znNQQeKPBNpOptvAnn4Ix9qvnc/kMA/lVxPGnhDTiV0HwHFNOPuTX8plP8A3wP8a1IfHPxFuozFpPhZbYEZH2TSW459cGgDO/4TTTDbSiP4aaWdjHLGNyE9jxxVF/GfhmYD7X8O9PBHXyJ5Yh+hrqU1D42ea7Cwu/mGSjW8e38Kgm1L4y2rGSTS7xtxyQlij/ooNAGAmt/DW8ULdeFtTsWbG6Szu94X6BzWpYxeGZrgf8Iv481HR5icrDqCsq57ZdTimXnjnxFHcn/hJPA2n3TIMObnTmR8Y7tiqjax8ONbVU1DQb7Q5OrS2MvmLnH91h0yf0oA7K4PjxLMS6ppejeMdPX5RNEEkcD1yoB6e1c9YXXhm41A/wBg6lf+ENWTg294xe2J/uknJ/76FM0rwpfQXM1z8PfGMV0VKnyPM8iZvYq3DdKnvfGFwGGl/Ejwn5/YXgh8m4Howbow+lAFnWbJbZRN4u0L7NMVzDr+h8oT2Z1UhT65wDWxofxD8S+FEik1eaPxD4dZti6ja4aRBjPPcEejc+9U9D0/U7Gznv8A4da+usaWPmn0m9Hz9OV2nrx3GPxqlpE2n6rq0tx4Yd/DXiTGJNHuf+Pe7x1UZxjPPBoA978PeKNI8TWC3elXkdxH/EAfmQ+jDqK2q+abWRofEjyaRu8LeLIxiXTpOLa8PXCk8DPYcg9q9b8F/EW28Ru2m6lCdN12D5ZrOY4LEdSmeo68dRQB3dFIDmloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAKOsRyzaReRQ7fMeB1XccDJBxmuQ16CXS/CegajIF87R5beSQqQRs2+W/Pphs/hXV69OttoOoTvEJVjt3YxseGAUnFUIrOHXfA8dqYViiu7EKIxyEDJwPwoA3ozuXI6U+uf8E6g+peErCaZg1wkfkz4/wCeifK36iugoAKKKKACiiigAo7UUUAMop2B6UYHpSsO42inYHpRgelFguNop2B6UYHpRYLjKevQUYHpS9KYgooooAKKKa7KqMzEBQMknoKAIby8gsbaS5uZUihjUs8jnAAFfNvxL+JupeKre4t9GdrbQY28tpSdjXTenrj2H41o/EXxxH4uvrvT4b17bw3p5zPKn3ruTPCJ2PPTPoT2rkIoYLawXxRrttHFABt0nStpCykdGI7ovUn+I0AUtO8I2On6OuueK7iS2t5Bm2so+J7n3/2V6cmpLRYNSgjvNenbT/Dlsx+y2UJ+ebnkID1Pq5/+tQ92UuP+El8VIb28ucPaWLHarDszD+GMcYUYz9K09L0CPVUbxb46vms9KY4toFG2SfjIWNR0UUAT2914i8dRvpPhixi0bw7CCJfLPlx7ccmV/wCI4zUM174O8DOIdLto/EesqMNdz820bf7KdyKWTUvEfxHu00Lwzp50/RY8KLa3+SNV7NKw6niuwi0rwJ8JbdJtXddX8QBciIAMUbHYHhR7nmgDnbTw98Rvif8AvL6ZrTTV+75w8mLH+zGAM/55ra/4QL4beCokfxTrZvrwc+RGxwf+ALz+Zrnr3xp49+JV2bHRop7a0OVMVoSiBf8Abf6e/wCFdFovwCKxi88Ua0qLjLxwHp9Xb/CgCN/jB4O0BQnhjwmoZSQHkRY+Pwyayp/jr41vw0en2FpG5yQY7dpGA/Ekfp+VdS158G/CLGJba2v7mD+LyzOSfqflzVef4/aDZAjSvC747FikQP8A3yDQBzq/ED4uTozJbXRVhuyunDgH0+WmyfEj4sWziee3uEjyPlfTvlP/AI7mtSL9ozUftAM2gW5gAOVSZgx9OSD/ACqSD9o66DH7R4chdO2y4K4/NTn9KAKcPx68SWzPDrOg2c4Yfc8t4jj3BzVuL4hfDbxT+58R+GlsZXG3z44wcf8AAlww/Kt7T/jp4Q1WRY9W0eW23AAySRrKoPp6/pWgfDfws8eKx077DHcsM5tW8lwT6rwCfwoA5G6+EWi6xG2oeAvEkckyHekTzA7eeMMOR36isa78R+M/COdJ8a6WNV0vO3ZeKHB9CkorT1j4J+JPDdyNR8Kaq1x5fzBVbypgfbHB/wA8U/Sfi7c2rt4f+IOkfaYxiOR5IfnX3dD1+ooAyYvDOk69nVvhxq01pqaDe2lTS7JV7nY38Q696mfxBpXimf8AsXx5ZNpOuxYSLVI08tg3bzB6e/T6Vraz8MbW/hTxT8NtSGV/eLbxSEFSOcKeoP8AsmorHVNH+Jsa+HfFlt/Z/iiEeXb32zaZCOzZ75z8v5UAF/ushbeH/iFF59o3GmeIrc5ZBwRlu4+v61V1+xnTUbDTvEF/5F9GM6P4jhJ2TJ1VZSOfTntn0qCLUL3wJdv4M8cWf9oeH5m/dSNzsGfvxn09u387cscfhW0TQ9cb+1vBWrfNY6gnLWpPQg9iMjI9vqKAPRfAnj+e81B/DHiNRba/bfLnOUuAP4lPrgg+9elKcjNfNtxpdy91B4V1O8A1SDE3h/WhwJl6iMt79B6GvVvh542k8QW82laqhg1/T/kuoW43443j2P8AWgDvaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMrxMA3hbVQe9pKP/HTUmiwi30KwhXolvGo/75FQ+J2K+F9UIGf9Fk4H+6au6f8A8gy1/wCuKf8AoIoA53w0f7P8S69pGCEMq30ORwVkHzY+jqfzrrK5PW0On+NdD1JfuXIksJznsRvT/wAeUj/gVdWORQAtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAE4FeU/FTxLdzvF4N0Xe19fKGupY+fs8GeSewyAc57V3nijXofDfh2+1WcjbbxFlX++38Kj6nFeByQ6tLaRWS7m8YeK3Mlw+eba0zkLx90EDJ9hQBX0bTNB1HV7i8nJTwj4bThnHN3Lnv6liOnoAKp6xqkurzt4416BVtInEWj6c33ZtvT/AIAvU+p4qfVbeDUL2HwfpEvl+H9EXztTu+0rjHmSHHXngD16VHptqnxB1251a+AsvCmhR5ES9I4hysa+rHHJ/wDrUAUtJs4xBL468YuZkdz9itH4N5IP5Iv8hiruhaDrvxd12XVNUuRaaVa/KzqNqRJ/zzjHTp3pum2OpfF7xqsPzWuh2YwqKMJbwjgKP9o1f+IHjeGK3XwP4OUR6bCBBM0K5aZhxtB6kZHJ70AWvEXxK03wvZy+Gfh/axxx5CyXyjJZuh2+p7ZP4UvhD4QG7gPiHxxdNbWrAytDJJtZs/xSMTwD6da1fCHgXSfh3oJ8V+LxG96q74bc8+UewA7uf0rkdZ17xX8YddOn6VDJHp0ZBW3VsJGucbpD3P8AkUAdZr3xk0jw3bDSPA+mwNtYjzTGRGD6qBgsc9zXMWnhH4i/EmQXOpz3ENjI27fdsUjH+6n/ANavRdD8A+D/AIaafHq3iG5gmvl5FxP90Edo07/kTXKeLPj5eXTPaeFbYwLnaLmZAzt7qvIH45oA39N+BvhXQ4FuPEGpPclRlt8ghiHv6/ma0zqnwe8PxNEDozFByqReeT+ODXlln8PviJ4+kivNSlmSFxxNfy4GOvC9f0rtNK/Zys1izqmtyySZ6W8YUfrQBsx/F34awSiOO2Cx7QNwsQAParH/AAsr4V6p8tybQADA8+wJ/LCmq0f7PPhVXy15qLr/AHTIo/pUd1+zv4blLm3v7+EnO1SysF/MZoAll8I/CvxnbbdNlsYpWGFezmCOp6/dPf6iuf1b9neNIzNoeuSGQDKJcoOT/vL0/KszUP2eNatg8ul61bTMvKLIrRsfxGawl1j4lfDW4Vbs3iWynGy4/ewsPY84/A0AWovFHxF+F9/Hb6ss09rkAJct5kbgf3X7fnXoVh4g8D/FzTUstWhitNWI2iNmAlU/9M3xz9P0qDSPin4T8e6c2ieJbZbOW4GxlkOY2J/ut1U/XFc54t+Bl3pyvqfhS8edYyJEtmP7wD/Zbv8ApQBl6r4d8W/B7WTqmkTPcaWW/wBaFyjLnhZF7H3rqpYNA+NGki9spE0vxTbD7pblscjPcrnOD1GPzqeA/iw8r/8ACL+Nk3h/9HWeZB16bZR/X8/Ws7x54Cv/AIe6xF4t8Js62Ub72Vfm8jPY+qHpzQBs6XrNp4js5vh94/QW2r2+Y7a8fq54CkN/ex+DCuejWbwBqM/gnxgpuvDV/ny5wD+7/wCmiHtgnkdv59TdW2n/ABl8Hw6ppxjtPE1gMsq4Dbh0UnrtPUHtWHba4nxD0mTwb4sRLbxJa7hZXcq7d0g/hYepx+P1oAqxWbWc0ngHXbwGxnxNoOqNzscnKbWHRTnBGeDU3naw9yNVjiMfjPw6dt9A2V+3Wy8Bx/eOBye4OazNBik8TaTd+A9XUR69pxZtLmfhwy8tFn0PJGf6VZi1XUL6wtfEMO5fE3hk+TqUL/euLcHGSPb7p/OgD6A8L+JrHxXocGqWD5ikGGU9UYdVPuK2q8M8Data+GPF8X2WQr4Z8TfvbIk8Qz90I7HJx+Ve5Kc0ALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAGH4vimn8I6tDbRPLO9rIqIn3mYqQAK07BSmn2yMMMsSgg9jgVV16ZbfRbyZrprUJEzGdV3GP3x3q9AcxId27Kjn1oAwvG1pLc+GLmS3XNza7buHAyd8ZD4H1wR+NbGn3ceoafb3kJzHPGsi/QjNTTRiSNkYZVgQRXOeB3MGiy6XI26bTbmS2bIx8obKH/vgrQB09FFFABRRRQAUUUUAFFFFABRUc2/C7MfeGc+lPHTmgBaKKKACiiigAoJwKKraheRafp9xeTsFigjaRz7AZoA8l+ImpxeIPHumeGpHH9lWCHUNS54IUEhW9Bgf+PVyFzq91p/hLUvGkisuteIJjZ6aAPmgtwcfL+AwMexrOtp7rVLEoh3at4w1Iqx/iS0V+foMk/gtdP8AaLC/+KE7sf8AiQeD7IlIcfLvVcZx67v/AEEUAcRrGn3mj6ZpfgyxTdqmq+Xc6gVJ3szH5Ij6AA5Pua0fGRfSksPhn4eXexdDeyR9bi4bHH0HH+RUnhDUfN1DxJ8StZjLm1z9lGMK0z8KP+AjA/Gr3wmsUVda+ImvOWW18xo5H53SYyzY/EAfWgC74xvovhZ4BtfCekv/AMTa/Tfd3CMQy56kY556D2FT/DPwXZeE9Bk8ceJwI5Fj8y3jkGDGp6Njux4x/wDXrmPAml3PxQ+JlxrGrbntYW+0TDHy8EBI+e39BVr4u+LrnxR4ji8KaMPMtbeYRbY/+W03TH0HT86AMq8udd+NHjcRWweGyThFJJS3jB+83+0f16V6vqGseHfg14Tt9OgWO51Bk4RAFedv77+gzRYWulfBj4dyXFxsk1KVQX5GZpT0Uf7Iz+WTXjXh3Q9Y+LHjaaa7lbY7ebd3AHEadAo/kBQA63sPF/xf8QGZ3eREOGmkysMCnsP8Opr3fwt8MfDPgmzW7njhubyJd73t0AApHdQeFrWeXw38MvCuGKWljCOFxl5G/mzGvnXxf491/wCI2spp9kkiWkkmy3sojy57FvU/pQB6t4n+PWhaUXt9HgfU5143g7Ih+PU/l+NeXX3xv8aX1yrw3cVqgbIjhhBH0Ock10Hg/wCAeo3rJdeJZfscGcm2iYGVvqeQv6167Y+DPBPg2388WNjbhF5nuSCcepLUAfPifEr4lXJV4NQvnHJGy2Bz69Fp8Pxh+IOnT4ub55COsdxbAf0Br3m5+K3gPTwUOuWrFDt2wIzgfQqMflU2n+PfAviBzHFqmnyyHAKXC7Ccj/bAzQB5hof7RVyJVj1zR0ZOAZbVipH1U5z+Yr1nRfF/hbxxZtBaXVtdb0zJaTAbgO4KHrWXrPwq8F+JrbzVsY4HcZW4smCH+oP5V4x4r+EfiTwbcPqejySXdnE25ZYDiWMerAenqKAO18c/Ai1ulkvvC7i3nGWa0c/I3+6f4fp0+lcn4H+J2seBtR/sLxJFPLYxtsKzZ8y3JPbPUe35V0nw2+NRnkTSfFkyqx+WK+YYyfR/T6/nXcfEb4d6f420aS5t4401aNM286/x9wrHuDQBhfEb4daf410X/hIfD6RnUmQTK8RGLlSM4+voa5n4UfEZxMfB/ikmRJCYYGuBkgnjymz27DNYXw08c6h4D8Sv4e14vFp5l8qVJc/6M+cZHt69u9dB8b/BCRBPF2kowLFRdCIfL7SZHTsCfpQBheKtF1T4R+N4dZ0h3OmXD7kPRSDy0Tf0rV+Jum2fiDQrD4i+G9ytkfatn3kIIwxx0KkYP1FdN4Q1i2+LPw5utD1Qp/advGEZj1yPuSD+v41xvwo1G40nxHqngLWwFtr0SQtG/wDDIAQcfUZ/IUAZviSdtd8OaX8QtNcxarbSLb6ksfBEi/ckOPUfzrc1TV4IL/RfiPYwb7HUU+x61bgZAbAVwR3yM9fQetYvh2IeCviFqXg7Wix0rUQbSXcOoYfunH4kfnVjwbZPBrfiP4baoMQ3QkEG/qJ05RgfcDP5UASXOji1Oq+ELeYurAazoM3d+M7VPuB+a17b8N/Ev/CU+DLK+lcG7VfJuR3Ei8Hj36/jXgUV1PL4SstRdXTWfCN4IpVHDG3LAjP0bI/H3r0X4eahBpXxI1PTIPl0/W7dNTsR0HIyw+vJ/wC+aAPZaKM0UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBg+M+PB+rcZzbsMVtQjESf7ornfH27/hDNQC5y3lpx15kUY/WujiGI1HsKAHEZFcnB/xLPiLdQ5Ij1W1WcZPHmRYRv8Ax0p+VdbXJeNALK50XXf+fC9VX945f3Tfqyn8KANu/wBf0rSpI49Q1G1tXkGVWaUISPbNXoZknjWSJ1dGGVZDkH6GvKfHker3/jFpdItkmfTdJmbEsDMJGcgMikcbtvI6/Su98HWtrZeE9Nt7FZktkgUIk4IdfUNnvmgDdooooAKKKKACiiigAooooAKKKKACiiigArzb426y2meAZbWI/vtQlS1UDrg5LfoMfjXpB6V4b8Zplv8Ax34X0hwGiVvOlXHON3r6YU0AZekIuna1qV+wVoPCGjCGHjGZ2Ukn2+YtXN3cj6D8HI5D/wAhHxLdM8kmPn8lSOM+hIz+NaU5uIfhDe3zvm78TauFJPVlDHAHtkGrPirTIr74i+EvA9qCsOnQRLKMkgMfnbP/AAEDn3oAx/HsM2g+EfC/gy3AE0sYvLpE/jlc/KD9M4rc+J7r4M+Huh+CrZv3sy+dcsoxuwefzbP5VCIm8a/tDNE3zWmnzbVwMgJD6/Vh+tV/EqN49+PMWm/L9nt5lgJzkbI/mf8APmgDrbPy/hT8FvtLADVdQGR6+Y44H0Vef/11h/Anwmbu/uvFmogGOHKW7P3kPLP+A/nVL4/ar9s8T6fodu+VtIQTEvZ36D8sfnXc+IZ4/h38D4NOWQw3s1qtuuDz5zrl8H/vqgDyDxprF98RviK9tp7yTRPMILOIn5QBxnHbuc19FeFvDul/DnwgULIoij827uSPvsByf6AV5R+z74VNxqF54kuEby4AYLdiOCxHzEfQED8auftBeLNiWnhi2cjcRcXWD1HIVT+p/KgDzTxn4t1P4h+J1ZVkMJk8qztV5wC3y8epzya+hfh/8OtK8GaVFczxRyakUDzXMgGYzjop7AfrWH8EfAkGj6CniG7jJvr5AY93/LOM9Me5/wAK5r44fEZmll8J6XJiNcfbZVP3j12D9M0AXvH3x2js5p9M8MRrLKhKNevygP8AsDv9eleMvdeJvG2qFWkvtUvHH3RliB9BwBXRfDT4Z3Hjq7lnnle30uA4klUZZ2/ur+Hevp/w74V0jwtYLZ6TaJBH1ZurOfUnuaAPl+H4K+OZow40oLxnDzKD/OqGo/C7xlpNu1xcaLOY0BZmiw+0DvxX2SMdsUjYYdRQB8b+EviT4i8HTLFaXRmsw2WtZiWT3x6Gvo/wL8StH8dW5jhU21+gzJbSEEn1K+oqn41+EGg+KYpJ7eJdP1DlhNCoAc/7Q7/XrXzXqGna54E8S7JRLaXltJlJV4B9we4NAHsPxg+FaGGXxH4etsOuXu7aMfeHd1Hr6in/AAR+I0166eFdVk3yIhNnMx5IH8B/Dp9K7/4ceNY/HHhYXEgjW9h/d3USnofXHoR/WvCvin4Yl8CeOY9S0zdDbXD/AGm2YDiNwQSv58/Q0Ad58c/AK3en/wDCUabAPtMAxeBF/wBYnZ/qP5fSrPwc8SJ4t8IXnhzV3WZ7ZPKCt1eAjHPrjkflXoPhfWrTxv4Lt70orR3cJjuIjyA2MOv86+drVJ/hf8ZkgDH7MtwEOT96Bz3+gP6UALpEs/wt+L7QTsyWscpikPZ4H5B/kfqK6f466NJpGvaV4t03dFJKQskicESLgq31I/lVz9oTw6722n+JIFTahFtMQDuOclT9OCPxrRsXPjz9nyZJsvd2UDKD94l4uR+YGPxoA5n4oLF4j8GeH/H1kNt0dsFwydmGf5MDWN43u7gv4U8eWkpWe7gRZ3j4Ini4b862vhmp8S/CnxT4aYKzxAzwAjoSM/zUfnXM6GW1f4S+I9Nlyz6XcRXsIxyucq34UAdu0VsPis8KxD+y/F2lllBwQWZCfzDD9a5zTLmXTdL8NaqA4n0DVXsLpzxiNm3KPpywpqXzTfDvwn4hjLG50PVDau2ei5VwM9uorX1+xVtf8e6TCu2O8sYtUhj/ANpdrkjH1NAH0VG25Aw5BGaK53wJqB1jwNo19JIZJJLVPMY9SwGD+oNFAHS0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAGH4st5bvQJbeCJpZGlh+RRkkCVSf0BNbS9BWV4hvBY6aJjefZP30S+b5e/q4G3HvnH41rL0oAWsnxJpx1Xw/f2anDyQsEPowGVP54rWpCODQBkeGtQGr+HNPviRvlgUvjoHAww/A5H4VrgYrlvCWbK+1vSWyFt71pogR/yzl+fj23Fh+FdVQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAh6V4H40v8AzPiz4jnnXK6PoLtCMZ5dVGf/ACKa98PSvm7xfLJL44+JF2BnytNjtSoGeGaEZ/ALQBsaslrJpPwr0CNVMU8kN1IOh4Vc/gSzflVXQJTfftBa9q8sp26ZHPIQe4VPLA/WoNMlW68a/DaGSM7oNMD5cE5A3lefwzVDwFeC78S+PNaclY1sbhmB9GY/4UAXvgezXfizxN4iuFLLHA7GTHdn3H9Fqt8EYpNa+JOq62+MJHJKynkgyNxz+dWvg1NLZ/D3xneRoXZIiVXGckRntUv7OtnIJ/EF9x5IiSI+ueT/AEoA5N1Hi74+FfMMsMup8N0/doeP0Wup/aL1QvqOjaQjfu443ncZ6ljgfoD+dYXweiWf40OxQMEFy4OM46jP61D8cnMvxTliBLYghXHXHFAHu/wu0pdE+HGkw7QrSQ+fIfUt82fyNfOGqC48f/FmeAOzG8vfKVj/AAxqcD8lFfVV0n2bwdKsa+X5VgQqgY24TpXzd8B9PXUPiUJ5o2cW1tJMG7B8gAn8zQB9CeKNSi8H+BL28gVVFnalYV4A3Ywo/PFfIujaVqHjHxRFZQ5e7vJss57Z5Zj9Oa+gP2hb+SDwVaWi5C3N2N2D/dBNcR+ztp/neK9Rviqn7Pa7QT1BZu35GgD37wv4dtPC+g2ulWMarHCgDMBy7d2PuTXP/EL4l6Z4GtPKkBn1KZC0FuPToGY9hmu3ZtsZI7Cvifx1r8/iTxdqGozl/mlKxo5zsQcAUAbes/GHxjqt28seqPZxlsrFbfKq9O/U9PWregfGrxbpU8f2u9+32wI3RzqMkDPAYDI6/pXm1FAH234R8Z6T4y0z7Xpk24rgSxMMNG3oRXP/ABe8HSeK/B8gtVZr2yJnhRQPn4IK/iP5V4v8CPEFxpnj2LTA2bbUVaN0/wBpVLKf0P519UuNyUAfHnwv8Uz+FvHFkRLstLqVYLlT02scAn3B5r3n4z+Gv+Eg8BT3Mf8Ax8aeftCcnBX+Ifl/KvmzxZa/2X431a3j+UQ3kmz2G4kV9c6ao8T/AA6tUnOft+nqrnryyYzQB5B+zv4ikS81Dw9IWaN1+0w+isOGH4jH61H+0XpSxappGsxrtaSNoHYDqVOV/Hk1yXwnM2lfF6ztFcHEstu5XkMACD/KvWv2grJZ/AcN0Rlre7XHHZgQfpQBJc7vGH7Piz3DBpmsN5Y85eI9f/Hf1rD/AGeLn7T4f17TXPyJKj49A6kH/wBBrU+DEq6h8I7izuGXyo5J4jkdEIz3+prk/wBna9WLxFrViXI86FXCgcHax5/8e/WgCt8JVfQPi/qmglcwSJNAwYf3Tlf0H61n+CbZoPiT4p0FV/cXFve2zocDgE7Tj1BArSss2H7TbrErtvvJAwLdmjJP5ZzUmmII/wBpm6SCTCNcyltoxwUyR+dAHM+Fs3fwm8YWJDH7NJBdpzwDnaf0rtdral4o8E3rnMmr6I9pMSSQRsI/PJrmPB9m8d58RbGNA9vHp9ypVzzlWOw/hjNX9HunTSfhhI0JaZL6dExxmPzOP1JoA9G+DGoKPh7Fbs2Tb3MsXJHY5/rRXL/D9tQgsNYisEt47ddWuAqPwVHy8UUAe9UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHKfEFDJ4dhUZydQtBx/12Surrn/FyhtPsVzjOp2n/o5a6AdKACiiigDl7v8A4l3juwuAuI9Rt3tnbP8Ay0T50/QvXUVy/jlGj0JdRTh9Onjusgc7Vb5wPqpYV0sTrJGrqQVYZBHcUAPooooAKKKKACiiigAooooAKKKKACiiigBD0r521/I8U/FTA62UZJb/AIBX0SeleE+JLUN8VfGNq4Oy+8Plwp6EqqYOB1+6aAKOnRxQ/ET4cmBZTE2koVEjZ52vnA7c1k+AlNxqPxFtShQzWc4OB935m4x+NPhuWhb4Wav5m8BzZsU4OBKAB9MN+NWfCcX2L45+INHMeIb5LmIqBwAVLj+R/OgBvwgY/wDCuvG8abmf7OSFHXmNq0f2e3L6T4mti4C5jZV7glXBP6CqHwNHmXvizQ2PyS2xwD90YLKff+IUfs9XMkPiLWtOfI82AMQeMFWx0/E0AY3wTdrP4tGASDa0U8RyPvY5/moqP41QfYvitJPtbbKkMvzHg8YOD6cVH4alfwr8dxHM5wmoS27t6hyVz+oroP2itPki8QaTqQU+XNbmPd/tKc/yagD3PWJZr7wZeyWu3z57F2jHUZKHFeAfs9XBi8d31q7Opksm+QdMq69fzNe5+A9Ti13wFpN0p3q9ssb555UbT+or558KTjwX8cDDOCkSXslqc9lckA/qDQB6T+0Ukh8I6ayrmMXfzH0+U4rA/ZvgQ3OtzF13hI0Cd8ZJzXpvxW0E+Ivh7qNvCAZoU+0xj1Kc4/EZFfPfwg8Ujwx43h+0Nts7wfZ5iei5Pyt+B/nQB9dHlT9K+F/EdpLY+I9Stp1KyR3MisCMfxGvudGDJweK8Z+J3wYbX7ubWtAKJfyfNNbu2FlPdgT0PT0FAHzVRW3qPhLX9KuntrzSbuOSM4b90SPzHBrW0v4X+MNVdPI0S4RGI+eYCMAepzQBsfA/SJdQ+JNjcoG8uyV53YDj7pUD82r60JwuTXE/Dn4fweBNGaASme8nIe4lH3SR0Cj0Fb/ijXYPDnhu+1afBW2iLhc43HsPxNAHyN8S2WT4la8VYMv2thkfhX1f4IjaHwDoaSjay2MW4Ht8or5E0azuvFvja1t8+ZcX92DI2OOTlj9MZNfXPim/h8O+BtRuF/dpbWjLHg4wcbV/mKAPmTwDNKnxksngwS1/IOR/CS2a9r+Pj4+GbAHBa7i/rXlnwI06W/8AiKb0puS1geR2IzgtwPx5/Su8/aK1BY/DmmaeG/eT3JfGeyj/AOvQBe+AzpH8MJ5GHAvJi3uNq1598AZ3j+Id5EqApLaSBm9MMDXfeGIv+Eb/AGe5LnZJFI9lNO397c5IBH4YrlP2crPfq+t3rw5EcMaLIR90kkkfiBQBUeZm/adBhY4N+FO302fN/Wrschm/aikNscBZtr49osN+tU/A6jV/2h768MbbIZ7mX1wQCoz+dTeD5RqP7Qus6nEp8iB7p5D6KAVz+f8AOgDP8JzOviH4jthng+xXnmKvUjc2MGm6XLJF4V+G4TPmf2vOw78eYo/xqp4J81fC3xA1lJR81mYQzDkmRjn8cfzrc0O3Ml18LtOcKs0SS3UiMP4DIzg/iBQAeDdNubm31iS0B8j+1JwnzdhtorrfhYJL3QNTvEgfy7jVbiVNy9VO2igD2OiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA53xZBe3MWkrZxlwmq20k4HaJXyT+GBXRVj65/Zyyac+oTyQkXkYt9jMN8pyFU46g88HitcdKAFooooAhu7eO6s5reUAxyxsjA9wRg1g+B7iSbwvbQTOHntC1pKe+6M7efwAP410bdK5LRH/s3xtrmlHOy6CajDzx8w2OPzQH8aAOuooFFABRRRQAUUUUAFFFFABRRRQAUUUUAB5rxz4gWkdl8X/DF+4Ahv4nspiR2IK/jw1ex15X8drGV/B1tqtqSl1pt5HMsi9VU5B/UrQB5Teq8XwyiCrsuPD2vPGGHBAPPr6gflW9rV6uk/HXQPECk/Z9ThhlLKB0kQxt/wDXpkCjUNT8RaWPmj8R6OmpQjnBuFXeQP8AgQYVg688+u/CnQdcTJudFmaxnJOSoyCh/kKAOg8HE+Dfj9f6SzYt7x5I146h/nT9cCqemE+Bv2g2gchLe6umj3Hpsl5X9SPyqv46v5Wm8JfEKywxniRZOMATRHkH68/lWt8abBL2PQ/HeksXhnRVdx2I+ZD7HqPwoAw/jHp8/h/4nnVokKpceXcxPjjeuAR+Yz+NekfFCBPGvwgt9btI97Qol4qjkqCMOPwyc/Ssv4jbfH/wf03xFYR+bcWzLJMqdUGCsg/A4P0pvwK8TQanoV54SvyGaNWaFW6PE3DL+Gf1oAm/Z78SxTaLeeHpSBNbSGePn7yN1/I/zrn/AI++GJ7LXrfxLbJtguAIpXQY2yL0J+o/lXKsl98J/iorsjCGCYlQeRLbtkfjx+or6X1Ox0zxz4Qkt96y2d9DuSRecZHDD3BoAyfhp4ut/GHhC3lkmSS9hQRXcZIJ3AdSPQjmvDPjF4Ck8La+dUsI2GmXjblKDAhk7rn9R/8AWrO0HVdX+Enj+SK6QlEfy7mIdJY88MP5ivpi2utC+IPhYyRFLzTrpCrKwwQfQjsRQB5r8Jvi3a3lnbeH9emEV5EBHBcyN8soHQEnoe3vXtYdZBweDXy146+DGt+Hp5r3SInv9MBLDyzmWIejL3+o/Ssjw18WPFfhRFto7lbm2TgQXSlwvsDkEfnQB9eGJT1AP1FKEA6V4Na/tJRCIfa9AfzO5inGP1FVNU/aPuZbdl0vRY4ZSOHuJNwHvgYz+dAHv9zcxWsLyzSJHGgyzucBR7mvlv4u/Ed/Fupf2Xp7kaVayHayn/XuONx9vT61zWreNPFvjSVbO7vrm6EjfLbQrhSfTavX8a9N+G/wSuBdxav4qhCxph4rItkk9i/t7UAanwN+Hz6Za/8ACT6lFtuLhcWkbDlEP8fsT/Kqf7QHi5Vht/DFpLl2Imu9p6D+FT/P8q9E8feP9L8D6M4Mkbai8ZFrajqT0BOOiivn7wL4Y1H4leNJLu/LyWwl869nPQ852j69PpQB678B/DX9keEG1aZCJ9SbeNw6Rrnbj65J/KvM/ihqDeNPizHpdoXkjidLKNV9d2WP5k8+1e3+PvFFr4D8FSSW4jjn8v7PZRAcBscYHoBz+FeTfAXw4NU8QXviW9QyC0O2Nm7ytyT+AP60Adn8brxdD+F1tpVu2wzyxWwUHHyKpJ/9BA/GqHwoRPC3we1bXpv3byiWcbxjO0FUH4n+dcX8XNbl8ZfEO30HTXMsNs4to1HQysfmP8h+Fdj8Xr6Dwh8OdL8J2H/Lyoj55Plpgk/UtigDC+Ciiz0rxV4puSfMhhKiRs8nBY8/UCub8CS3Vr4Z8beIEkaGf7IsCTZ7yPlh9cAfnXT64E8E/AOy0guq3+sOJJAAckE7j+QCrXO6440D4L6FpKjbdaxcNeyLjkxDhc/X5aAE06JbH4GXa7f9J1jVUiiGeqoB/UN+ddbfqlh8QpnjPkpoPhnaWbBUSFMAe33/ANKrXOlK3ir4feFmVvJsLNL28QHhScuc5/3efrWXc3kupeGPE+oKW+1a/rMdlCwHVFOcA9xjAx70Aew/CG0ktvhnpXnKFaVWl6dQzEg/lRXW6Vp6aZpFnYwriO3hSJfooAooAv0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHNeLo/Nl8PoMZGrwtyM9Fc/0rpR0rm/FD7dS8OJjO7Uh+kUldIOlABRRRQAdq5DxLjTvFPh7VgNqvM1hKf8AZlHy/wDj4H5119c74309tR8I6jFH/rki86H/AK6J8y/qBQB0KnIpaoaJfpqmiWV/GcpcQrID9RV+gAooooAKKKKACiiigAooooAKKKKACsrxHo8OvaBe6ZcAGO5iZOex7H88Vq0hGRigD5jttRk07TtE1iSAre+FL/8As6/GMGSFicfX+IfjWhaWNvD4x8TeC5ABp/iGD7TYMRgbyPMjI9PT6jFbPjLQY9G+I00Fx8uieK4jbzMeFjuP4Tn13YP4muTuv7QvfCsM+wp4j8HXASRQnzPbhvlb6Kf05oAq+EoDr3hDxB4IuhjULYm9slfs6cOo7gkf1rpPhhd2/jD4eax4EvGIuY0aS2Z+cA8gj02t/OsLxXfCw13RPiPoY/c3xV7hFOAk6jDofTIz9eaPEFxJ4U8Z6d4+0E79K1NvOAHQE/6yJvQ9aANn4Ma+NI1nUvBOtZRZ5GWKOTG0SDIZefUD/Oa5TxNpeofCr4jpeafvW3EnnWrHo8Z6ofXGcflXXfFfw+NTtrL4ieHJGdXWNp/K5Kkfdfj0xg+9dFbmy+NXw2SCaSKLWrPGW/uyAdcdlbH+cUATeOfD9p8U/Adrr+kFWvoIjJEAclv70RPqOfxrhfg98Rz4cvj4e1uZ00+RsRPIeLeTPQ+in+dZngbxhqnwx8UzaRrMci2Jl2XMJ6oezr+n1Fd78S/hpZ+K9PbxX4YZZbqVBK0UXK3K4+8P9rH50Adl8QPh7pvjzSTLGI01FIybW6Xoe4Bx1U1892Or+LPhL4ke0dnhIIaW2c7opl9fx7Ec103w5+Ll54VdND8QxySaehCI7A+ZbexB5I9u1e53+keF/iBoqPPFa6hbOv7ueMgsv0Ycj6UAYfhD4ueGvFSRwS3Asr8qN0FwdoLd9rdDVzxD8MPCXiphPc2CxTf89rUiNm+uOD+NeTeJv2ftUtJpJvD15HdwEkrDMdjqOwz0P14rlI5/iT4GK2yLq1nGhIVNpeLPt1WgD06f9nHSGLmHWbtAfuho1bFaFh+z54Wt5Ve6uL25A6oXCg/kM15k3xz8cxW6wGS1WUceY1sN34g8fpSSfGf4hXkXlxzIpI2lorQZz+R5oA+idK8MeGvCdsXsdOs7NUX5ptoDY92PP61wvjb436PosclnoRXUb7p5g/1KfU9/oPzryceGviX4+nR72DUZoS2d92xjjX3AOP0Fej+EfgDYWMi3fiS6+2ygf8e0WVjB926t+lAHmHh/wr4n+KXiJry4kleF5MXF7Nnag9F9TjoB+lfSVlY+H/hv4U8tWis7K3GZJX6yN6n1Jo17xR4d8BaMv2iSG3SMbYbWHAZvZVr551zXvEvxg8TRWdlbOtspzDbKfkiXu7n1/wD1CgBupXus/GLx8tvbBxbByIlP3YIc8sff19+K9f8AGGraT8Kfh6NM0hY472ZNkCDhmYjDSt649foKk0jStB+Dfg6e7upUkvGTMsmPnnfHCKOuM/4mvH9O0/W/jL48N7dK0dmCBLIvK28QJIQH15P4nNAHVfAvwilxNP4w1PJEZZbZnP8AF/E5PtyPxNZBkf4sfGdVVgdMtn+X0MMZz/48f510fxQ8RWvhTw7aeAvDWVkdAkojbc6If4fXcxP5H3pFs4vg78MZbltv/CRasoQEgZjJHQey5596AOe8VSz/ABG+McOhQ5/s+zl+zoq9EjT/AFjce4/kKbcCDxx8YBCjrHoejjAIGFS3g6/gSPyNV9LX/hB/hxda9MzJruvKYLQN96OHPzP+P+FJaWs/hf4ewWluP+J94rdUCYyyW3QZ9NxP40AX4dcku7Dxj45cn7TdSDTNN45UN1x9Fx+dbvhnQ/N8d+G/DWFe20Gx+23fHBuJPm59wWX8qpXFnYWHiOy0BVDaH4StTfX5zkTXGM8/U4A/Gu8+D+mSzaRe+KL5MXut3Dz5PURhiFH8z+VAHpa8CilooAKKKKACig0UAFFFFABRRWRc+ItPtPEFloss3+nXas8cY5wFGST6UAa9Fct4k+IGheE7pINXlnhLqGVhAzIQf9oDGeOlVYPil4VuIw6XlwFIyCbWTkf980AdnRXIn4l+FgCTfyADubaQf+y1IvxG8JEkNrltGQcESZU/qKAOqormP+FieEP+hhsf+/lPTx94TkGV8Q6f+M4H86AOkorAHjbwuwBHiHS8H1u0H9akHjDwyeniHST/ANvsf+NAEXiDS7rUNW0K4g2+XZXhmmycfL5bKMevJFdAOlctd+JNBn1XTTH4ntF/eOBBFcoyzEqeGweMdR71uDV9N4/4mFr/AN/l/wAaALtFVRqVkyhlu4GBOMiRTz+dSR3UEozHMjj1VgaAJqZKgeMqwyCMGl8xP76/nQWU8Aj86AOQ+H87W+n6jocjEy6VfS26g/8APMnen4YbH4V2NcRHjSfivNGSRFrFgJB6GWE4P4lWH5V2wIx1oAWik3ClBzQAUUUUAFFFFABRRRQAUUUUAFFFFAHI/EXwt/wlfhO6s4h/psY8+1bOMSL0/Pp+NeMjX2P9n+NTDl4v+JX4htQPvrjaHI9wevqK+kyAa8K+Ieh/8IZ4ml1+K387w9q4+z6rbKOAW/iHoc4IPqPegDEi0zTdI1S78KX9wG8MeIEFzpV2xyIZcZU/XJwfw96z/DC+X/anwy8UE2/2iX/Q5W6QzjoQf7rcVZj022u7VvBF9e4glYXnh3UZM4YNyI89gf0NR3FrJ8QNHeC4D2/jjRE8sxMu1rqNeR1/jH+etAE/gHxJL4G16/8ABPixT/Z0zmLD8pGx7/7rA/yqPxNoWp/CPxhDr+gb20advlGdy7TyYmP8j/WorGaP4oaN/YWqGO38V6ev+i3Uvym6Vesbn+9/h9a1fBfjf+z/ADfAnj+0JgJEEb3Q4iHZWJ/h6YbtQB0uv6Dofxl8Lxaxo8kcGrxLjLHDA943A/Q15n4U8deJPhlq7aVqkMr2SviWzmHK+6H/AOvg1sa/4d8QfCTWxr/hu4afRpsEsPmXBPCP6jphq7Sz1HwX8Z9NjtdQjFprKL0yBKvujfxD2NAFrVfDHhD4vaSNT0udIdQC/wCvQYdT6SJ35715Pc6T49+E+pvPaPOltuwJoh5kMg91OQPxFWNU8CeN/htqr6npD3ElrGSwubUkgoDn94o7euRiuv8ADXx/tZoRaeKNOYN0a4gAKn6oen4H8KAHeGv2hbYxrF4k0+RJeB51qNyn1JUnj8M16JpvxT8F6nGpi1y3jJXOyf8AdkfXNc5J4W+GHj2Pz7I2STyfMfssgikBPqn/ANaufv8A9nG2kk3aZ4gkiQnO2eAPj8QRQB6xI/hW6T7VIdJkUgHzW8v+ZpX1vwxYR+cb/S4UHzbllQDjvxXiM37OWsiMiHxFaPz914nUfoTTYP2cdYPFz4gskGePLid/54oA9K1n4z+DNIhJj1Br6TtHaoWz+JwP1ryvxH8efEGrN9m0C3GnREkB9ollI/EED8BXVaf+ztpFsofU9ZubgjkiJBGp/PJrdF58NPhmjxRm0S7CfOqfvpmx2J5x+lAHmPhj4R+JfGd4NU8Qzy2ltKdzSTndNJ9FPT8a9SvtX8G/B/RDZ2qL9qI3LAh3SzN6sew+vHpXn/ir466lrEjaf4WspLVJMoJ2G6Zv91R0/U1W8I/BzW/El6NW8WTTW1s53ssrbp5frn7o9zQBmKviT40+L4nmUw6fCSNyqfKt07gHuxxXpHijxDonwh8Kf2H4fCf2pMu5UJ3MGIwZX6jPHT2qt4q+JWheCNKPhzwbbwyXijy1MAzHEehJP8bZrn/Cnw+EJm8YfEafZEp8xYLt8tIcZBf88BaAH/DjwmsaT/EPxjL+7AM8HnHlz/z0P8gP/rVmpLcfFjxjPruq5tfDWkqXkyeFjHO3/eYDnH+FLruvav8AF/XotB0GFrTRLYhueFVRxvfHHTotJrN7/abW3w38DoDYq2Ly7TpcOPvMxHG0Y6/SgBLZ4viX4yuNc1RfsnhbRos+WRgLGvRBjuSMn8vSrFrq4mvdS+JOpW+LaA/ZNDtiOr9E49AOT75pJbG21V4Ph/4cuFTRbEm41fVMgLKR94k9wOg5/lU9xqdleOuvSwiPwr4eP2fSLJjj7ZOOA2O/TJ74/GgBtlpEkz6f4JkZm1nWJ1v9cnLElIh8wjJ9cc49SK+h7K1hsbSK1t0EcMSBEReigcAVwnw18JS2FvN4i1iMtr2psZZ2k5MSschBnpgY/l2r0OgAooooAKKKKACiiigAooooAbJu8ttmN2OM9M15/e+DdXk8QaNrKXaSXcF2094GbEZVht2oNu7gYAye3et7xZ4lufDq6ctppv2+e+uhbRxecIxuIJGSQR2qmNf8af8AQlR4/wCwrH/hQB0l5p9rqVs1ve20VxC33o5UDA/ga5s+CZNMUv4a1W40xgci3b99bn22Nyv/AAEinf8ACQ+LlGW8FfguqRH+lIfEvipcbvBU2O+3UIiaAGtrfiPSzt1fQftsHe40tt/1Jjb5h+BNXbDxX4a1SbyUu4Euu8FynlSj6q4BqifFfiDcwPgjUjjoVuISD/49WdqmqS6pEy6n8N9Quhjnf5Dn8DuzQB3QtrRwGEMJHYhAaik0nTpSDJY2rH1aJTXkz/arGc/2T4Z8aaST/DazJJEP+AOzCpI/FXxAtg3l6Xqd0g+4t3paqzfVkkx/47QB6h/wj2jMctpNi31tk/wpreGdCfro2n/+Aqf4V5xb/FHxfCn+nfD6/bHBMLEfoQa0oPivcEgXPgjxFCf4ikAcD+VAEfjfTNB0XVtBkTwul4HmlDQWdors4EZ/hA565/CuVXxf4RbxBFpsnw4miDbt5ezBkGATwgHNa+r/ABGt7jxf4euDoGvRx27TsyyWeHfMZX5VzzjPNbc/xR0dXWWTw54gZlHD/wBm8j8Sc0ANudJ8Ax6DHquoeHBZWryhQs1oyOGJwMqORntVh/CfgS00cai+heVatjgwS7+TjlPvfpXL+I/ijpmrQwQDw14hkS3uI7kKbcIJCjZAPJwM0H45Xssoih8HXkWeBJOzbR9dqZoA2Fs/hmR8tk0RxnPkXCkfpWL4i1T4a6FEkpW/mZpNpS3nnRlGOvJHFWJfiXdTj/SNe0jSi4ztFjPM6jv94KP0qndXXgHxLs/4STxrNqQjbcImxBFnH91VB/WgDndf134d3Nppd/pOoaitzBeJ5sMs8+/yTkOASTjseD2rrW0a01oBfDumeIpYmGVvLrUZreHn03Hc34CuT+J0XgNPB0EPhSXSxPFcq7rA37x1wR1Iyevc16nofxB8JWfh+wt7jxFZebBbRpIDPvOQoB5xz9aAMPRPBV14TnTXPEfi+88mOTd9lWdjFk8BSWyWr1K0uIru0iuIJFkhlQOjqeGUjIIrzvxJqnhDxg2nlfEmm7bOYymOSXKOCpGCMj1z+FdTbeLPDMFvHEmu6aFVQoxcIAB9M0AdDRWVa+JdFvrlba01Wynnb7sccysx/AGtWgAooooAKKKKACiiigAooooAKoatpNprOmz2N/Ak1vMu10YdR/Sr9B5oA+c7/Sbfw/qc3gjXpZY7B38/QtTY4a3kPRS393PB/PvVWUah4mvNzL9g8f6L8y4wgv0XnI9Wx+YNe7+K/CWl+LNIksdRgV+CY5cfNE2MBlPrXil9YX1jdQeHPEswtdctjnQtdGQsgB4jdvTtz0oAzL2wt/iBA2t6FGbDxfY4a9sF+Tzdv/LSMf3s44qxHqGlfFK2TRvEITSvFtvmOC7KbVnIGNr56H+vT0pJbObXdcdQo0H4gWpDnD7Ib7HOVPQMRj2NOvbfTPHd59h1eL/hHvG8B2GR12RXbDpnHQk9/wCdADvD3jrWfh9fHwt4ysmn0tfkBddxVPVSeHQ46f8A6q1Nc+FumeIoh4k+HupxpIx3iBJcKD/skcofY/pWH/wk9zpbL4T+JukPdWq/LHdEfvoh2ZWH3h0/+vSp4R1/w2T4h+HWuDU7FusUJ3SKp5w6dD/OgDS0P4teIfBsi6L4z0u4mVDtE7giXHvnhx710c/h/wCF/wASAbiyuo7a9cDJt2EMgJPdGGD+VYVl8WdA8RQNo/xA0RUkU7PNWIkA98j7yfhUVz8H/DmvH7V4N8TwqzfMkMj78fiPmH5GgCnrH7Pms202/RdTguU6qJj5bDn2yKxE0L4teGZz9mi1jptBgkMy49sZH6Vutpvxj8HEx2txcXltHwPLKzptA9GGQPyqK2+PPirTLgQ6xpNtKQMbGjaFifX/ACKAM8+K/jFp8YM0esKueDLZE5/Nahk8b/Fi4jeTdqarwpKWeMH/AL54NdSP2j5/I58OR+bng/aDj+VUJP2gvEV07LZaLbAg5A+dyF/CgDmI9F+KHisAvFrE8UjFczSGNAffJHFdJpvwOSyhN54y1+306ENysci7iP8AebgfkarTeOfix4gTZaW13Ajng2toV/8AHjmmJ8JPiB4kuvtOu3iwR4y017clyo+gz/SgDoofGvwz+HqlPDdk+p3w/wCXjGTn/fb+grCuvFnj/wCKlyLDS7RrTTnfDm2VlRR6vJ3p8OgfDXwPCsmv6l/wkGoDLC3szmMfXB/mfwouvi1rmtKmheCtFGnQkbUW3TfJt9sDC/X9aAOhTw54P+EemjU9WlXU9f25hiYg4fHG1ewz/Ea4kjxb8XtTF3qEyW2k2x+eZv3cEC98ZPJxWqngnT/D7Nr3xM1Tzp5BvjsI5TJLK3X5z19B1/Gqb3niT4mr/Z2mW0Gj+GbMl2Cjy4YkHd2/iIGTigBLzWhJFH4E+H8TvBM4S4vsYkum6Ek9k/pWlb2B8ORyeC/CDjUPEF+Amp6jH922ToUVuwHck1DprhFm8L/Dy1Mk7ALf+IH4yv8AFtP8Cj86msBDbQXfh/wfcGOADOt+I5uBtHUIew69OTn8aAJVtLJtOn8IaJeRw6FaES67rZwBOcj5FP14A74rofBWht421u21WW0Nr4W0c+XpNrjb5rAj94w79Mk+uPeszw54eTx00GmaVHJZ+CNPky5cESahICSWJ7/0r3m0tYbO1jt4I1jijUKiKMBQOgFAEygAYAxS0UUAFFFFABRRRQAUUUUAFc94k8UJ4fudMtxbG4m1C48iNRIF28ZLHPYDrXQHpXF+J/Cl9rniTT9RBtHtrGGVEglz8zSAAseowAOlAGXqerxeJrnwXeQxvGj6s52t3MauCQR1HGQa9IHSvOhoh8O3HgPSnuGuGt7uZTK3Gf3LngdgO30r0bIoAKMCkyKMigBcCjFGaMg0AGKMCiigBMD0pcCiigDntVs2m8WaJcCNjHbrOxYDhSVAGT+dV9T8daHpV7LazyTM0BH2l4oWdLfPQyMBhfxrSu7uRNfs7Rbm3WOSKR2hYHzHxtwV9hnn6ivPm0XXrfw/rnh2106R77U76V2vnx5PkyH7+49SBxt659qAPU4jHKgdNrKwBUjoRT9i/wB0flUNjALWxgtwc+VGqZ9cDFWKAI/Ii7ov5Uvkxf8APNPyp9FAFeSwtJeZLWFj/tRg1WOgaOeulWJ+tun+FaNFAGd/wj+i4x/ZFh/4DJ/hVeXwj4dmz5mh6c2fW1T/AArZpDk9OKAPMdY8P6RonxS8GNpmnWtmZmug/kRhN2I+M4r08dK4PxVgfE7wTkd7v/0WK7wdKACiiigAooooAKKKKACiiigAooooAKw/E/hfTfFWky2GpQK6MPkkA+eNv7yn1rcooA+d9f0u58PRR6D4zjmudJQ403Xbdcy2p7Kx9Pb2/KLUpY7mxtrfxrbi7seEsvFOnncR/d8zHX8eeDX0He2FtqNq9reQRzQSDDRuMgivKdV+Gep+HDdy+Eniu9NuATc6JekmOQd9p7H06fWgDmLg3+j6Ulp4nsV8WeF25g1S2bdJbqeM7uSPoT+NY9h4OuPtDat8NPFAuHAJazZ/KuIx/dKk4YfhWhp8bWl80fhC/k8P6uT/AKToOqn91Kf9gsMEdufzrK1KXRTqgXXdLvPB+spn/TLFSYXOeuz+qmgCW+8Yo8p074j+D/NuR8pvY18mdV6Z6Yb161RPgrwvrBWbwj4tihuScraaifKcY9G7967qO68a2+noLqy03xtoYGfNiIaXHf3z+Fc3Pp/wx1a9MWpW+q+Fr5sEwyKREPpkHGfwFAE1s3xi8Kb44EuNShZs7lAuhn26mnzfF3X7G42+JfA1rPKoxmWBomx9WVqfb+B7i0hz4J+I8DF8sImuPLBXPX5Sf5VNb2fxnS3P2fUbe9iA2g/aIJQw9cnrQA6H45WRMazeAkRIx8myQNtPsDGMVDcfHjVJrjdZeDoEbG1d7NI2PwUUsNp8cBKHMZcp081rdh/Omz2fxuu5XWWSSAtyNk8CfgMHNABJ43+LetqDY6NJZxkYytqUH5yVmXvhnxbrkRn8X+MrPT4VGWiubwFlH/XNTjP86fdfDfx7qj+Z4j8RW1vGOD9qvy3HXoOKrDwB4E0fL+IPHEczj/ljYpuOfwzQBRNl8NvD9mzzajeeI74ruSOFTbxZ9CeTW/pfivxdrlkNM8E+E4NIgYbWuYIzwMd5CAM+/WorLWfAenMsHhbwdea7eD7s12pPP05/kK19SufGup2e/wATa3YeEtK6fZoiFlZeuNoy38vpQBzc2geH/Dl6154v1s6/rBb5dNs5DIS3pI+fwxW3fWep69psN14tvbfwn4ajGYdMhXZJNjsEyCSffP0qLQZtNtbt4fh/oUt9cH7+uaqMJD6sMgADv61Vv3Q6o8qeb408ShwPN8stZ22ewAPzEH8KALs063Ph9USEeGfA6ncfm/0rUCPToTu/KtPw94Su/Hb2yy6c+i+DrVg0FmMq94ezue+e598c9a6Pw38L7i/1BNd8bXC6hf4BitRxDB7behx7cfWvU1RUACgADgAUAV7DT7bTbOO0tIUhgjXakaDAUe1WqKKACiiigAooooAKKKKACiiigAooooA5jxb4ZvNfl0640/Vm027sZWkjmEIk+8pU8E+hrMXwv42GP+K7Yn302P8AxruqKAOG/wCEa8brn/ito3z/AHtNTj8mpP7E+ICDEfirTz1Pzad/9lXdYooA4NdI+I4OT4n0gjuDp5H/ALNUosfiLEBjV9CkIHO61kXP5Gu3oxQBwqx/E0ZzceGifQiYf0p//FygR/yLDev7yf8A+Irt8UUAcV5vxIUnNr4Zf0xPN/8AE0ovPiKAc6T4fbHpdyj/ANlrtMUYoA8xuofiHceJbHVv7E0fdawSwhReNtO8qSTxn+H9a249T8er/rfDWlt/u6iR/wCyGuywBS0AcU2veOUDH/hELViOgTUhz+a0qeJfGGf3nglgP9nUIzXZ4FLQBxLeLvFEfLeBLxv9y8jJqNfHHiPeA/w/1ZV7lZ4yfyzXdUmAaAOJHjzUwxD+BtfAx2WI/wDs9J/wsG92sT4J8SfL1xDF/wDF13GKKAOE/wCFky9D4L8Tg/8AXqn/AMXSj4kkE+Z4S8Sp6Zs1Ofyau6pMA0AeTjxI3i/4k+GJbbQ9ZtI7A3BmkvLUxqNyYHOfb9a9YHSjaPSloAKKKKACiiigAooooAKKKKACiiigAooooAKQjNLRQBg+IfB2heKIQmrWEczL9yUfLIn0YciuC1X4d+I9Mtng0e+tta0zJJ03WUD4H+w+M/yr1ukIBoA+Zp4bTRr9kn/tvwNfMcgwO8tpJ+RBx7citVbvxTdwqLd/D3jeDzN+6VFaVQexVsEDr64r325sbW9gaC5t4pomGGSRAyn8DXEat8H/AAhqT+aljJYzZJ8yzcxnpj6UAeQ3Vv4dikmXxT4H1TQ7mRv3cum5MRHf5ScD8M9ayVt/A0d6FsfFWvacARjdbH5D9QQa9cf4Wa/p7K2h+O9VhxwUuz5gA9ufTtiqt34J+If2CeCbVND1ZXOSl1Zgs/Pc49qAOHay8NhHuZfixqUsjsOYw+7nu2W/zisbUbLw0FjnHxG1C5kLZA+zSFl9STu4NdyvhL4gNGIZPCnhEoo+XNuo/DI5qa38G+PWgMLeHvCECqwKE2qsRz69/wAaAPNSvgmSRC9/4n1WZhkosSLk/ixP863dH0RzdeZovw2uLlApAk1eVioPrtIA/nXokXgr4hzny28QaVpcKkqq2FmF4x24FW4/hLd3xb+3/GOs3yN1iik8pD9Rk0AcTdWvie1tR/bvi/SvDFk3/LppwVZQPQCMA9vWqenWWj3U+zw94d1DxbqQPzX+qgiBf+Ang/jXrmjfCfwdo214dJjnlU58y5PmNn8eK7RIlQAKAABgAUAeSaV8MNd1tY/+Ev1gJZIdyaXpo8qJfY4A+nT8a9N0nQtN0KxSz020itoEHCRrjPufU+5rQwM5paADFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUhODQAtFJuFJuFADqKbuoBoAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUABOKz01DztSltIV3iFQZnzwrHov1xz+XrV89KwfDSbDqpkGJzqEpfJycZG3/x3bQBvDpVe9nlt7Z5YYfNZRnYDgt7D3rA1HxDKmrX1lblEj0+0F1czMMgZztQD1wpJ/CtHw/eXeoeH7K6v1RbqaJXkRBwpIzj8iKAL9leRX9pHcwMGikUMp9qsVgeEv8AkHXe3Plfbp/K/wB3eentnNb9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRSN0oAha6jWcQ71MhG7b3x61LuHrXP+Ft17b3eqzDL3dxJs9okcqg/IZ+pNZ3iC/SHxppSEXHl2ltNdzmFScL9xd2O33j+FAHWy3McLosjqpc7Vyep9KlByM1l6jbRa1osio2RLHvhkHG1sZVh9Dg07w9ftqfh+xvXBDzQq7D3xz+tAGnTW+9TqY33qACiiioKEpR1pKUdapAPooopkhRRRQAUUUUAFFFFABRRRQAUUUUAFFFIRkg0ALRRRQAUUUUAFFFFABRRRQAhrPTTPJ1SS8hcr5ygTJ1DkdG9j29xj0rRooAyL3w9Yag10biHP2uEQz7WI8xATgHH1P51MmmC3042dq5iXBAcckZ7/WtGigCvZWkVjax20KbIo1CqvoKsUUUAFFFFABRRRQAUUUUAFFFISAMkgCgBaKTcKQMDnBBx6UAOooozQAUUZozQAUUUUAFFFFABRRRQAUUUUAFFFFABSEZpaKAMLSIpdMuryxaJ/s7SvcQyjlcO2WX2IYnHsfaszVvDd/e3Wt+U8YGqQx24nJ5gjAIYAY5JyxHPceldcVBNOoAxbyGWw0OOwsY2aQoLeL/AGeMbj7ADNX9Mso9O023s4RiKCNY1+gGKtFQaUDFABTG4NPoxmgCPNGafgelGB6UrDuMzSjrTsD0owKLCuLRRRTAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsjxMSPC+qkHGLWTn/gJrXrN162lvdC1C1gXdLNbuiAnGSVIFAHlt95dvqqFZba3juYo0eZYVkjtFTqWGCCzZ69u9d14Me0kXWpLJomtm1FvLaHGwjyo+mOMVFL4d1CZdNlje3t5LPYRHndHwMEYKcZGeQRWloFhdWTaobqONPtF600YjbI27EUdvVTQBtE8Vxeqt4h0/X9Lni1bzoru+EL2AiXYITnLA43ZAGSc4rs65MaT4o/t571r3SjCzhVzDIZIoc8qnzbQT6kdaBlFtc1A+Pksb64v9NtXk2WiG3QwXWBk/PyQx5444FbvjG9vdP8Iape2Fz5Fxb27So+wNggZxg1G+k6nqN9CdWexa1tbn7RALdGDsRnbu3E4xnnHX2p2r6VqmseGdU0yae0E12JIo3VWCpG3AyMklgKQGzaTM9nA7tlmjVifUkVhTX99H8QrKwF1mxn0+aYw7Bw6vGAc9f4jxVmfw7Zana2a6taxzzWygKQzAA4HI6egqOfRrp/F9lq8Twi3t7SS2MZzuO5lOR242imI3wxx1pcmm0tAD6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKRTkt7GgBaKKKACiiigAooooAKKKKACiiigAooooAKQ9KWg9KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=" alt="image"><br>观察牛顿环的装置如左图所示，牛顿环如右图所示。产生牛顿环的原理其实也是等厚干涉，光程差取决于AB之间空气的厚度，则产生牛顿环明环暗环的条件是<br> $  $<br>\delta = 2e+\frac{\lambda}{2}=\begin{cases}<br>k\lambda &amp;&amp; k=1,2…明环\\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2…暗环<br>\end{cases}<br> $  $<br>由此可以求出相应明环和暗环的半径,由图中几何关系可得<br> $  $<br>r^2 = R^2 - (R-e)^2 = 2Re - e^2<br> $  $<br>由于R &gt;&gt; e,我们将上式简化得到<br> $  $<br>r=\sqrt{2Re}<br> $  $<br>因此，可以求出第k级明环或暗环的半径<br> $  $<br>r_k = \sqrt{(k-\frac{1}{2})R\lambda}    k=1,2,…明环</p>
-<p>r_k=\sqrt{kR\lambda}    k=0,1,2…暗环<br> $  $<br>与等倾干涉不同，牛顿环中心环的层级最低，向下按上方透镜，从环中心会产生新的环<br>与等倾干涉类似，除反射光外，投射光也产生干涉，干涉条纹与反射光干涉条纹互补</p>
-<h5 id="干涉现象的应用"><a href="#干涉现象的应用" class="headerlink" title="干涉现象的应用"></a>干涉现象的应用</h5><blockquote>
-<p>测量长度的微小变化</p>
-</blockquote>
-<p>使用干涉膨胀仪利用等厚干涉。优点在于只要很好的样品就可以测量。</p>
-<blockquote>
-<p>检查工件平整度</p>
-</blockquote>
-<p>利用等厚干涉，若表面平整，则产生正常的干涉条纹，若表面有凹痕，则凹痕处，干涉条纹向左弯曲，若表面有凸痕，则凸痕处，干涉条纹向右弯曲。<br>凹痕深度为<br> $  $<br>h = \frac{d}{l}\frac{\lambda}{2}<br> $  $<br>d为弯曲条纹的偏移距离，l为相邻条纹的间距。</p>
-<blockquote>
-<p>减反射膜(增透膜)和高反射膜</p>
-</blockquote>
-<p>有些光学仪器需要降低反射，有些光学仪器需要增强反射，利用薄膜干涉的原理，在玻璃表面镀一层折射率为n’的物质，使反射光干涉增强和干涉相消。</p>
-<p>减反射膜，使反射光干涉相消，要求n’ &lt; n，膜的厚度为 $ \frac{\lambda}{4n’} $ </p>
-<p>高反射膜，使反射光干涉增强，要求n’ &gt; n，膜的厚度为 $ \frac{\lambda}{4n’} $ </p>
-<h5 id="迈克耳孙干涉仪"><a href="#迈克耳孙干涉仪" class="headerlink" title="迈克耳孙干涉仪"></a>迈克耳孙干涉仪</h5><p>数出视场里移动过的条纹数目N，则可求得M2的移动距离<br> $  $<br>d = N\frac{\lambda}{2}<br> $  $<br>利用公式，已知长度可以求光的波长，已知波长可以求长度。</p>
-<h2 id="第21章-光的衍射"><a href="#第21章-光的衍射" class="headerlink" title="第21章 光的衍射"></a>第21章 光的衍射</h2><p>光的波长很短，只有当障碍物的线度与入射光波长可以比拟时，才会产生明显的衍射现象<br>按照光源、障碍物和观察屏幕三者的位置，可以把衍射分为两类：一类是障碍物到光源和观察屏的距离都是有限远，这时出现的衍射称为菲涅尔衍射，另一类是障碍物到光源和观察屏的距离时无限远，光源到障碍物几乎变成平行光，障碍物的衍射光到观察屏时也成为平行光，这类衍射称为夫琅禾费衍射。夫琅禾费衍射可以看成菲涅尔衍射的极限情况。可以通过透镜将光转化为平行光来模拟这种情况。</p>
-<p>本章仅限于讨论夫琅禾费衍射</p>
-<h5 id="惠更斯·菲涅尔原理"><a href="#惠更斯·菲涅尔原理" class="headerlink" title="惠更斯·菲涅尔原理"></a>惠更斯·菲涅尔原理</h5><p>在惠更斯原理的基础上，添加了子波相干叠加的概念。</p>
-<blockquote>
-<p>从同一波面上各点发出的子波传播到空间某一点相遇时，各子波间也可以相互叠加而产生干涉现象。</p>
-<h5 id="夫琅禾费单缝衍射"><a href="#夫琅禾费单缝衍射" class="headerlink" title="夫琅禾费单缝衍射"></a>夫琅禾费单缝衍射</h5><p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3134103529,1803665781&amp;fm=26&amp;gp=0.jpg" alt="image"><br>平行光垂直入射单缝，经单缝衍射后再经过透镜L会聚在观察屏幕S上，形成单缝衍射条纹。<br>实验结果表明，单缝衍射条纹是一系列平行于狭缝的明暗相间的条纹，中央明纹最宽，约为其他各级明纹宽度的两倍。中央明纹也很亮，两侧明纹的强度由内向外逐渐减弱。<br>缝处各子波源发出的与主光轴成 $ \theta $ 角的光线（ $ \theta $ 称为衍射角），这束平行光经过透镜会聚于屏上P点。<br>因为单缝上各点到P点的光程不同，因此相位不同，会产生干涉。根据衍射角的不同，P点会有不同的亮度，产生明暗纹。<br>明暗纹发生的条件</p>
-</blockquote>
-<p>当衍射角 $ \theta $ 符合<br> $  $<br>asin\theta = \pm (2k+1)\frac{\lambda}{2}   k=1,2…<br> $  $<br>时，为各级明条纹中心的位置。k为级次。当<br> $  $<br>asin\theta = \pm k\lambda   k=1,2…<br> $  $<br>时，为各级暗纹的位置。k为级次,a为缝宽度。<br> $ \theta = 0 $ （即k=0）为中央明纹中心的位置。在两个第一级暗纹之间的区域，即 $ \theta $ 符合<br> $  $<br>-\lambda &lt; asin\theta &lt; \lambda<br> $  $<br>的范围为中央明纹区。中央明纹宽度为<br> $  $<br>\Delta x = 2ftan\theta \approx 2f·\frac{\lambda}{a}<br> $  $<br>其中f为透镜到光屏的距离</p>
-<blockquote>
-<p>衍射光强分布</p>
-</blockquote>
-<p>中央明纹最强，其他各级都要弱得多，而且随着级数增加越来越弱。</p>
-<blockquote>
-<p>明纹宽度</p>
-</blockquote>
-<p>如前所述，中央明纹的宽度约为 $ 2f·\frac{\lambda}{a} $ ，a为缝宽度。除中央明纹外，其他明纹的宽度均约为中央明纹的一半，即 $ \frac{\lambda}{a}f $ </p>
-<p>光波长给定时，a越小，衍射左右越显著。a越大，衍射作用越不显著。当a &gt;&gt;  $ \lambda $ ,所有各级条纹都密集于中央明纹附近而分辨不清，只能看到一条亮纹，即S通过透镜形成的几何光学的象。</p>
-<h5 id="夫琅禾费圆孔衍射·光学仪器的分辨本领"><a href="#夫琅禾费圆孔衍射·光学仪器的分辨本领" class="headerlink" title="夫琅禾费圆孔衍射·光学仪器的分辨本领"></a>夫琅禾费圆孔衍射·光学仪器的分辨本领</h5><p><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2096625807,2290783343&amp;fm=26&amp;gp=0.jpg" alt="image"><br>第一暗环的角位置 $ \theta_1 $ （即“爱里斑”对透镜光心张角的一半）与圆孔直径D，入射光波长 $ \lambda $ 有如下关系<br> $  $<br>sin\theta_1 = \frac{1.22\lambda}{D}<br> $  $<br>一般 $ \theta_1 $ 很小，可以用 $ \theta_1 $ 代替 $ sin\theta_1 $ 即<br> $  $<br>\theta_1 = 1.22\frac{\lambda}{D}<br> $  $<br>如果圆孔后透镜到光屏的距离（焦距）为f，则“爱里斑”半径为<br> $  $<br>R = f·\theta_1 = 1.22\frac{\lambda f}{D}<br> $  $<br>可知，D越小，“爱里斑”越大，衍射效果越明显。D越大，“爱里斑”越小，衍射效果不明显。当D &gt;&gt;  $ \lambda $ ，则明暗环向中间靠拢成为一个亮点。即点光源的几何成像。</p>
-<blockquote>
-<p>光学仪器的分辨本领</p>
-</blockquote>
-<p>如果一个物点的衍射图样的中心最亮处与另一个物点的衍射图样的第一个暗处重合。大多数人能判断出这是两个物点。我们就说这两物点恰好能被这一光学仪器分辨。</p>
-<p>这被称为瑞利判据。根据瑞利判据，两物点的衍射图样中心距离，应等于“爱里斑”的半径。此时两物点对透镜中心的张角称为最小分辨角。<br> $  $<br>\delta\theta = 1.22\frac{\lambda}{D}<br> $  $<br>我们将最小分辨角的倒数称为该仪器的分辨本领，用R表示，即<br> $  $<br>R = \frac{1}{\delta\theta} = \frac{D}{1.22\lambda}<br> $  $ </p>
-<h5 id="衍射光栅·光栅光谱"><a href="#衍射光栅·光栅光谱" class="headerlink" title="衍射光栅·光栅光谱"></a>衍射光栅·光栅光谱</h5><p>平行排列在一起的许多等距离等宽度的狭缝就构成最简易的透射光栅。</p>
-<p>光栅衍射实际是各缝衍射光相干涉的结果。对于衍射角为 $ \theta $ 的光束，当满足<br> $  $<br>(a+b)sin\theta = \pm k\lambda    k=0,1,2…<br> $  $<br>则会在P点相互加强形成明纹。上述决定明条纹的公式称为光栅方程，满足光栅方程的明纹又称为主极大。  </p>
-<p>当满足<br> $  $<br>(a+b)sin\theta = \pm \frac{k’}{N}\lambda </p>
-<p>k’=\not Nk,k’=1,2…N-1,N+1…2N-1，2N+1…<br> $  $<br>则在P点形成暗纹。所以在相邻两主极大之间有N-1条暗纹。</p>
-<p>其中a时缝的宽度，b时缝之间的距离</p>
-<blockquote>
-<p>衍射条纹的角宽</p>
-</blockquote>
-<p>设第k级主极大的衍射角为 $ \theta $ ，它左右相邻两个极小的衍射角之差为 $ \delta \theta $ ，称为该主极大的角宽<br> $  $<br>\delta \theta = \frac{2\lambda}{N(a+b)cos\theta}<br> $  $<br>N时光栅的总缝数。在 $ \theta $ 不大时，表示主极大粗细的 $ \delta \theta $ 很小，即条纹很细，光能集中，条纹很明亮。由此可得，光栅衍射条纹的特点：明纹细且亮，且分得很开。</p>
-<blockquote>
-<p>缺级</p>
-</blockquote>
-<p>如果光栅衍射出现主极大的位置恰为单缝衍射暗纹的位置，则该主极大就不会出现，这种现象称为缺级。需要满足<br> $  $<br>(a+b)sin\theta = \pm k\lambda   k=1,2…</p>
-<p>asin\theta = \pm k’\lambda   k=1,2,…<br> $  $<br>即<br> $  $<br>k = \frac{a+b}{a}k’<br> $  $<br>上式即为缺级条件</p>
-<blockquote>
-<p>光栅光谱</p>
-</blockquote>
-<p>我们取a+b为光栅常量，记作d，在d一定时，当不同波长的复色光入射，各波长的光除零级条纹重合以外，其他各级条纹的位置不重合，并按波长从短到长的次序从中间向外侧依次分开排列。形成光栅光谱。</p>
-<p>在较高级次时，各极谱线可能相互重叠。</p>
-<blockquote>
-<p>光栅的分辨本领。</p>
-</blockquote>
-<p>若在波长 $ \lambda $ 附近，两种单色光同时照射光栅，它们的衍射条纹发生重叠，若它们波长差为 $ d\lambda $ 时，光栅刚好能分辨出是两条谱线，则定义光栅的分辨本领R为<br> $  $<br>R = \frac{\lambda}{d\lambda}<br> $  $<br>根据瑞利判据，他们的衍射条纹对应的衍射角之差应该等于它们条纹的半角宽，此时刚好能分辨，即<br> $  $<br>d\theta = \frac{\lambda}{N(a+b)cos\theta}<br> $  $<br>经过计算可得<br> $  $<br>d\lambda = \frac{\lambda}{kN}</p>
-<p>R = kN<br> $  $<br>k为衍射级次，N为总缝数，因此提高光栅某一级谱线的分辨本领，可以提高缝数</p>
-<h5 id="X射线衍射"><a href="#X射线衍射" class="headerlink" title="X射线衍射"></a>X射线衍射</h5><p>一束平行的X射线以 $ \theta $ 角掠射到原子晶体的晶面上，将被表面及内部的各原子层散射，散射线相互叠加就形成衍射图样。在各原子散射的射线中，只有按反射定律的射线强度最大。<br>被上下两原子层反射的反射线光程差为 $ 2dsin\theta $ ，d为晶面间距离，当满足<br> $  $<br>2dsin\theta = k\lambda    k=1,2…<br> $  $<br>时，各层反射线相互加强，上式称为布拉格公式。</p>
-<h2 id="第22章-光的偏振"><a href="#第22章-光的偏振" class="headerlink" title="第22章 光的偏振"></a>第22章 光的偏振</h2><h5 id="光的五种偏振态"><a href="#光的五种偏振态" class="headerlink" title="光的五种偏振态"></a>光的五种偏振态</h5><blockquote>
-<p>自然光</p>
-</blockquote>
-<p>由于自然光在各个方向上振幅都相等，没有哪个方向更占优势，因此，我们可以将自然光分解为两个相互垂直的强度相同的光矢量，它们的强度都等于自然光强度的一半。<br>用在光线上依次画点和竖线的方式表示两个垂直方向上的相同强度光矢量</p>
-<blockquote>
-<p>线偏振光</p>
-</blockquote>
-<p>自然光经过某些物质的反射折射或吸收后，可能只保留一个方向的光振动。只沿某一固定方向振动的光线称为线偏振光，简称偏振光。<br>偏振光的偏振方向和传播方向组成的平面称为振动面。<br>用在光线上只画点或只画竖线的方式表示表示只有一个方向上的光矢量</p>
-<blockquote>
-<p>部分偏振光</p>
-</blockquote>
-<p>除了自然光和线偏振光之外，还有一种偏振态介于这两种之间的光。在垂直于光的传播方向的平面内，光矢量可取任何一个方向的振动；但不同方向振动的振幅不同，某一方向的振动最强，垂直于该方向的振动最弱，这种光称为部分偏振光。<br>用在光线上画两点一竖线或者两竖线一点的方式表示一个方向的强光矢量，与其垂直方向上若光矢量</p>
-<blockquote>
-<p>椭圆偏振光和圆偏振光</p>
-</blockquote>
-<p>如果在垂直于光的传播方向的平面上，光矢量按一定频率旋转（左旋或右旋），当光矢量的端点的轨迹是圆，称为圆偏振光，是椭圆则称为椭圆偏振光。</p>
-<h5 id="偏振光的起偏和检偏"><a href="#偏振光的起偏和检偏" class="headerlink" title="偏振光的起偏和检偏"></a>偏振光的起偏和检偏</h5><p>获得偏振光最常用的方法是利用偏振片。偏振片是一种人造的透明薄片，将只能吸收某一方面的光振动而只让这个方向垂直的光振动通过的物质，镀在透明薄片上，做成偏振片。  </p>
-<p>我们在使用的偏振片上标出记号，以表示该偏振片允许通过的光的振动方向，这个方向称为偏振化方向。</p>
-<p>自然光通过第一个偏振片（称为起偏器）后只有起偏器偏振化方向上的线偏振光。  </p>
-<p>设通过起偏器之后的线偏振光振幅为 $ A_0 $ ,光强为 $ I_0 $ ，通过第二个偏振片（称为检偏器）之后的线偏振光为 $ A $ ,光强为 $ I $ 。且起偏器和检偏器的偏振化方向成 $ \alpha $ ,则它们的关系是<br> $  $<br>\frac{I}{I_0} = \frac{A^2}{A_0^2} = cos^2\alpha</p>
+<p>频率\nu = \frac{1}{T} = \frac{B}{2\pi}\frac{q}{m}</p>
+<script type="math/tex; mode=display">
+当带电粒子速度v不垂直于磁场B时，垂直于磁场的方向为匀速圆周运动，平行方向为匀速直线运动，合运动为等间距的螺旋线运动，螺距为</script><p>h=v_{平行}T=\frac{2\pi nv_{平行}}{qB}</p>
+<script type="math/tex; mode=display">
+##### 带电粒子加速器
+>回旋加速器
+
+带电粒子在磁场中运动半个圆周，电场方向刚好改变，即电场周期与粒子运动周期一致</script><p>T = \frac{2\pi n}{qB}</p>
+<script type="math/tex; mode=display">
+粒子会在加速器中一直加速，知道例子运动轨迹到加速器边缘。则粒子最终离开的速度时</script><p>v = \frac{qBR}{m}</p>
+<script type="math/tex; mode=display">
+>电子感应加速器
+
+利用变化的磁场激发涡旋电场来加速电子  
+为了使电子能在与其速度无关的恒定半径R的圆周上不断加速，电子运动轨道上的磁感应强度 $ B_R $ 应等于轨道所包围的圆面积内的平均磁场 $ \overline B $ 的一半</script><p>B_R = \frac{1}{2}\overline B</p>
+<script type="math/tex; mode=display">
+使用交变电流提供变化的磁场，只在第一个1/4周期内能够给电子加速，因此加速器是以脉冲形式工作的
+##### 霍尔效应
+霍尔电势差为</script><p>V_H = R_H\frac{IB}{d}</p>
+<script type="math/tex; mode=display">
+式中的比例系数 $ R_H $ 称为霍尔系数</script><p>R_H = \frac{1}{nq}</p>
+<script type="math/tex; mode=display">
+n为载流子浓度，q为载流子所带电量
+
+n型半导体中，载流子带负电，p型半导体中，载流子带正电  
+## 第20章 光的干涉
+###### 光的相干性
+干涉现象表现为在可见光波的叠加区域内，有些地方较亮，有些地方较暗，从而形成一系列有规则的明暗相间的条纹  
+
+发生干涉现象的条件：  
+两列光频率相同，振动方向相同，相位差恒定  
+
+为了获得两束相干光，将一光源同一点发出的光分为两部分，并沿不同的路径传播，然后再让他们相遇，这样两束光波能够满足干涉条件。  
+把从光源同一点发出的光分为两束的方法有两种，即分波阵面法和分振幅法
+
+分波阵面法是将从一点（线）光源发出的光波在其波阵面上分离为两部分。后面的杨氏双缝实验、洛埃镜干涉等实验就是利用分波阵面法获得相干光的。  
+分振幅法是通过部分反射和部分投射，将一束光分为若干部分的方法，薄膜干涉就是利用分振幅法得到相干光的。
+
+ >相干长度
+
+因为一个原子在某一时刻发出的光波是有限长的波列，因此，光波再次相遇时想要干涉现象，路程差必须小于L0，L0被称为该光源的相干长度。  
+相干长度常用来描述光源相干性的好坏。
+##### 杨氏双缝实验
+![image](https://bkimg.cdn.bcebos.com/pic/91ef76c6a7efce1bcac6d739a351f3deb58f6557?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1)
+如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。  
+我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为</script><p>\delta = r2 - r1 \approx dsin\theta</p>
+<script type="math/tex; mode=display">
+式中的 $ \theta $ 是PM与 $ S_1S_2 $ 的中垂线 $ P_0M $ 的夹角。通常实验中，D >> d,D >> x（x为屏幕上P点到屏幕中心P0的距离），所以这一夹角非常小，可以作这样的近似。  
+
+从波动理论可知，设入射单色光波长为 $ \lambda $ ,那么，当</script><p>\delta = dsin\theta = \pm k\lambda     k=0,1,2,……</p>
+<script type="math/tex; mode=display">
+时，P点因两光波干涉相互加强而成为亮点，在P点处会出现一条明纹。其中k称为条纹的层级，对应k=0的明条纹称为零级明条纹或称中央明纹。   
+如果</script><p>\delta = dsin\theta = \pm (2k-1)\frac{\lambda}{2}     k=1,2,3,……</p>
+<script type="math/tex; mode=display">
+则P点因为两光波干涉相互减弱而成为暗点，在P点出现一条暗纹，k称为条纹的层级，依次为第一级，第二级……暗条纹。  
+
+若对上述两条件都不满足，则介于最亮和最暗之间
+
+各级明条纹中心的位置为</script><p>x_k = \pm k\frac{D}{d}\lambda   k=0,1,2,……</p>
+<script type="math/tex; mode=display">
+各级暗条纹中心的位置为</script><p>x_k = \pm(2k-1)\frac{D}{2d}\lambda   k=1,2,……</p>
+<script type="math/tex; mode=display">
+相邻两条明纹或相邻两条暗纹之间的距离为</script><p>\Delta x = \frac{D}{d}\lambda</p>
+<script type="math/tex; mode=display">
+##### 洛埃镜实验·半波损失
+光从光疏介质（折射率小）射向光密介质（折射率大）时，在界面处的反射光有相位 $ \pi $ 的突变，即相当于有 $ \lambda/2 $ 的路程改变，所有通常称为“半波损失”   
+洛埃镜实验证实了这一结论  
+##### 光程和光程差
+在光通过不同介质时，由于光波波长在不同介质中不相同，所以使用几何路程计算相位差是不方便的，所以我们引入光程的概念。  
+设有一频率为 $ \nu $ 的单色光，它在真空中的波长为 $ \lambda_0 $ ，传播速度为c；在折射率为n的介质中，速度为</script><p>v = \frac{c}{n}</p>
+<script type="math/tex; mode=display">
+波长为</script><p>\lambda_n = \frac{v}{\nu} = \frac{c}{n\nu} = \frac{\lambda_0}{n}</p>
+<script type="math/tex; mode=display">
+当该单色光在折射率为n的介质中所经过的几何路程为x时，相应的相位变化为</script><p>\Delta \varphi = \frac{2\pi}{\lambda_n}x = \frac{2\pi}{\lambda_0}nx</p>
+<script type="math/tex; mode=display">
+其中nx即为光程差  
+
+相位差和光程差的关系是</script><p>相位差 = \frac{光程差}{\lambda_0}2\pi</p>
+<script type="math/tex; mode=display">
+上式说明，如果两束相干光在不同介质中传播，对干涉起决定作用的是两束光的光程差，而不是他们的几何路程差。
+
+>一束平行光经过透镜后会聚于焦平面上某一点，此时平行光的光程是相等的，透镜的存在不引起附加的光程差
+
+##### 薄膜干涉
+由薄膜两表面的反射光或透射光所形成的干涉称为薄膜干涉。我们下面分别讨论厚度均匀的薄膜所产生的等倾干涉以及厚度不均匀的薄膜所产生的等厚干涉。
+>匀厚薄膜干涉(等倾干涉)
+![image](https://wkretype.bdimg.com/retype/zoom/e25970224431b90d6c85c772?pn=3&o=jpg_6&md5sum=aee2dd3c2faa72521cd7ba598fc84456&sign=a873f54016&png=8347-21809&jpg=249306-387236)
+
+将厚度为e，折射率为n2的薄膜放在折射率为n1的介质（图中为空气）中，在薄膜上下表面反射得到的双条平行光线2、3，它们从同一条光线分离出来，所以满足相干光的条件；又因为它们的能量也是从同一条光线中分离出来的。而能量和振幅有关，所以这种产生相干光的方法称为分振幅法。  
+经过透镜，在P点相交发生干涉。P点的光强取决于两光束的光程差。  
+从C点作垂直于光线2的垂线CD，则两光线的光程差为</script><p>\delta = n_2(AB+BC)-n_1AD+\frac{\lambda}{2}</p>
+<script type="math/tex; mode=display">
+式中的 $ \lambda/2 $ 是由半波损失产生的光程差，无论是n1 > n2还是n2 > n1，两表面反射光之间由于相位突变引起的光程差均为 $ \lambda/2 $    
+利用入射角、折射角及折射角定律</script><p>n_1sini = n_2sin\gamma</p>
+<script type="math/tex; mode=display">
+代入上式可得</script><p>\delta = 2n_2ecos\gamma + \frac{\lambda}{2}</p>
+<script type="math/tex; mode=display">
+或</script><p>\delta = 2e\sqrt{n_2^2 - n_1^2sin^2i}+\frac{\lambda}{2}</p>
+<script type="math/tex; mode=display">
+所以反射光出现明纹和暗纹的条件是</script><p>\delta = \begin{cases}<br>k\lambda &amp;&amp; k=1,2,…明纹 \\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2…暗纹<br>\end{cases}</p>
+<script type="math/tex; mode=display">
+因此光程差完全由入射角i决定。利用特殊的装置，可以将许多不同入射角的光线的干涉情况都显示在屏上，会出现干涉圆环。内疏外密，明暗相间。  
+
+由于入射角i越小，干涉圆环条纹半径就越小，因此i=0对应的是中央环心。  
+i=0时 $ \delta $ 取最大值，相应的k取最大值，所以中央环心级次最高  
+如果实验中可以让膜慢慢变厚，则随着e增大，环心的级次k也增大，这时可以观察到所有的圆环在扩大，在环心处不断有新的环出现  
+如果慢慢减小膜的厚度，则所有圆环都向中心收缩，并不断在中心处消失。
+
+
+除了反射光有干涉，两条透射光也有干涉现象，类似于反射光，透射光的光程差为</script><p>\delta = 2e\sqrt{n_2^2-n_1^2sin^2i}</p>
+<p>=\begin{cases}<br>k\lambda &amp;&amp; k=0,1,2…明纹 \\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2… 暗纹<br>\end{cases}</p>
+<script type="math/tex; mode=display">
+对同一方向的入射光来说，当它们的反射光相互加强时，透射光相互减弱，反射光相互减弱时，透射光相互加强。他们的干涉环纹互补。
+>劈尖干涉（等厚干涉）
+
+我们来讨论膜厚度不均匀的情况。膜的上表面略有倾斜，与下表面构成劈尖。当入射角很小时，将在膜的表面产生干涉。
+![image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578458240001&di=2125255cd454f3e14e6e5db60d1db8bf&imgtype=jpg&src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D3530825908%2C822854596%26fm%3D214%26gp%3D0.jpg)
+我们设折射率为n2的膜放在折射率为n1的介质（这里时空气）中。为了方便分析，我们考虑一波长为 $ \lambda $ 的光线垂直入射，设此处膜厚度为e。  
+则上下两表面的反射光线1，2光程差为</script><p>\delta = 2ne + \frac{\lambda}{2}</p>
+<script type="math/tex; mode=display">
+其中 $ \frac{\lambda}{2} $ 来自反射光的半波损失。因此反射光出现干涉条纹明纹暗纹的条件是</script><p>\delta = \begin{cases}<br>k\lambda &amp;&amp; k =1,2,…明纹\\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2…暗纹<br>\end{cases}</p>
+<script type="math/tex; mode=display">
+由上式可知，反射光的光程差完全由膜的厚度决定，厚度相同则光程差相同，有相同的k级，构成同一级干涉条纹，因此称为等厚干涉。
+![image](https://appwk.baidu.com/naapi/doc/view?ih=810&o=jpg_6&iw=1080&ix=0&iy=0&aimw=1080&rn=1&doc_id=1b7f8a521fb91a37f111f18583d049649b660e2d&pn=1&sign=ee261cd2d9240a8df8dec6d9d9730c09&type=1&app_ver=2.9.8.2&ua=bd_800_800_IncredibleS_2.9.8.2_2.3.7&bid=1&app_ua=IncredibleS&uid=&cuid=&fr=3&Bdi_bear=WIFI&from=3_10000&bduss=&pid=1&screen=800_800&sys_ver=2.3.7)
+在实验中，观察等厚干涉的装置如左图所示，用薄纸或其他物品撑起两玻璃片一侧，构成空气劈尖。通过显微镜T观察。  
+在劈尖处，e等于0，是暗条纹，这是半波损失的另一有力证据。
+
+设第k和第k+1级暗条纹处的厚度分别为 $ e_k $ 和 $ e_{k+1} $ ,则</script><p>\Delta e = e_{k+1}-e_k = \frac{\lambda}{2n_2}</p>
+<script type="math/tex; mode=display">
+则两条纹之间距离为</script><p>l=\frac{\Delta e}{sin\theta}=\frac{\lambda}{2n_2sin\theta}</p>
+<script type="math/tex; mode=display">
+可以看出，条纹间距与膜的厚度无关，条纹是等距离的。
+##### 牛顿环
+![image](data:image/jpeg;base64,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ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsjxMSPC+qkHGLWTn/gJrXrN162lvdC1C1gXdLNbuiAnGSVIFAHlt95dvqqFZba3juYo0eZYVkjtFTqWGCCzZ69u9d14Me0kXWpLJomtm1FvLaHGwjyo+mOMVFL4d1CZdNlje3t5LPYRHndHwMEYKcZGeQRWloFhdWTaobqONPtF600YjbI27EUdvVTQBtE8Vxeqt4h0/X9Lni1bzoru+EL2AiXYITnLA43ZAGSc4rs65MaT4o/t571r3SjCzhVzDIZIoc8qnzbQT6kdaBlFtc1A+Pksb64v9NtXk2WiG3QwXWBk/PyQx5444FbvjG9vdP8Iape2Fz5Fxb27So+wNggZxg1G+k6nqN9CdWexa1tbn7RALdGDsRnbu3E4xnnHX2p2r6VqmseGdU0yae0E12JIo3VWCpG3AyMklgKQGzaTM9nA7tlmjVifUkVhTX99H8QrKwF1mxn0+aYw7Bw6vGAc9f4jxVmfw7Zana2a6taxzzWygKQzAA4HI6egqOfRrp/F9lq8Twi3t7SS2MZzuO5lOR242imI3wxx1pcmm0tAD6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKRTkt7GgBaKKKACiiigAooooAKKKKACiiigAooooAKQ9KWg9KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=)
+观察牛顿环的装置如左图所示，牛顿环如右图所示。产生牛顿环的原理其实也是等厚干涉，光程差取决于AB之间空气的厚度，则产生牛顿环明环暗环的条件是</script><p>\delta = 2e+\frac{\lambda}{2}=\begin{cases}<br>k\lambda &amp;&amp; k=1,2…明环\\<br>(2k+1)\frac{\lambda}{2} &amp;&amp; k=0,1,2…暗环<br>\end{cases}</p>
+<script type="math/tex; mode=display">
+由此可以求出相应明环和暗环的半径,由图中几何关系可得</script><p>r^2 = R^2 - (R-e)^2 = 2Re - e^2</p>
+<script type="math/tex; mode=display">
+由于R >> e,我们将上式简化得到</script><p>r=\sqrt{2Re}</p>
+<script type="math/tex; mode=display">
+因此，可以求出第k级明环或暗环的半径</script><p>r_k = \sqrt{(k-\frac{1}{2})R\lambda}    k=1,2,…明环</p>
+<p>r_k=\sqrt{kR\lambda}    k=0,1,2…暗环</p>
+<script type="math/tex; mode=display">
+与等倾干涉不同，牛顿环中心环的层级最低，向下按上方透镜，从环中心会产生新的环  
+与等倾干涉类似，除反射光外，投射光也产生干涉，干涉条纹与反射光干涉条纹互补
+##### 干涉现象的应用
+>测量长度的微小变化
+
+使用干涉膨胀仪利用等厚干涉。优点在于只要很好的样品就可以测量。
+>检查工件平整度
+
+利用等厚干涉，若表面平整，则产生正常的干涉条纹，若表面有凹痕，则凹痕处，干涉条纹向左弯曲，若表面有凸痕，则凸痕处，干涉条纹向右弯曲。
+凹痕深度为</script><p>h = \frac{d}{l}\frac{\lambda}{2}</p>
+<script type="math/tex; mode=display">
+d为弯曲条纹的偏移距离，l为相邻条纹的间距。
+>减反射膜(增透膜)和高反射膜
+
+有些光学仪器需要降低反射，有些光学仪器需要增强反射，利用薄膜干涉的原理，在玻璃表面镀一层折射率为n'的物质，使反射光干涉增强和干涉相消。
+
+减反射膜，使反射光干涉相消，要求n' < n，膜的厚度为 $ \frac{\lambda}{4n'} $ 
+
+高反射膜，使反射光干涉增强，要求n' > n，膜的厚度为 $ \frac{\lambda}{4n'} $ 
+##### 迈克耳孙干涉仪
+数出视场里移动过的条纹数目N，则可求得M2的移动距离</script><p>d = N\frac{\lambda}{2}</p>
+<script type="math/tex; mode=display">
+利用公式，已知长度可以求光的波长，已知波长可以求长度。
+## 第21章 光的衍射
+光的波长很短，只有当障碍物的线度与入射光波长可以比拟时，才会产生明显的衍射现象  
+按照光源、障碍物和观察屏幕三者的位置，可以把衍射分为两类：一类是障碍物到光源和观察屏的距离都是有限远，这时出现的衍射称为菲涅尔衍射，另一类是障碍物到光源和观察屏的距离时无限远，光源到障碍物几乎变成平行光，障碍物的衍射光到观察屏时也成为平行光，这类衍射称为夫琅禾费衍射。夫琅禾费衍射可以看成菲涅尔衍射的极限情况。可以通过透镜将光转化为平行光来模拟这种情况。
+
+本章仅限于讨论夫琅禾费衍射
+##### 惠更斯·菲涅尔原理
+在惠更斯原理的基础上，添加了子波相干叠加的概念。
+>从同一波面上各点发出的子波传播到空间某一点相遇时，各子波间也可以相互叠加而产生干涉现象。
+##### 夫琅禾费单缝衍射
+![image](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3134103529,1803665781&fm=26&gp=0.jpg)
+平行光垂直入射单缝，经单缝衍射后再经过透镜L会聚在观察屏幕S上，形成单缝衍射条纹。  
+实验结果表明，单缝衍射条纹是一系列平行于狭缝的明暗相间的条纹，中央明纹最宽，约为其他各级明纹宽度的两倍。中央明纹也很亮，两侧明纹的强度由内向外逐渐减弱。   
+缝处各子波源发出的与主光轴成 $ \theta $ 角的光线（ $ \theta $ 称为衍射角），这束平行光经过透镜会聚于屏上P点。  
+因为单缝上各点到P点的光程不同，因此相位不同，会产生干涉。根据衍射角的不同，P点会有不同的亮度，产生明暗纹。
+>明暗纹发生的条件
+
+当衍射角 $ \theta $ 符合</script><p>asin\theta = \pm (2k+1)\frac{\lambda}{2}   k=1,2…</p>
+<script type="math/tex; mode=display">
+时，为各级明条纹中心的位置。k为级次。当</script><p>asin\theta = \pm k\lambda   k=1,2…</p>
+<script type="math/tex; mode=display">
+时，为各级暗纹的位置。k为级次,a为缝宽度。  
+ $ \theta = 0 $ （即k=0）为中央明纹中心的位置。在两个第一级暗纹之间的区域，即 $ \theta $ 符合</script><p>-\lambda &lt; asin\theta &lt; \lambda</p>
+<script type="math/tex; mode=display">
+的范围为中央明纹区。中央明纹宽度为</script><p>\Delta x = 2ftan\theta \approx 2f·\frac{\lambda}{a}</p>
+<script type="math/tex; mode=display">
+其中f为透镜到光屏的距离
+>衍射光强分布
+
+中央明纹最强，其他各级都要弱得多，而且随着级数增加越来越弱。
+>明纹宽度
+
+如前所述，中央明纹的宽度约为 $ 2f·\frac{\lambda}{a} $ ，a为缝宽度。除中央明纹外，其他明纹的宽度均约为中央明纹的一半，即 $ \frac{\lambda}{a}f $ 
+
+光波长给定时，a越小，衍射左右越显著。a越大，衍射作用越不显著。当a >>  $ \lambda $ ,所有各级条纹都密集于中央明纹附近而分辨不清，只能看到一条亮纹，即S通过透镜形成的几何光学的象。
+##### 夫琅禾费圆孔衍射·光学仪器的分辨本领
+![image](https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2096625807,2290783343&fm=26&gp=0.jpg)
+第一暗环的角位置 $ \theta_1 $ （即“爱里斑”对透镜光心张角的一半）与圆孔直径D，入射光波长 $ \lambda $ 有如下关系</script><p>sin\theta_1 = \frac{1.22\lambda}{D}</p>
+<script type="math/tex; mode=display">
+一般 $ \theta_1 $ 很小，可以用 $ \theta_1 $ 代替 $ sin\theta_1 $ 即</script><p>\theta_1 = 1.22\frac{\lambda}{D}</p>
+<script type="math/tex; mode=display">
+如果圆孔后透镜到光屏的距离（焦距）为f，则“爱里斑”半径为</script><p>R = f·\theta_1 = 1.22\frac{\lambda f}{D}</p>
+<script type="math/tex; mode=display">
+可知，D越小，“爱里斑”越大，衍射效果越明显。D越大，“爱里斑”越小，衍射效果不明显。当D >>  $ \lambda $ ，则明暗环向中间靠拢成为一个亮点。即点光源的几何成像。
+>光学仪器的分辨本领
+
+如果一个物点的衍射图样的中心最亮处与另一个物点的衍射图样的第一个暗处重合。大多数人能判断出这是两个物点。我们就说这两物点恰好能被这一光学仪器分辨。
+
+这被称为瑞利判据。根据瑞利判据，两物点的衍射图样中心距离，应等于“爱里斑”的半径。此时两物点对透镜中心的张角称为最小分辨角。</script><p>\delta\theta = 1.22\frac{\lambda}{D}</p>
+<script type="math/tex; mode=display">
+我们将最小分辨角的倒数称为该仪器的分辨本领，用R表示，即</script><p>R = \frac{1}{\delta\theta} = \frac{D}{1.22\lambda}</p>
+<script type="math/tex; mode=display">
+##### 衍射光栅·光栅光谱
+平行排列在一起的许多等距离等宽度的狭缝就构成最简易的透射光栅。
+
+光栅衍射实际是各缝衍射光相干涉的结果。对于衍射角为 $ \theta $ 的光束，当满足</script><p>(a+b)sin\theta = \pm k\lambda    k=0,1,2…</p>
+<script type="math/tex; mode=display">
+则会在P点相互加强形成明纹。上述决定明条纹的公式称为光栅方程，满足光栅方程的明纹又称为主极大。  
+
+
+当满足</script><p>(a+b)sin\theta = \pm \frac{k’}{N}\lambda </p>
+<p>k’=\not Nk,k’=1,2…N-1,N+1…2N-1，2N+1…</p>
+<script type="math/tex; mode=display">
+则在P点形成暗纹。所以在相邻两主极大之间有N-1条暗纹。
+
+其中a时缝的宽度，b时缝之间的距离
+>衍射条纹的角宽
+
+设第k级主极大的衍射角为 $ \theta $ ，它左右相邻两个极小的衍射角之差为 $ \delta \theta $ ，称为该主极大的角宽</script><p>\delta \theta = \frac{2\lambda}{N(a+b)cos\theta}</p>
+<script type="math/tex; mode=display">
+N时光栅的总缝数。在 $ \theta $ 不大时，表示主极大粗细的 $ \delta \theta $ 很小，即条纹很细，光能集中，条纹很明亮。由此可得，光栅衍射条纹的特点：明纹细且亮，且分得很开。
+>缺级
+
+如果光栅衍射出现主极大的位置恰为单缝衍射暗纹的位置，则该主极大就不会出现，这种现象称为缺级。需要满足</script><p>(a+b)sin\theta = \pm k\lambda   k=1,2…</p>
+<p>asin\theta = \pm k’\lambda   k=1,2,…</p>
+<script type="math/tex; mode=display">
+即</script><p>k = \frac{a+b}{a}k’</p>
+<script type="math/tex; mode=display">
+上式即为缺级条件
+
+>光栅光谱
+
+我们取a+b为光栅常量，记作d，在d一定时，当不同波长的复色光入射，各波长的光除零级条纹重合以外，其他各级条纹的位置不重合，并按波长从短到长的次序从中间向外侧依次分开排列。形成光栅光谱。
+
+在较高级次时，各极谱线可能相互重叠。
+
+>光栅的分辨本领。
+
+若在波长 $ \lambda $ 附近，两种单色光同时照射光栅，它们的衍射条纹发生重叠，若它们波长差为 $ d\lambda $ 时，光栅刚好能分辨出是两条谱线，则定义光栅的分辨本领R为</script><p>R = \frac{\lambda}{d\lambda}</p>
+<script type="math/tex; mode=display">
+根据瑞利判据，他们的衍射条纹对应的衍射角之差应该等于它们条纹的半角宽，此时刚好能分辨，即</script><p>d\theta = \frac{\lambda}{N(a+b)cos\theta}</p>
+<script type="math/tex; mode=display">
+经过计算可得</script><p>d\lambda = \frac{\lambda}{kN}</p>
+<p>R = kN</p>
+<script type="math/tex; mode=display">
+k为衍射级次，N为总缝数，因此提高光栅某一级谱线的分辨本领，可以提高缝数
+##### X射线衍射
+一束平行的X射线以 $ \theta $ 角掠射到原子晶体的晶面上，将被表面及内部的各原子层散射，散射线相互叠加就形成衍射图样。在各原子散射的射线中，只有按反射定律的射线强度最大。  
+被上下两原子层反射的反射线光程差为 $ 2dsin\theta $ ，d为晶面间距离，当满足</script><p>2dsin\theta = k\lambda    k=1,2…</p>
+<script type="math/tex; mode=display">
+时，各层反射线相互加强，上式称为布拉格公式。
+## 第22章 光的偏振
+##### 光的五种偏振态
+>自然光
+
+由于自然光在各个方向上振幅都相等，没有哪个方向更占优势，因此，我们可以将自然光分解为两个相互垂直的强度相同的光矢量，它们的强度都等于自然光强度的一半。  
+用在光线上依次画点和竖线的方式表示两个垂直方向上的相同强度光矢量
+>线偏振光
+
+自然光经过某些物质的反射折射或吸收后，可能只保留一个方向的光振动。只沿某一固定方向振动的光线称为线偏振光，简称偏振光。  
+偏振光的偏振方向和传播方向组成的平面称为振动面。  
+用在光线上只画点或只画竖线的方式表示表示只有一个方向上的光矢量
+>部分偏振光
+
+除了自然光和线偏振光之外，还有一种偏振态介于这两种之间的光。在垂直于光的传播方向的平面内，光矢量可取任何一个方向的振动；但不同方向振动的振幅不同，某一方向的振动最强，垂直于该方向的振动最弱，这种光称为部分偏振光。  
+用在光线上画两点一竖线或者两竖线一点的方式表示一个方向的强光矢量，与其垂直方向上若光矢量
+>椭圆偏振光和圆偏振光
+
+如果在垂直于光的传播方向的平面上，光矢量按一定频率旋转（左旋或右旋），当光矢量的端点的轨迹是圆，称为圆偏振光，是椭圆则称为椭圆偏振光。
+
+##### 偏振光的起偏和检偏
+获得偏振光最常用的方法是利用偏振片。偏振片是一种人造的透明薄片，将只能吸收某一方面的光振动而只让这个方向垂直的光振动通过的物质，镀在透明薄片上，做成偏振片。  
+
+我们在使用的偏振片上标出记号，以表示该偏振片允许通过的光的振动方向，这个方向称为偏振化方向。
+
+自然光通过第一个偏振片（称为起偏器）后只有起偏器偏振化方向上的线偏振光。  
+
+设通过起偏器之后的线偏振光振幅为 $ A_0 $ ,光强为 $ I_0 $ ，通过第二个偏振片（称为检偏器）之后的线偏振光为 $ A $ ,光强为 $ I $ 。且起偏器和检偏器的偏振化方向成 $ \alpha $ ,则它们的关系是</script><p>\frac{I}{I_0} = \frac{A^2}{A_0^2} = cos^2\alpha</p>
 <p>A = A_0cos\alpha</p>
-<p>I = I_0cos^2\alpha<br> $  $<br>最后一个公式被称为马吕斯公式</p>
-<blockquote>
-<p>光在反射和折射时的偏振</p>
-</blockquote>
-<p>自然光从折射率n1的介质射向折射率为n2的介质时，反射光中垂直于入射面的光振动强于平行于入射面的光振动。折射光中平行于入射面的光振动强于垂直于入射面的光振动。</p>
-<p>当改变入射角i时，反射光的偏振化程度也随之改变，当入射光为某一特定值 $ i_0 $ 时，反射光中只有垂直于入射面的光振动，此时，反射光为偏振光。折射光仍为部分偏振光。这个特定的入射角称为起偏角  </p>
-<p>实验表明，自然光以起偏角 $ i_0 $ 入射到两种介质的分界面上时，反射光和折射光相互垂直。可得<br> $  $<br>tani_0 = \frac{n_2}{n_1}<br> $  $ </p>
-<blockquote>
-<p>双折射现象</p>
-</blockquote>
-<p>一束光线射向各向异性介质中时，一束光线会产生两束折射光，沿不同方向传播。称为双折射现象，能产生这种现象的晶体称为双折射晶体。</p>
-<p>两条折射光一条与各向同性介质中一样遵从折射定律，称为寻常光线，简称o光。另一条称为异常光线，简称e光。</p>
-<p>这两条光都是线偏振光，且振动方向近似于相互垂直。</p>
-<p>在双折射晶体中，存在一个特殊的方向，放光线在晶体中沿这一方向传播时，不产生双折射现象，这个方向称为晶体的光轴。</p>
-<p>过o光和光轴的平面称为o光的主平面，o光的振动方向垂直于o光的主平面。过e光和光轴的平面称为e光的主平面，e光的振动方向平行于e光的主平面。对于大多数晶体，o光和e光的主平面夹角不大。</p>
-<blockquote>
-<p>椭圆偏振光的获得</p>
-</blockquote>
-<p>从单轴晶体中切出一块薄片，使其两个晶面都平行于光轴。这样的一片晶体称为晶片。</p>
-<p>一束波长为 $ \lambda $ 的偏振光垂直入射厚度为d的晶片。入射光的振幅为A，光振动方向和晶片光轴的夹角为 $ \theta $ ，线偏振光进入晶体产生o光和e光。o光振动垂直于光轴，e光振动平行于光轴，o光和e光振幅分别为<br> $  $<br>A_o = Asin\theta</p>
-<p>A_e = Acos\theta<br> $  $<br>这种情况下，o光和e光沿同一方向前进，但速度不同，透过晶片后，两者光程差为<br> $  $<br>\delta = (n_o - n_e)d<br> $  $<br>对应的相位差是<br> $  $<br>\Delta \varphi = \frac{2\pi}{\lambda}(n_o-n_e)d<br> $  $<br>这样的光一般是椭圆偏振光。<br>当相位差为 $ \pi/2 $ ，晶片称为四分之一波片。厚度为<br> $  $<br>d = \frac{\lambda}{4|n_o-n_e|}<br> $  $<br>使用四分之一波片，并使 $ \theta = \pi/4 $ ,则 $ A_o = A_e $ ,产生圆偏振光。</p>
-<p>而使用二分之一波片，即使两光相位差为 $ \pi $ 的波片，波片厚度为<br> $  $<br>d = \frac{\lambda}{2|n_o-n_e|}<br> $  $<br>线偏振光通过后仍为线偏振光，振动面转过 $ 2\theta $ </p>
-<h2 id="第23章-量子光学基础"><a href="#第23章-量子光学基础" class="headerlink" title="第23章 量子光学基础"></a>第23章 量子光学基础</h2><h4 id="黑体辐射·普朗克的能量子假说"><a href="#黑体辐射·普朗克的能量子假说" class="headerlink" title="黑体辐射·普朗克的能量子假说"></a>黑体辐射·普朗克的能量子假说</h4><h5 id="热辐射"><a href="#热辐射" class="headerlink" title="热辐射"></a>热辐射</h5><p>任何一个物体在任何温度下都会向外辐射电磁波，而且辐射出的总能量及能量按波长分布的情况都与该物体的温度有关，这称为热辐射。</p>
-<p>如果在单位时间内，从物体表面单位面积上所辐射的、波长在 $ \lambda $ 到 $ \lambda+d\lambda $ 范围内的辐射能为 $ dE_{\lambda} $ ,那么 $ dE_{\lambda} $ 和波长间隔 $ d\lambda $ 的比值称为单色辐出度<br> $  $<br>M_\lambda = \frac{dE_\lambda}{d\lambda}<br> $  $<br>单色辐出度与物体温度T及所取定的波长 $ \lambda $ 有关，常表示为 $ M_\lambda(T) $ 反映了在不同温度下辐射按波长的分布情况。</p>
-<p>单位时间内，从物体表面单位面积上所辐射的各种波长的总辐射能，称为物体的辐射出射度，用M(T)表示<br> $  $<br>M(T) = \int_0^\infty M_\lambda(T) d\lambda<br> $  $<br>实验表明，物体的单色辐出度及辐射出射度与辐射体的材料及表面情况（如粗糙程度）有关</p>
-<p>任意物体，在发出辐射能的同时，也在吸收或反射由其他物体发射来的辐射能。<br>我们将物体在温度T时，吸收波长在 $ \lambda $ 到 $ \lambda+d\lambda $ 范围内的电磁波的能量与相应波长的入射电磁波的能量，称为物体的单色吸收系数，用 $ \alpha(\lambda,T) $ 表示，而把物体反射波长在 $ \lambda $ 到 $ \lambda+d\lambda $ 范围内电磁波的能量与相应波长的入射电磁波的能量称为物体的单色反射系数。用 $ \gamma(\lambda,T) $ 表示。对于不透明的物体<br> $  $<br>\alpha(\lambda,T)+\gamma(\lambda,T)=1<br> $  $ </p>
-<p>如果一个物体，在任何温度下，对任意波长的电磁辐射都全部吸收，我们称之为绝对黑体</p>
-<h5 id="基尔霍夫定律"><a href="#基尔霍夫定律" class="headerlink" title="基尔霍夫定律"></a>基尔霍夫定律</h5><p>对每一个物体来说，单色辐出度与吸收系数的比值是一个与物体性质无关，而只由温度T和辐射波长有关的普适常量<br> $  $<br>\frac{M_\lambda(T)}{\alpha(\lambda,T)}=f(\lambda,T)<br> $  $<br>根据上式，一个好的吸收体一定是一个好的辐射体。因此对于黑体<br> $  $<br>M_{0,\lambda}(T) = f(\lambda,T)<br> $  $<br>可知，基尔霍夫定律中的普适常量就是黑体的单色辐出度。</p>
-<h5 id="黑体辐射基本定律"><a href="#黑体辐射基本定律" class="headerlink" title="黑体辐射基本定律"></a>黑体辐射基本定律</h5><p>利用开有小孔的空腔这一黑体模型进行研究，对黑体辐射我们得出两条普适规律。</p>
-<blockquote>
-<p>斯特藩-玻尔兹曼定律</p>
-</blockquote>
-<p>黑体的辐射出射度与黑体温度的四次方成正比<br> $  $<br>M_0(T) = \int_0^\infty M_{0,\lambda}(T)d\lambda =\sigma T^4<br> $  $<br>式中的 $ \sigma = 5.67*10^{-8} W/(m^2·K^4) $ 为普适常量,称为斯特藩-玻尔兹曼常量</p>
-<blockquote>
-<p>维恩位移定律</p>
-</blockquote>
-<p>在任一温度下， $ M_{0,\lambda}(T) $ 都有一个最大值，该最大值对应的波长称为波峰波长，记为 $ \lambda_m $ ,波峰波长与温度成反比<br> $  $<br>T·\lambda_m = b<br> $  $<br>式中 $ b = 2.898 * 10^{-3} m·K $ </p>
-<h5 id="经典物理学的困难"><a href="#经典物理学的困难" class="headerlink" title="经典物理学的困难"></a>经典物理学的困难</h5><p>静电物理学对辐射波长分布的公式都只能符合实际实验曲线的一部分。这些失败暴露的经典物理学的缺陷。</p>
-<h5 id="普朗克量子假说"><a href="#普朗克量子假说" class="headerlink" title="普朗克量子假说"></a>普朗克量子假说</h5><p>普朗克总结前人失败的教训，得到一个与实验完全相符的公式，即<br> $  $<br>M_{0,\lambda}(T) = 2\pi hc^2\lambda^{-5}\frac{1}{e^{\frac{hc}{\lambda kT}}-1}<br> $  $<br>其中c为光速，k为玻尔兹曼常量，h为普朗克常量， $ h = 6.626*10^{-34}J·s $   </p>
-<p>为了推出上式，普朗克提出了违背静电物理学的量子假设：<br>1 黑体是由许多带电的线性谐振子组成的，频率为 $ \nu $ 的谐振子只能取如下的能量不连续值，即<br> $  $<br>E_n = nh\nu    n=0,1,2…<br> $  $<br>其中h为普朗克常量<br>2 这些谐振子能量变化时能向外辐射或吸收电磁波。根据上式，它们辐射或吸收的能量只能是<br> $ h\nu $ 的整数倍</p>
-<h4 id="光电效应·爱因斯坦电子理论"><a href="#光电效应·爱因斯坦电子理论" class="headerlink" title="光电效应·爱因斯坦电子理论"></a>光电效应·爱因斯坦电子理论</h4><p>当光照射到金属表面时，在一定的条件下，有电子从金属表面逸出的现象称为光电效应，所逸出电子称为光电子</p>
-<h5 id="光电效应的实验规律"><a href="#光电效应的实验规律" class="headerlink" title="光电效应的实验规律"></a>光电效应的实验规律</h5><p>1 入射光频率不变时，饱和光电流 $ I_s $ 与入射光的强度成正比，也可表述为，单位时间内从金属表面逸出的光电子数目与入射光强成正比<br>2 光电子的最大初动能与入射光的频率成线性关系，与入射光强无关<br>当两极间加上反向电压 $ V_a $ 时，光电流才为零，这个电压称为截止电压。<br>3 截止频率(红限频率)<br>对于每种金属都有一个截止频率 $ \nu_0 $ ,只有入射光频率大于截止频率时，才会产生光电效应<br>4 光电效应是瞬时发生的</p>
-<h5 id="经典电磁理论的困难"><a href="#经典电磁理论的困难" class="headerlink" title="经典电磁理论的困难"></a>经典电磁理论的困难</h5><p>静电电磁理论对光电效应无法解释</p>
-<h5 id="爱因斯坦光量子理论"><a href="#爱因斯坦光量子理论" class="headerlink" title="爱因斯坦光量子理论"></a>爱因斯坦光量子理论</h5><p>爱因斯坦在普朗克量子假说的基础上，提出光量子的概念  </p>
-<blockquote>
-<p>光是以光速c运动的粒子流，这些粒子称为光量子，简称光子。每个光子都具有一定的能量。频率为 $ \nu $ 的光束每个光子的能量为<br> $  $<br>E = h\nu<br> $  $<br>式中h为普朗克常量，光强为I的光束中，单位时间里通过垂直于光的传播方向单位面积的光子数为 $ N=\frac{I}{h\nu} $ </p>
-</blockquote>
-<p>使用该理论可以很好的解释光电效应<br> $  $<br>\frac{1}{2}mv_m^2 = h\nu - W<br> $  $<br>式中的 $ v_m $ 为逸出电子的速度，W为逸出功。关于截止频率有<br> $  $<br>\nu_0 = \frac{W}{h}<br> $  $ </p>
-<h4 id="康普顿效应"><a href="#康普顿效应" class="headerlink" title="康普顿效应"></a>康普顿效应</h4><p>X射线经金属、石墨等物质散射后形成的光谱成分，散射谱线中除了与原来波长相同的成份外，还包括波长较长的成分，这种现象称为康普顿效应。</p>
-<h5 id="康普顿效应的实验规律"><a href="#康普顿效应的实验规律" class="headerlink" title="康普顿效应的实验规律"></a>康普顿效应的实验规律</h5><p>设原波长为 $ \lambda_0 $ ，产生的较长波长为 $ \lambda $ ,波长改变量为 $ \Delta\lambda=\lambda-\lambda_0 $ .波长改变量与散射角的关系为<br> $  $<br>\Delta \lambda = 2Asin^2\frac{\varphi}{2}<br> $  $<br>A=0.00242nm<br>实验还表明，原子量越小的物质，康普顿效应越显著</p>
-<h5 id="经典电磁理论的困难-1"><a href="#经典电磁理论的困难-1" class="headerlink" title="经典电磁理论的困难"></a>经典电磁理论的困难</h5><p>经典电磁理论无法解释康普顿效应</p>
-<h5 id="光子理论对康普顿效应的解释"><a href="#光子理论对康普顿效应的解释" class="headerlink" title="光子理论对康普顿效应的解释"></a>光子理论对康普顿效应的解释</h5><p>将散射看作光子与物质中电子等粒子弹性碰撞的结果，光子中的一部分能量传给电子，波长变长。<br>光子质量为 $ m=\frac{h\nu_0}{c^2} $ ,动量即为<br> $  $<br>p =mc =\frac{h\nu_0}{c} = \frac{h}{\lambda_0}<br> $  $<br>碰撞中利用能量守恒公式和动量守恒公式，即可得到康普顿效应的实验规律。<br>其中 $ A=\frac{h}{m_0c}=0.00242nm $ 称为康普顿波长，式中 $ m_0 $ 为碰撞前电子的质量</p>
-<h4 id="光的波粒二象性"><a href="#光的波粒二象性" class="headerlink" title="光的波粒二象性"></a>光的波粒二象性</h4><p>我们不得不承认，光同时拥有波和粒子两种形式的特性，在光子的能量和动量公式中体现的尤为明显<br> $  $<br>E = h\nu</p>
-<p>p =mc =\frac{h\nu_0}{c} = \frac{h}{\lambda_0}<br> $  $ </p>
-<h2 id="第24章-原子的波尔理论"><a href="#第24章-原子的波尔理论" class="headerlink" title="第24章 原子的波尔理论"></a>第24章 原子的波尔理论</h2><p>波尔的原子模型只能够解释氢原子的基本规律</p>
-<h4 id="氢原子光谱的规律性"><a href="#氢原子光谱的规律性" class="headerlink" title="氢原子光谱的规律性"></a>氢原子光谱的规律性</h4><p>巴耳末发现了氢原子光谱可见光区域谱线波长的规律<br> $  $<br>\lambda = B\frac{n^2}{n^2-4}    n=3,4,5…<br> $  $<br>其中 $ B = 3.6456*10^{-7} m $ 这称为巴耳末公式  </p>
-<p>里德伯发现，不用波长，而用波长的倒数,即单位长度内波的数量称为波数来表示，可以将公式变得更简洁易于推广。<br> $  $<br>\widetilde\nu = \frac{1}{\lambda} = R_H(\frac{1}{2^2}-\frac{1}{n^2})   n=3,4,5…<br> $  $<br>其中 $ R_H = \frac{4}{B} = 1.0967758*10^7 m^{-1} $ ,称为氢的里德伯常量。<br>上式中对应的氢原子谱线系叫做巴耳末系。进一步研究后，里德伯把氢原子的所有光谱线系用同一个公式表示<br> $  $<br>\widetilde\nu = R_H(\frac{1}{m^2}-\frac{1}{n^2})</p>
-<p>m=1,2,3…;n=m+1,m+2,…<br> $  $<br>式中当m给定后，n可取从m+1开始的一切整数值构成一个谱线系</p>
-<h4 id="波尔氢原子理论"><a href="#波尔氢原子理论" class="headerlink" title="波尔氢原子理论"></a>波尔氢原子理论</h4><h5 id="波尔理论的基本假设"><a href="#波尔理论的基本假设" class="headerlink" title="波尔理论的基本假设"></a>波尔理论的基本假设</h5><blockquote>
-<p>定态假设</p>
-</blockquote>
-<p>假设电子围绕原子核做圆周运动时，只能处在一些分立的稳定状态，称为定态。当电子处在这些分立的轨道上时，电子虽然做加速运动，但是不辐射能量，故原子具有稳定的能量，这些能量取量子化的不连续值，称为能级<br> $  $<br>E = E(n)   n=1,2,3…<br> $  $ </p>
-<blockquote>
-<p>跃迁假设</p>
-</blockquote>
-<p>原子从一个定态到另一个定态称为跃迁。电子跃迁时，会发射或吸收光子，光子频率有下述条件确定<br> $  $<br>h\nu = E_n - E_k<br> $  $<br>式中 $ h\nu $ 为光子的能量， $ E_n,E_k $ 为有关的两个定态能量。上式称为波尔频率条件。它实质上是改写成能量守恒形式的里德伯公式。</p>
-<blockquote>
-<p>量子化条件</p>
-</blockquote>
-<p>假设在定态时，电子的轨道角动量也是量子化的，只能取约化普朗克常量的整数倍<br> $  $<br>L =mvr= n\overline h   n=1,2,3…<br> $  $<br>式中的约化普朗克常量 $ \overline h = h/2\pi $ ;n为正整数，称为量子数</p>
-<h5 id="波尔的氢原子理论"><a href="#波尔的氢原子理论" class="headerlink" title="波尔的氢原子理论"></a>波尔的氢原子理论</h5><blockquote>
-<p>电子轨道半径的量子化</p>
-</blockquote>
-<p>根据电子运动方程及轨道角动量量子化可得到定态的电子轨道半径为<br> $  $<br>r_n = \frac{4\pi\epsilon_0\overline h^2}{me^2}n^2=n^2a_0 n=1,2,3…<br> $  $<br>式中 $ r_n $ 为原子中电子处在第n个轨道的半径， $ a_0 $ 是氢原子中电子最靠近原子核的轨道半径，称为玻尔半径，其值为<br> $  $<br>a_0 = \frac{4\pi\epsilon_0\overline h^2}{me^2} = 0.529*10^{-10} m<br> $  $<br>且可以得到各轨道上电子的运动速度<br> $  $<br>v_n = \frac{1}{n}\frac{e^2}{4\pi\epsilon_0\overline h}   n=1,2,3…<br> $  $<br>电子速度也是不连续的，n=1时速度最大</p>
-<blockquote>
-<p>原子能量的电子化</p>
-</blockquote>
-<p>当电子在第n个轨道运动时，原子的总能量为<br> $  $<br>E_n = -\frac{1}{2}mv_n^2-\frac{e^2}{4\pi\epsilon_0r_n}<br> $  $<br>将 $ v_n $ 和 $ r_n $ 代入后得<br> $  $<br>E_n = -\frac{1}{n^2}\frac{1}{(4\pi\epsilon_0)^2}\frac{me^4}{2\overline h^2}<br> $  $<br>对于氢原子，上式可写作<br> $  $<br>E_n = -\frac{13.6}{n^2} eV<br> $  $<br>n越大，原子能量的绝对值越小，电子离核也越远，即n越大，原子能量越大。<br>原子电离所需能量为<br> $  $<br>E_{电离} = E_{\infty}-E_n<br> $  $ </p>
-<blockquote>
-<p>氢原子光谱的解释</p>
-</blockquote>
-<p>原子从较高能态跃迁到较低能态时，发出光子的能量为<br> $  $<br>h\nu = E_n - E-k<br> $  $ </p>
-<h2 id="第25章-量子力学基础"><a href="#第25章-量子力学基础" class="headerlink" title="第25章 量子力学基础"></a>第25章 量子力学基础</h2><h4 id="德布罗意波"><a href="#德布罗意波" class="headerlink" title="德布罗意波"></a>德布罗意波</h4><p>德布罗意认为波粒二象性同样适用于实物粒子，粒子的运动是与波动过程联系在一起的，其对应的波长为<br> $  $<br>\lambda = \frac{h}{p} = \frac{h}{mv}<br> $  $<br>这个表达式称为德布罗意关系式。<br>利用上式，可得电子束的德布罗意波长为<br> $  $<br>\lambda = \frac{h}{p} = \frac{h}{\sqrt{2meV}}<br> $  $ </p>
-<h4 id="不确定性原理"><a href="#不确定性原理" class="headerlink" title="不确定性原理"></a>不确定性原理</h4><h5 id="位置和动量的不确定关系"><a href="#位置和动量的不确定关系" class="headerlink" title="位置和动量的不确定关系"></a>位置和动量的不确定关系</h5><p>微观粒子的位置和动量是不可能同时精确地测定的。这就是位置和动量的不确定性原理。<br>位置坐标和动量的不确定量满足关系式<br> $  $<br>\Delta x\Delta p_x \geq \frac{\overline h}{2}<br> $  $<br>类似上式同样的有<br> $  $<br>\Delta y\Delta p_x \geq \frac{\overline h}{2}</p>
-<p>\Delta z\Delta p_x \geq \frac{\overline h}{2}<br> $  $<br>在经典力学中，将符合上述关系的x和 $ p_x $ 一对量称为正则共轭量。<br>这个关系有海森伯提出。它表明，两个共轭变量的不确定量的乘积，在数量级上不会小于 $ \overline h $<br>这就是海森伯不确定性原理</p>
-<h5 id="能量和时间的不确定性关系"><a href="#能量和时间的不确定性关系" class="headerlink" title="能量和时间的不确定性关系"></a>能量和时间的不确定性关系</h5><p>为了测量一个粒子的能量E，必须在一定的时间间隔内完成一项实验，能量的不确定量与测定能量所需要的时间间隔的不确定关系为<br> $  $<br>\Delta E\Delta t \geq \frac{\overline h}{2}<br> $  $<br>对于受激原子这样的系统，原子所处的激发态能量并不是单一值，而是在一个很小的能量范围 $ \Delta E $ 里，这个范围称为能级宽度。同时，原子处于这个激发态的时间是有一定大小的，即只能存在 $ \Delta t $ 时间，叫做平均寿命。<br>能级宽度和平均寿命的关系即为<br> $  $<br>\Delta E\Delta t \geq \frac{\overline h}{2}<br> $  $ </p>
-<p>另外在位置动量的不确定关系中，我们用质量和速度的乘积表示动量，则可得到关系式<br> $  $<br>\Delta x\Delta v_x \geq \frac{\overline h}{2m}<br> $  $<br>它指出能够以多大的准确度谈及微观粒子的轨道。粒子的质量越大，其位置和速度的不确定度越小，轨道概念的应用就越准确。</p>
-<h4 id="薛定谔方程"><a href="#薛定谔方程" class="headerlink" title="薛定谔方程"></a>薛定谔方程</h4><p>薛定谔的定态方程<br> $  $<br>\nabla^2\psi + \frac{2m}{\overline h^2}(E-U)\psi=0<br> $  $<br>其中<br> $  $<br>\nabla^2 = \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}</p>
+<p>I = I_0cos^2\alpha</p>
+<script type="math/tex; mode=display">
+最后一个公式被称为马吕斯公式
+>光在反射和折射时的偏振
+
+自然光从折射率n1的介质射向折射率为n2的介质时，反射光中垂直于入射面的光振动强于平行于入射面的光振动。折射光中平行于入射面的光振动强于垂直于入射面的光振动。
+
+当改变入射角i时，反射光的偏振化程度也随之改变，当入射光为某一特定值 $ i_0 $ 时，反射光中只有垂直于入射面的光振动，此时，反射光为偏振光。折射光仍为部分偏振光。这个特定的入射角称为起偏角  
+
+实验表明，自然光以起偏角 $ i_0 $ 入射到两种介质的分界面上时，反射光和折射光相互垂直。可得</script><p>tani_0 = \frac{n_2}{n_1}</p>
+<script type="math/tex; mode=display">
+>双折射现象
+
+一束光线射向各向异性介质中时，一束光线会产生两束折射光，沿不同方向传播。称为双折射现象，能产生这种现象的晶体称为双折射晶体。
+
+两条折射光一条与各向同性介质中一样遵从折射定律，称为寻常光线，简称o光。另一条称为异常光线，简称e光。
+
+这两条光都是线偏振光，且振动方向近似于相互垂直。
+
+在双折射晶体中，存在一个特殊的方向，放光线在晶体中沿这一方向传播时，不产生双折射现象，这个方向称为晶体的光轴。
+
+过o光和光轴的平面称为o光的主平面，o光的振动方向垂直于o光的主平面。过e光和光轴的平面称为e光的主平面，e光的振动方向平行于e光的主平面。对于大多数晶体，o光和e光的主平面夹角不大。
+
+>椭圆偏振光的获得
+
+从单轴晶体中切出一块薄片，使其两个晶面都平行于光轴。这样的一片晶体称为晶片。
+
+一束波长为 $ \lambda $ 的偏振光垂直入射厚度为d的晶片。入射光的振幅为A，光振动方向和晶片光轴的夹角为 $ \theta $ ，线偏振光进入晶体产生o光和e光。o光振动垂直于光轴，e光振动平行于光轴，o光和e光振幅分别为</script><p>A_o = Asin\theta</p>
+<p>A_e = Acos\theta</p>
+<script type="math/tex; mode=display">
+这种情况下，o光和e光沿同一方向前进，但速度不同，透过晶片后，两者光程差为</script><p>\delta = (n_o - n_e)d</p>
+<script type="math/tex; mode=display">
+对应的相位差是</script><p>\Delta \varphi = \frac{2\pi}{\lambda}(n_o-n_e)d</p>
+<script type="math/tex; mode=display">
+这样的光一般是椭圆偏振光。  
+当相位差为 $ \pi/2 $ ，晶片称为四分之一波片。厚度为</script><p>d = \frac{\lambda}{4|n_o-n_e|}</p>
+<script type="math/tex; mode=display">
+使用四分之一波片，并使 $ \theta = \pi/4 $ ,则 $ A_o = A_e $ ,产生圆偏振光。
+
+而使用二分之一波片，即使两光相位差为 $ \pi $ 的波片，波片厚度为</script><p>d = \frac{\lambda}{2|n_o-n_e|}</p>
+<script type="math/tex; mode=display">
+线偏振光通过后仍为线偏振光，振动面转过 $ 2\theta $ 
+## 第23章 量子光学基础
+#### 黑体辐射·普朗克的能量子假说
+##### 热辐射
+任何一个物体在任何温度下都会向外辐射电磁波，而且辐射出的总能量及能量按波长分布的情况都与该物体的温度有关，这称为热辐射。
+
+如果在单位时间内，从物体表面单位面积上所辐射的、波长在 $ \lambda $ 到 $ \lambda+d\lambda $ 范围内的辐射能为 $ dE_{\lambda} $ ,那么 $ dE_{\lambda} $ 和波长间隔 $ d\lambda $ 的比值称为单色辐出度</script><p>M_\lambda = \frac{dE_\lambda}{d\lambda}</p>
+<script type="math/tex; mode=display">
+单色辐出度与物体温度T及所取定的波长 $ \lambda $ 有关，常表示为 $ M_\lambda(T) $ 反映了在不同温度下辐射按波长的分布情况。
+
+单位时间内，从物体表面单位面积上所辐射的各种波长的总辐射能，称为物体的辐射出射度，用M(T)表示</script><p>M(T) = \int_0^\infty M_\lambda(T) d\lambda</p>
+<script type="math/tex; mode=display">
+实验表明，物体的单色辐出度及辐射出射度与辐射体的材料及表面情况（如粗糙程度）有关
+
+
+任意物体，在发出辐射能的同时，也在吸收或反射由其他物体发射来的辐射能。  
+我们将物体在温度T时，吸收波长在 $ \lambda $ 到 $ \lambda+d\lambda $ 范围内的电磁波的能量与相应波长的入射电磁波的能量，称为物体的单色吸收系数，用 $ \alpha(\lambda,T) $ 表示，而把物体反射波长在 $ \lambda $ 到 $ \lambda+d\lambda $ 范围内电磁波的能量与相应波长的入射电磁波的能量称为物体的单色反射系数。用 $ \gamma(\lambda,T) $ 表示。对于不透明的物体</script><p>\alpha(\lambda,T)+\gamma(\lambda,T)=1</p>
+<script type="math/tex; mode=display">
+
+如果一个物体，在任何温度下，对任意波长的电磁辐射都全部吸收，我们称之为绝对黑体
+##### 基尔霍夫定律
+对每一个物体来说，单色辐出度与吸收系数的比值是一个与物体性质无关，而只由温度T和辐射波长有关的普适常量</script><p>\frac{M_\lambda(T)}{\alpha(\lambda,T)}=f(\lambda,T)</p>
+<script type="math/tex; mode=display">
+根据上式，一个好的吸收体一定是一个好的辐射体。因此对于黑体</script><p>M_{0,\lambda}(T) = f(\lambda,T)</p>
+<script type="math/tex; mode=display">
+可知，基尔霍夫定律中的普适常量就是黑体的单色辐出度。
+##### 黑体辐射基本定律
+利用开有小孔的空腔这一黑体模型进行研究，对黑体辐射我们得出两条普适规律。
+>斯特藩-玻尔兹曼定律
+
+黑体的辐射出射度与黑体温度的四次方成正比</script><p>M_0(T) = \int_0^\infty M_{0,\lambda}(T)d\lambda =\sigma T^4</p>
+<script type="math/tex; mode=display">
+式中的 $ \sigma = 5.67*10^{-8} W/(m^2·K^4) $ 为普适常量,称为斯特藩-玻尔兹曼常量
+>维恩位移定律
+
+在任一温度下， $ M_{0,\lambda}(T) $ 都有一个最大值，该最大值对应的波长称为波峰波长，记为 $ \lambda_m $ ,波峰波长与温度成反比</script><p>T·\lambda_m = b</p>
+<script type="math/tex; mode=display">
+式中 $ b = 2.898 * 10^{-3} m·K $ 
+##### 经典物理学的困难
+静电物理学对辐射波长分布的公式都只能符合实际实验曲线的一部分。这些失败暴露的经典物理学的缺陷。
+##### 普朗克量子假说
+普朗克总结前人失败的教训，得到一个与实验完全相符的公式，即</script><p>M_{0,\lambda}(T) = 2\pi hc^2\lambda^{-5}\frac{1}{e^{\frac{hc}{\lambda kT}}-1}</p>
+<script type="math/tex; mode=display">
+其中c为光速，k为玻尔兹曼常量，h为普朗克常量， $ h = 6.626*10^{-34}J·s $   
+
+为了推出上式，普朗克提出了违背静电物理学的量子假设：  
+1 黑体是由许多带电的线性谐振子组成的，频率为 $ \nu $ 的谐振子只能取如下的能量不连续值，即</script><p>E_n = nh\nu    n=0,1,2…</p>
+<script type="math/tex; mode=display">
+其中h为普朗克常量  
+2 这些谐振子能量变化时能向外辐射或吸收电磁波。根据上式，它们辐射或吸收的能量只能是
+ $ h\nu $ 的整数倍
+#### 光电效应·爱因斯坦电子理论
+当光照射到金属表面时，在一定的条件下，有电子从金属表面逸出的现象称为光电效应，所逸出电子称为光电子
+##### 光电效应的实验规律
+
+
+1 入射光频率不变时，饱和光电流 $ I_s $ 与入射光的强度成正比，也可表述为，单位时间内从金属表面逸出的光电子数目与入射光强成正比  
+2 光电子的最大初动能与入射光的频率成线性关系，与入射光强无关  
+当两极间加上反向电压 $ V_a $ 时，光电流才为零，这个电压称为截止电压。  
+3 截止频率(红限频率)  
+对于每种金属都有一个截止频率 $ \nu_0 $ ,只有入射光频率大于截止频率时，才会产生光电效应  
+4 光电效应是瞬时发生的
+##### 经典电磁理论的困难
+
+静电电磁理论对光电效应无法解释
+##### 爱因斯坦光量子理论
+
+爱因斯坦在普朗克量子假说的基础上，提出光量子的概念  
+>光是以光速c运动的粒子流，这些粒子称为光量子，简称光子。每个光子都具有一定的能量。频率为 $ \nu $ 的光束每个光子的能量为</script><p>E = h\nu</p>
+<script type="math/tex; mode=display">
+>式中h为普朗克常量，光强为I的光束中，单位时间里通过垂直于光的传播方向单位面积的光子数为 $ N=\frac{I}{h\nu} $ 
+
+使用该理论可以很好的解释光电效应</script><p>\frac{1}{2}mv_m^2 = h\nu - W</p>
+<script type="math/tex; mode=display">
+式中的 $ v_m $ 为逸出电子的速度，W为逸出功。关于截止频率有</script><p>\nu_0 = \frac{W}{h}</p>
+<script type="math/tex; mode=display">
+#### 康普顿效应
+X射线经金属、石墨等物质散射后形成的光谱成分，散射谱线中除了与原来波长相同的成份外，还包括波长较长的成分，这种现象称为康普顿效应。
+
+##### 康普顿效应的实验规律
+设原波长为 $ \lambda_0 $ ，产生的较长波长为 $ \lambda $ ,波长改变量为 $ \Delta\lambda=\lambda-\lambda_0 $ .波长改变量与散射角的关系为</script><p>\Delta \lambda = 2Asin^2\frac{\varphi}{2}</p>
+<script type="math/tex; mode=display">
+A=0.00242nm  
+实验还表明，原子量越小的物质，康普顿效应越显著
+##### 经典电磁理论的困难
+经典电磁理论无法解释康普顿效应
+##### 光子理论对康普顿效应的解释
+将散射看作光子与物质中电子等粒子弹性碰撞的结果，光子中的一部分能量传给电子，波长变长。
+光子质量为 $ m=\frac{h\nu_0}{c^2} $ ,动量即为</script><p>p =mc =\frac{h\nu_0}{c} = \frac{h}{\lambda_0}</p>
+<script type="math/tex; mode=display">
+碰撞中利用能量守恒公式和动量守恒公式，即可得到康普顿效应的实验规律。  
+其中 $ A=\frac{h}{m_0c}=0.00242nm $ 称为康普顿波长，式中 $ m_0 $ 为碰撞前电子的质量
+#### 光的波粒二象性
+我们不得不承认，光同时拥有波和粒子两种形式的特性，在光子的能量和动量公式中体现的尤为明显</script><p>E = h\nu</p>
+<p>p =mc =\frac{h\nu_0}{c} = \frac{h}{\lambda_0}</p>
+<script type="math/tex; mode=display">
+## 第24章 原子的波尔理论
+波尔的原子模型只能够解释氢原子的基本规律
+#### 氢原子光谱的规律性
+巴耳末发现了氢原子光谱可见光区域谱线波长的规律</script><p>\lambda = B\frac{n^2}{n^2-4}    n=3,4,5…</p>
+<script type="math/tex; mode=display">
+其中 $ B = 3.6456*10^{-7} m $ 这称为巴耳末公式  
+
+里德伯发现，不用波长，而用波长的倒数,即单位长度内波的数量称为波数来表示，可以将公式变得更简洁易于推广。</script><p>\widetilde\nu = \frac{1}{\lambda} = R_H(\frac{1}{2^2}-\frac{1}{n^2})   n=3,4,5…</p>
+<script type="math/tex; mode=display">
+其中 $ R_H = \frac{4}{B} = 1.0967758*10^7 m^{-1} $ ,称为氢的里德伯常量。  
+上式中对应的氢原子谱线系叫做巴耳末系。进一步研究后，里德伯把氢原子的所有光谱线系用同一个公式表示</script><p>\widetilde\nu = R_H(\frac{1}{m^2}-\frac{1}{n^2})</p>
+<p>m=1,2,3…;n=m+1,m+2,…</p>
+<script type="math/tex; mode=display">
+式中当m给定后，n可取从m+1开始的一切整数值构成一个谱线系
+#### 波尔氢原子理论
+##### 波尔理论的基本假设
+>定态假设
+
+假设电子围绕原子核做圆周运动时，只能处在一些分立的稳定状态，称为定态。当电子处在这些分立的轨道上时，电子虽然做加速运动，但是不辐射能量，故原子具有稳定的能量，这些能量取量子化的不连续值，称为能级</script><p>E = E(n)   n=1,2,3…</p>
+<script type="math/tex; mode=display">
+>跃迁假设
+
+原子从一个定态到另一个定态称为跃迁。电子跃迁时，会发射或吸收光子，光子频率有下述条件确定</script><p>h\nu = E_n - E_k</p>
+<script type="math/tex; mode=display">
+式中 $ h\nu $ 为光子的能量， $ E_n,E_k $ 为有关的两个定态能量。上式称为波尔频率条件。它实质上是改写成能量守恒形式的里德伯公式。
+>量子化条件
+
+假设在定态时，电子的轨道角动量也是量子化的，只能取约化普朗克常量的整数倍</script><p>L =mvr= n\overline h   n=1,2,3…</p>
+<script type="math/tex; mode=display">
+式中的约化普朗克常量 $ \overline h = h/2\pi $ ;n为正整数，称为量子数
+##### 波尔的氢原子理论
+>电子轨道半径的量子化
+
+根据电子运动方程及轨道角动量量子化可得到定态的电子轨道半径为</script><p>r_n = \frac{4\pi\epsilon_0\overline h^2}{me^2}n^2=n^2a_0 n=1,2,3…</p>
+<script type="math/tex; mode=display">
+式中 $ r_n $ 为原子中电子处在第n个轨道的半径， $ a_0 $ 是氢原子中电子最靠近原子核的轨道半径，称为玻尔半径，其值为</script><p>a_0 = \frac{4\pi\epsilon_0\overline h^2}{me^2} = 0.529*10^{-10} m</p>
+<script type="math/tex; mode=display">
+且可以得到各轨道上电子的运动速度</script><p>v_n = \frac{1}{n}\frac{e^2}{4\pi\epsilon_0\overline h}   n=1,2,3…</p>
+<script type="math/tex; mode=display">
+电子速度也是不连续的，n=1时速度最大
+>原子能量的电子化
+
+当电子在第n个轨道运动时，原子的总能量为</script><p>E_n = -\frac{1}{2}mv_n^2-\frac{e^2}{4\pi\epsilon_0r_n}</p>
+<script type="math/tex; mode=display">
+将 $ v_n $ 和 $ r_n $ 代入后得</script><p>E_n = -\frac{1}{n^2}\frac{1}{(4\pi\epsilon_0)^2}\frac{me^4}{2\overline h^2}</p>
+<script type="math/tex; mode=display">
+对于氢原子，上式可写作</script><p>E_n = -\frac{13.6}{n^2} eV</p>
+<script type="math/tex; mode=display">
+n越大，原子能量的绝对值越小，电子离核也越远，即n越大，原子能量越大。   
+原子电离所需能量为</script><p>E_{电离} = E_{\infty}-E_n</p>
+<script type="math/tex; mode=display">
+>氢原子光谱的解释
+
+原子从较高能态跃迁到较低能态时，发出光子的能量为</script><p>h\nu = E_n - E-k</p>
+<script type="math/tex; mode=display">
+## 第25章 量子力学基础
+#### 德布罗意波
+德布罗意认为波粒二象性同样适用于实物粒子，粒子的运动是与波动过程联系在一起的，其对应的波长为</script><p>\lambda = \frac{h}{p} = \frac{h}{mv}</p>
+<script type="math/tex; mode=display">
+这个表达式称为德布罗意关系式。  
+利用上式，可得电子束的德布罗意波长为</script><p>\lambda = \frac{h}{p} = \frac{h}{\sqrt{2meV}}</p>
+<script type="math/tex; mode=display">
+#### 不确定性原理
+##### 位置和动量的不确定关系
+微观粒子的位置和动量是不可能同时精确地测定的。这就是位置和动量的不确定性原理。  
+位置坐标和动量的不确定量满足关系式</script><p>\Delta x\Delta p_x \geq \frac{\overline h}{2}</p>
+<script type="math/tex; mode=display">
+类似上式同样的有</script><p>\Delta y\Delta p_x \geq \frac{\overline h}{2}</p>
+<p>\Delta z\Delta p_x \geq \frac{\overline h}{2}</p>
+<script type="math/tex; mode=display">
+在经典力学中，将符合上述关系的x和 $ p_x $ 一对量称为正则共轭量。  
+这个关系有海森伯提出。它表明，两个共轭变量的不确定量的乘积，在数量级上不会小于 $ \overline h $ 
+这就是海森伯不确定性原理
+##### 能量和时间的不确定性关系
+
+为了测量一个粒子的能量E，必须在一定的时间间隔内完成一项实验，能量的不确定量与测定能量所需要的时间间隔的不确定关系为</script><p>\Delta E\Delta t \geq \frac{\overline h}{2}</p>
+<script type="math/tex; mode=display">
+对于受激原子这样的系统，原子所处的激发态能量并不是单一值，而是在一个很小的能量范围 $ \Delta E $ 里，这个范围称为能级宽度。同时，原子处于这个激发态的时间是有一定大小的，即只能存在 $ \Delta t $ 时间，叫做平均寿命。  
+能级宽度和平均寿命的关系即为</script><p>\Delta E\Delta t \geq \frac{\overline h}{2}</p>
+<script type="math/tex; mode=display">
+
+
+另外在位置动量的不确定关系中，我们用质量和速度的乘积表示动量，则可得到关系式</script><p>\Delta x\Delta v_x \geq \frac{\overline h}{2m}</p>
+<script type="math/tex; mode=display">
+它指出能够以多大的准确度谈及微观粒子的轨道。粒子的质量越大，其位置和速度的不确定度越小，轨道概念的应用就越准确。
+#### 薛定谔方程
+薛定谔的定态方程</script><p>\nabla^2\psi + \frac{2m}{\overline h^2}(E-U)\psi=0</p>
+<script type="math/tex; mode=display">
+其中</script><p>\nabla^2 = \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}</p>
 <p>E为粒子的总能量，动能势能之和</p>
 <p>U为粒子在势场中的势能,用p表示粒子的动能</p>
 <p>\frac{p^2}{2m} = E-U</p>
-<p>\psi为空间坐标的函数\psi(x,y,z)<br> $  $<br>方程的每一个解 $ \psi $ 描述粒子的一种稳定状态(定态)，相对应的E就是粒子在这个稳定状态下的能量。</p>
-<h4 id="波函数的意义"><a href="#波函数的意义" class="headerlink" title="波函数的意义"></a>波函数的意义</h4><p>按照波函数的统计解释，我们可以得到粒子在单位体积元dV中出现的概率dP<br> $  $<br>dP = |\Psi|^2dV<br> $  $<br>对整个空间积分，则有<br> $  $<br>\int dP=\int_V \Psi^*\Psi dV = 1<br> $  $<br>这个表达式为归一化条件，满足这个条件式的叫做归一化函数，我们假定，我们讨论的波函数都是归一化的。</p>
-<p>其中 $ |\Psi|^2 = \Psi^*\Psi $ 表示粒子t时刻在(x,y,z)处单位体积内出现的概率，称为密度。</p>
-<p>在稳定场中<br> $  $<br>\Psi^<em>\Psi = \psi^</em>\psi<br> $  $<br>于是概率密度为 $ \psi^*\psi $ ，与时间无关</p>
-<h4 id="能量的量子化"><a href="#能量的量子化" class="headerlink" title="能量的量子化"></a>能量的量子化</h4><p>我们定义一维无限深势阱，这是势能在势阱内为零，在势阱外为无穷大的情况。<br>则在势阱外及势阱两边波函数等于零，发现粒子的概率为0<br>可以求得粒子能量的本征值为<br> $  $<br>E_n = \frac{\pi^2\overline h^2}{2ml^2}n^2    (n=1,2,3…)<br> $  $<br>由此可见，粒子在势阱内的能量是量子化的</p>
-<p>同时我们可以得到，粒子在势阱内的本征波函数为<br> $  $<br>\psi_n(x) = \sqrt{\frac{2}{l}}sin^2\frac{n\pi}{l}x   (n=1,2,3…)<br> $  $<br>由此可得能量本征值在势阱内的概率密度为<br> $  $<br>|\psi_n(x)|^2 = \frac{2}{l}sin^2\frac{n\pi}{l}x   (n = 1,2,3…)<br> $  $<br>粒子在势阱中所具有的最低能量，即基态能量，称为零点能，即n=1时的能量本征值<br> $  $<br>E_1 = \frac{\pi^2\overline h^2}{2ml^2}<br> $  $ </p>
-<h4 id="原子中电子的状态"><a href="#原子中电子的状态" class="headerlink" title="原子中电子的状态"></a>原子中电子的状态</h4><h5 id="描述原子中电子状态的四个量子数"><a href="#描述原子中电子状态的四个量子数" class="headerlink" title="描述原子中电子状态的四个量子数"></a>描述原子中电子状态的四个量子数</h5><p>对氢原子研究</p>
-<blockquote>
-<p>能量量子化和主量子数</p>
-</blockquote>
-<p>由量子力学解得的氢原子能量是量子化的，其值为<br> $  $<br>E_n = -\frac{1}{n^2}(\frac{me^4}{8\epsilon_0^2h^2})<br> $  $<br>式中n = 1，2，3…。称为主量子数，它确定氢原子的能量。</p>
-<blockquote>
-<p>角动量量子化与角量子数</p>
-</blockquote>
-<p>由量子力学解得的电子轨道角动量L为<br> $  $<br>L = \sqrt{l(l+1)} \overline h<br> $  $<br>式中的l称为轨道角量子数，简称角量子数。可能值为l=0,1,2…，(n-1)</p>
-<blockquote>
-<p>空间量子化和磁量子数</p>
-</blockquote>
-<p>求解氢原子的薛定谔方程可得电子轨道角动量在空间某特定方向(如Z轴，通常取外磁场方向)上的分量为<br> $  $<br>L_z = m_l \overline h<br> $  $<br>式中 $ m_l $ 称为轨道角动量磁量子数，简称磁量子数。当l给定时，其可能值为 $ m_l = 0,\pm 1,\pm2,…,\pm l $ </p>
-<blockquote>
-<p>自旋角动量空间量子化和自旋磁量子数</p>
-</blockquote>
-<p>与电子轨道角动量一样，电子自旋角动量也是量子化的，通常用S表示自旋角动量，其值可表示为<br> $  $<br>S=\sqrt{s(s+1)}  \overline h<br> $  $<br>式中s称为自旋角动量量子数，简称自旋量子数。</p>
+<p>\psi为空间坐标的函数\psi(x,y,z)</p>
+<script type="math/tex; mode=display">
+方程的每一个解 $ \psi $ 描述粒子的一种稳定状态(定态)，相对应的E就是粒子在这个稳定状态下的能量。
+#### 波函数的意义
+按照波函数的统计解释，我们可以得到粒子在单位体积元dV中出现的概率dP</script><p>dP = |\Psi|^2dV</p>
+<script type="math/tex; mode=display">
+对整个空间积分，则有</script><p>\int dP=\int_V \Psi^*\Psi dV = 1</p>
+<script type="math/tex; mode=display">
+这个表达式为归一化条件，满足这个条件式的叫做归一化函数，我们假定，我们讨论的波函数都是归一化的。
+
+其中 $ |\Psi|^2 = \Psi^*\Psi $ 表示粒子t时刻在(x,y,z)处单位体积内出现的概率，称为密度。
+
+在稳定场中</script><p>\Psi^<em>\Psi = \psi^</em>\psi</p>
+<script type="math/tex; mode=display">
+于是概率密度为 $ \psi^*\psi $ ，与时间无关
+#### 能量的量子化
+我们定义一维无限深势阱，这是势能在势阱内为零，在势阱外为无穷大的情况。
+则在势阱外及势阱两边波函数等于零，发现粒子的概率为0  
+可以求得粒子能量的本征值为</script><p>E_n = \frac{\pi^2\overline h^2}{2ml^2}n^2    (n=1,2,3…)</p>
+<script type="math/tex; mode=display">
+由此可见，粒子在势阱内的能量是量子化的
+
+同时我们可以得到，粒子在势阱内的本征波函数为</script><p>\psi_n(x) = \sqrt{\frac{2}{l}}sin^2\frac{n\pi}{l}x   (n=1,2,3…)</p>
+<script type="math/tex; mode=display">
+由此可得能量本征值在势阱内的概率密度为</script><p>|\psi_n(x)|^2 = \frac{2}{l}sin^2\frac{n\pi}{l}x   (n = 1,2,3…)</p>
+<script type="math/tex; mode=display">
+粒子在势阱中所具有的最低能量，即基态能量，称为零点能，即n=1时的能量本征值</script><p>E_1 = \frac{\pi^2\overline h^2}{2ml^2}</p>
+<script type="math/tex; mode=display">
+#### 原子中电子的状态
+##### 描述原子中电子状态的四个量子数
+对氢原子研究
+>能量量子化和主量子数
+
+由量子力学解得的氢原子能量是量子化的，其值为</script><p>E_n = -\frac{1}{n^2}(\frac{me^4}{8\epsilon_0^2h^2})</p>
+<script type="math/tex; mode=display">
+式中n = 1，2，3…。称为主量子数，它确定氢原子的能量。
+>角动量量子化与角量子数
+
+由量子力学解得的电子轨道角动量L为</script><p>L = \sqrt{l(l+1)} \overline h</p>
+<script type="math/tex; mode=display">
+式中的l称为轨道角量子数，简称角量子数。可能值为l=0,1,2…，(n-1)
+>空间量子化和磁量子数
+
+求解氢原子的薛定谔方程可得电子轨道角动量在空间某特定方向(如Z轴，通常取外磁场方向)上的分量为</script><p>L_z = m_l \overline h</p>
+<script type="math/tex; mode=display">
+式中 $ m_l $ 称为轨道角动量磁量子数，简称磁量子数。当l给定时，其可能值为 $ m_l = 0,\pm 1,\pm2,…,\pm l $ 
+>自旋角动量空间量子化和自旋磁量子数
+
+与电子轨道角动量一样，电子自旋角动量也是量子化的，通常用S表示自旋角动量，其值可表示为</script><p>S=\sqrt{s(s+1)}  \overline h</p>
+<p>$$<br>式中s称为自旋角动量量子数，简称自旋量子数。</p>
 <p>由量子力学计算可得 $ s = \frac{1}{2} $ ，故电子自旋角动量的量值为 $ S=\sqrt{\frac{3}{4}}\overline h = \frac{\sqrt3}{2}\overline h $ </p>
 ]]></content>
       <categories>
