@@ -235,7 +235,7 @@
   <entry>
     <title>大学物理笔记</title>
     <url>/posts/c122a607.html</url>
-    <content><![CDATA[<p>　　是我之前考大物之前整理的笔记，因为我们学校的大学物理是分两个学期上的，这份笔记只有下学期的内容，所以有些知识可能并不涉及，文末会附下载链接，自行取用。</p>
+    <content><![CDATA[<p>　　是我之前考大物之前整理的笔记，因为我们学校的大学物理是分两个学期上的，这份笔记只有下学期的内容，所以有些知识可能并不涉及，文末会附下载链接，自行取用。<br>　　如果有错漏，可以在评论区指出，我会尽快更改，但是提供下载的文件不会同步更新。</p>
 <h1 id="第13章-静电场"><a href="#第13章-静电场" class="headerlink" title="第13章 静电场"></a>第13章 静电场</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="库仑定律"><a href="#库仑定律" class="headerlink" title="库仑定律"></a>库仑定律</h3><script type="math/tex; mode=display">
 \vec F = {1 \over 4\pi\epsilon_0}*{q_1q_2 \over r^2}*vec r</script><p>其中 $ \epsilon_0 $ 称为真空中的电容率，物理意义为单位长度的电容，大小为$\epsilon_0 = 8.85 * 10 ^ {-15} C ^ 2 / ( N * m ^ 2 )$<br>$ \vec r $是指由$q_1$指向$q_2$的单位矢量。<br>在同一位置的库仑力有可加性，用矢量加法计算。  </p>
 <h3 id="电场强度"><a href="#电场强度" class="headerlink" title="电场强度"></a>电场强度</h3><p>点电荷的电场强度公式</p>
@@ -333,8 +333,7 @@ V = \frac{\sigma}{2\pi}(\sqrt{z^2+R^2}-z)</script><blockquote>
 </blockquote>
 <script type="math/tex; mode=display">
 V = \frac{\sigma}{2\pi}(\sqrt{z^2+R_1^2}-\sqrt{z^2-R_2^2})</script><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>电场中由电势相等的点组成的面叫做等势面<br>1.等势面与电厂线处处正交<br>2.等势面密集处场强大，等势面稀疏处场强小</p>
-<h1 id="第14章-静电场中的导体和电介质"><a href="#第14章-静电场中的导体和电介质" class="headerlink" title="第14章 静电场中的导体和电介质"></a>第14章 静电场中的导体和电介质</h1><h2 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h2><p>&lt; !—more—&gt;</p>
-<h3 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h3><p>孤立导体电容</p>
+<h1 id="第14章-静电场中的导体和电介质"><a href="#第14章-静电场中的导体和电介质" class="headerlink" title="第14章 静电场中的导体和电介质"></a>第14章 静电场中的导体和电介质</h1><h2 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h2><h3 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h3><p>孤立导体电容</p>
 <script type="math/tex; mode=display">
 C = \frac{q}{V}</script><p>电容器电容</p>
 <script type="math/tex; mode=display">
@@ -701,7 +700,7 @@ R_H = \frac{1}{nq}</script><p>n为载流子浓度，q为载流子所带电量</p
 <p>相干长度</p>
 </blockquote>
 <p>因为一个原子在某一时刻发出的光波是有限长的波列，因此，光波再次相遇时想要干涉现象，路程差必须小于L0，L0被称为该光源的相干长度。<br>相干长度常用来描述光源相干性的好坏。</p>
-<h2 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h2><p><img src="https://bkimg.cdn.bcebos.com/pic/91ef76c6a7efce1bcac6d739a351f3deb58f6557?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt="image"><br>如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。<br>我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为</p>
+<h2 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h2><p><img src="img/dawu1.jpg"><br><img src="https://bkimg.cdn.bcebos.com/pic/91ef76c6a7efce1bcac6d739a351f3deb58f6557?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt="image"><br>如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。<br>我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为</p>
 <script type="math/tex; mode=display">
 \delta = r2 - r1 \approx dsin\theta</script><p>式中的 $ \theta $ 是PM与 $ S_1S_2 $ 的中垂线 $ P_0M $ 的夹角。通常实验中，D &gt;&gt; d,D &gt;&gt; x（x为屏幕上P点到屏幕中心P0的距离），所以这一夹角非常小，可以作这样的近似。  </p>
 <p>从波动理论可知，设入射单色光波长为 $ \lambda $ ,那么，当</p>
