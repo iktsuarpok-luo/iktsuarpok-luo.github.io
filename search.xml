@@ -333,7 +333,8 @@ V = \frac{\sigma}{2\pi}(\sqrt{z^2+R^2}-z)</script><blockquote>
 </blockquote>
 <script type="math/tex; mode=display">
 V = \frac{\sigma}{2\pi}(\sqrt{z^2+R_1^2}-\sqrt{z^2-R_2^2})</script><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>电场中由电势相等的点组成的面叫做等势面<br>1.等势面与电厂线处处正交<br>2.等势面密集处场强大，等势面稀疏处场强小</p>
-<h1 id="第14章-静电场中的导体和电介质"><a href="#第14章-静电场中的导体和电介质" class="headerlink" title="第14章 静电场中的导体和电介质"></a>第14章 静电场中的导体和电介质</h1><h2 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h2><h3 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h3><p>孤立导体电容</p>
+<h1 id="第14章-静电场中的导体和电介质"><a href="#第14章-静电场中的导体和电介质" class="headerlink" title="第14章 静电场中的导体和电介质"></a>第14章 静电场中的导体和电介质</h1><h2 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h2><p>&lt; !—more—&gt;</p>
+<h3 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h3><p>孤立导体电容</p>
 <script type="math/tex; mode=display">
 C = \frac{q}{V}</script><p>电容器电容</p>
 <script type="math/tex; mode=display">
