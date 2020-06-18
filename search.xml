@@ -6,7 +6,7 @@
     <content><![CDATA[<p>　　是我之前考数据结构之前整理的笔记，文末会附下载链接，自行取用。</p>
 <h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h1><p>T(N)为计算得出的函数时间复杂度  </p>
 <ol>
-<li>$ T(N) = O(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。</li>
+<li>$T(N) = O(f(N))$ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\leq c*f(N) $ 恒成立。</li>
 <li>$ T(N) = \Omega(f(N)) $ 当且仅当存在正常数 $ c $ 和 $ n_0 $ 使得当 $ N\geq n_0 $ 时， $ T(N)\geq c*f(N) $ 恒成立。</li>
 <li>$ T(N) = \Theta(f(N)) $ 当且仅当 $ T(N) = O(f(N)) $ 且 $ T(N) = \Omega(f(N)) $ </li>
 <li>$ T(N) = o(f(N)) $ 当且仅当 $ T(N) = O(f(N)) $ 且 $ T(N)=\not\Theta(f(N)) $   </li>
@@ -700,7 +700,7 @@ R_H = \frac{1}{nq}</script><p>n为载流子浓度，q为载流子所带电量</p
 <p>相干长度</p>
 </blockquote>
 <p>因为一个原子在某一时刻发出的光波是有限长的波列，因此，光波再次相遇时想要干涉现象，路程差必须小于L0，L0被称为该光源的相干长度。<br>相干长度常用来描述光源相干性的好坏。</p>
-<h2 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h2><img src="/posts/c122a607/dawu1.png" class="">  
+<h2 id="杨氏双缝实验"><a href="#杨氏双缝实验" class="headerlink" title="杨氏双缝实验"></a>杨氏双缝实验</h2>  
 <p>如果所示，我们将最左边的小孔记作S，中间的两个狭缝记作S1,S2，S1和S2到S的距离相等。我们将两个狭缝之间的距离记为d，其中点为M，到屏幕的距离为D。<br>我们在屏幕上任取一点P，P到S1和S2的距离分别为r1和r2。从S1和S2所发的光到P点的波程差为</p>
 <script type="math/tex; mode=display">
 \delta = r2 - r1 \approx dsin\theta</script><p>式中的 $ \theta $ 是PM与 $ S_1S_2 $ 的中垂线 $ P_0M $ 的夹角。通常实验中，D &gt;&gt; d,D &gt;&gt; x（x为屏幕上P点到屏幕中心P0的距离），所以这一夹角非常小，可以作这样的近似。  </p>
