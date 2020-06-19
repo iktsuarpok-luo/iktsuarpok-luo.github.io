@@ -1164,24 +1164,6 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-<?php
-$urls = array(
-    'http://www.luoself.work',
-    'https://www.luoself.work',
-);
-$api = 'http://data.zz.baidu.com/urls?site=https://www.luoself.work&token=32c8raRKXJVw8ulG';
-$ch = curl_init();
-$options =  array(
-    CURLOPT_URL => $api,
-    CURLOPT_POST => true,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POSTFIELDS => implode("\n", $urls),
-    CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
-);
-curl_setopt_array($ch, $options);
-$result = curl_exec($ch);
-echo "console.log($result)";
-php?>
 
 
   
