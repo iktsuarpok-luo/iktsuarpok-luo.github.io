@@ -284,7 +284,8 @@ p = \begin{cases}
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>分享 数据结构</tag>
+        <tag>分享</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -1215,7 +1216,8 @@ S=\sqrt{s(s+1)} \ \overline h</script><p>式中s称为自旋角动量量子数�
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>分享 物理</tag>
+        <tag>分享</tag>
+        <tag>物理</tag>
       </tags>
   </entry>
   <entry>
@@ -1238,7 +1240,8 @@ S=\sqrt{s(s+1)} \ \overline h</script><p>式中s称为自旋角动量量子数�
         <category>算法</category>
       </categories>
       <tags>
-        <tag>有趣 算法</tag>
+        <tag>有趣</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -1251,7 +1254,8 @@ S=\sqrt{s(s+1)} \ \overline h</script><p>式中s称为自旋角动量量子数�
         <category>数学</category>
       </categories>
       <tags>
-        <tag>常用 算法</tag>
+        <tag>算法</tag>
+        <tag>常用</tag>
       </tags>
   </entry>
   <entry>
