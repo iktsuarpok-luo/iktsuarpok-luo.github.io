@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="踩坑,教程," />
 
 
 
@@ -83,13 +83,15 @@
 
 
 
-<meta name="description" content="姑妄听之">
-<meta property="og:type" content="website">
-<meta property="og:title" content="洛空间">
-<meta property="og:url" content="https:&#x2F;&#x2F;www.luoself.work&#x2F;archives&#x2F;2020&#x2F;03&#x2F;index.html">
+<meta name="description" content="题目:给定一个有序整数数组 nums 和一个目标值 target, 请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。你可以假设每个输入只会对应一个答案,但是你不能重复利用这个数组中同样的元素。 示例:给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回[0, 1]。 解题要求:时间复杂度优">
+<meta name="keywords" content="踩坑,教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="O(N)复杂度从数组内找到和为Target的两个数">
+<meta property="og:url" content="https:&#x2F;&#x2F;www.luoself.work&#x2F;posts&#x2F;f1fe0520.html">
 <meta property="og:site_name" content="洛空间">
-<meta property="og:description" content="姑妄听之">
+<meta property="og:description" content="题目:给定一个有序整数数组 nums 和一个目标值 target, 请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。你可以假设每个输入只会对应一个答案,但是你不能重复利用这个数组中同样的元素。 示例:给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回[0, 1]。 解题要求:时间复杂度优">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-12-13T03:20:20.343Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,14 +122,14 @@
 
 
 
-  <link rel="canonical" href="https://www.luoself.work/archives/2020/03/"/>
+  <link rel="canonical" href="https://www.luoself.work/posts/f1fe0520.html"/>
 
 
 
 
 <script data-ad-client="ca-pub-1434776531628752" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-  <title>归档 | 洛空间</title>
+  <title>O(N)复杂度从数组内找到和为Target的两个数 | 洛空间</title>
   
 
 
@@ -156,7 +158,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -284,74 +286,218 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.luoself.work/posts/f1fe0520.html">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/top.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="洛空间">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/posts/f2b5c584.html" itemprop="url">
-              
-                <span itemprop="name">取模10^9+7</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">O(N)复杂度从数组内找到和为Target的两个数</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-03-28T13:05:30+08:00"
-              content="2020-03-28" >
-          03-28
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-18T11:54:25+08:00">
+                2020-11-18
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo-NexT/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo+NexT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <blockquote>
+<p>题目:给定一个有序整数数组 nums 和一个目标值 target, 请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。你可以假设每个输入只会对应一个答案,但是你不能重复利用这个数组中同样的元素。</p>
+<p>示例:给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回[0, 1]。</p>
+<p>解题要求:时间复杂度优化到O(N)甚至更低</p>
+</blockquote>
+<p>​        题目本身是很简单的，也很好理解，难度还是在于优化时间复杂度，O(N)的时间复杂度要求我们在有限次遍历过程中找出题解。因此我们在一次遍历的过程中,需要对数组的所有元素都进行处理,具体思路如下:</p>
+<p>​        遍历过程中,我们使用Map处理,对于nums[i],如果target - nums[i]的结果是Map中的key,则输出对应的value和i,否则,Map中存入<nums[i], i>的键值对。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findTarget</span><span class="params">(<span class="keyword">int</span>[] nums,<span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">    Map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; mp = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(mp.get(target - nums[i]) != <span class="keyword">null</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">"["</span> + mp.get(target - nums[i]) + <span class="string">", "</span> + i + <span class="string">"]"</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            mp.put(nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​        最坏情况出现在两个下标之一是最后一个元素时,需要遍历整个数组,时间复杂度为O(N),空间复杂度为O(2N)。</p>
+<p>​        暂时没有更优化的想法,目前整个数组遍历一次是必要的,有更好的想法会来补充。</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>只要你打赏，我们就是朋友。</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="luo 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.jpg" alt="luo 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E8%B8%A9%E5%9D%91/" rel="tag"># 踩坑</a>
+          
+            <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/763eb96a.html" rel="next" title="不使用乘除法和循环分支语句的等差求和">
+                <i class="fa fa-chevron-left"></i> 不使用乘除法和循环分支语句的等差求和
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/a4ac25bb.html" rel="prev" title="O(1)复杂度数组">
+                O(1)复杂度数组 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -359,6 +505,11 @@
 
 
           
+
+  
+	<div id="gitalk-container"></div>
+
+
         </div>
         
           
@@ -398,7 +549,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -477,6 +628,15 @@
         
       </div>
     </main>
+	
+	
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
@@ -612,19 +772,15 @@
   
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
 
   
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1050,31 +1206,11 @@
       
       new needShareButton('#needsharebutton-float', flOptions);
     
-  </script>
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 

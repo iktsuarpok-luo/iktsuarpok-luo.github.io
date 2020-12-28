@@ -1221,6 +1221,20 @@ S=\sqrt{s(s+1)} \ \overline h</script><p>式中s称为自旋角动量量子数�
       </tags>
   </entry>
   <entry>
+    <title>取模10^9+7</title>
+    <url>/posts/f2b5c584.html</url>
+    <content><![CDATA[<p>　　最近在一道笔试题里看到了一个运算结果很大的数，会超过所有类型的最大值，题目要求结果对<code>10^9+7</code>取模，上网搜索这个问题的解决方法才发现这是面试中常有的问题，所以记录一下。<br>　　为什么要取模？是因为结果不能用任何数字类型来存储，用字符串又不方便运算，所以要进行取模操作。<br>　　那为什么是<code>10^9+7</code>?首先，<code>10^9+7</code>是一个足够大的质数，对于质数求模操作可能得到的结果要远大于合数，有效避免了蒙中答案的概率。另外<code>10^9+7</code>有一个很好的特点，相加不超过int，相乘不超过longlong。<br>　　那么，代码上应该怎么解决呢？<br>　　很简单，这利用了同余定理</p>
+<script type="math/tex; mode=display">如果a \equiv c(mod\ \ p),b \equiv d(mod\ \ p),那么有 ac \equiv bd(mod\ \ p)</script><p>　　在代码中，a,b相乘，对p取余，我们取a%p作为a的同余数，b%p作为b的同余数，那么<code>(a * b)%p = (a%p * b%p)%p</code>，根据<code>10^9+7</code>相乘不超过longlong的特点，我们就能避免溢出。<br>　　相加则类似于b=2的情况。<br>　　以上。</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>常用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>O(1)复杂度数组</title>
     <url>/posts/a4ac25bb.html</url>
     <content><![CDATA[<p>最近碰到的一道比较有趣的面试题  </p>
@@ -1245,17 +1259,45 @@ S=\sqrt{s(s+1)} \ \overline h</script><p>式中s称为自旋角动量量子数�
       </tags>
   </entry>
   <entry>
-    <title>取模10^9+7</title>
-    <url>/posts/f2b5c584.html</url>
-    <content><![CDATA[<p>　　最近在一道笔试题里看到了一个运算结果很大的数，会超过所有类型的最大值，题目要求结果对<code>10^9+7</code>取模，上网搜索这个问题的解决方法才发现这是面试中常有的问题，所以记录一下。<br>　　为什么要取模？是因为结果不能用任何数字类型来存储，用字符串又不方便运算，所以要进行取模操作。<br>　　那为什么是<code>10^9+7</code>?首先，<code>10^9+7</code>是一个足够大的质数，对于质数求模操作可能得到的结果要远大于合数，有效避免了蒙中答案的概率。另外<code>10^9+7</code>有一个很好的特点，相加不超过int，相乘不超过longlong。<br>　　那么，代码上应该怎么解决呢？<br>　　很简单，这利用了同余定理</p>
-<script type="math/tex; mode=display">如果a \equiv c(mod\ \ p),b \equiv d(mod\ \ p),那么有 ac \equiv bd(mod\ \ p)</script><p>　　在代码中，a,b相乘，对p取余，我们取a%p作为a的同余数，b%p作为b的同余数，那么<code>(a * b)%p = (a%p * b%p)%p</code>，根据<code>10^9+7</code>相乘不超过longlong的特点，我们就能避免溢出。<br>　　相加则类似于b=2的情况。<br>　　以上。</p>
+    <title>O(N)复杂度从数组内找到和为Target的两个数</title>
+    <url>/posts/f1fe0520.html</url>
+    <content><![CDATA[<blockquote>
+<p>题目:给定一个有序整数数组 nums 和一个目标值 target, 请你在该数组中找出和为目标值的那两个整数,并返回他们的数组下标。你可以假设每个输入只会对应一个答案,但是你不能重复利用这个数组中同样的元素。</p>
+<p>示例:给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回[0, 1]。</p>
+<p>解题要求:时间复杂度优化到O(N)甚至更低</p>
+</blockquote>
+<p>​        题目本身是很简单的，也很好理解，难度还是在于优化时间复杂度，O(N)的时间复杂度要求我们在有限次遍历过程中找出题解。因此我们在一次遍历的过程中,需要对数组的所有元素都进行处理,具体思路如下:</p>
+<p>​        遍历过程中,我们使用Map处理,对于nums[i],如果target - nums[i]的结果是Map中的key,则输出对应的value和i,否则,Map中存入<nums[i], i>的键值对。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findTarget</span><span class="params">(<span class="keyword">int</span>[] nums,<span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">    Map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; mp = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(mp.get(target - nums[i]) != <span class="keyword">null</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">"["</span> + mp.get(target - nums[i]) + <span class="string">", "</span> + i + <span class="string">"]"</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            mp.put(nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​        最坏情况出现在两个下标之一是最后一个元素时,需要遍历整个数组,时间复杂度为O(N),空间复杂度为O(2N)。</p>
+<p>​        暂时没有更优化的想法,目前整个数组遍历一次是必要的,有更好的想法会来补充。</p>
 ]]></content>
       <categories>
-        <category>数学</category>
+        <category>Hexo+NexT</category>
       </categories>
       <tags>
-        <tag>算法</tag>
-        <tag>常用</tag>
+        <tag>踩坑</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不使用乘除法和循环分支语句的等差求和</title>
+    <url>/posts/763eb96a.html</url>
+    <content><![CDATA[<blockquote>
+<p>题目描述</p>
+<p>求1+2+3+…+n,要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句( A ? B : C )。</p>
+</blockquote>
+<p>​        题目本身只是很简单的等差求和,难度在于题目限制乘除法使用求和公式,限制使用循环分支结构,因为没有循环,因此求和只能使用递归来实现,难度在于没有分支结构,如何判断递归结束条件。题解思路如下:</p>
+<p>​        逻辑与的左侧结果为非时,及逻辑或的左侧结果为是时,逻辑运算符右侧的逻辑计算式将不再执行,因此我们可以利用逻辑计算式的短路,来进行递归结束的返回,将递归放到逻辑计算右式,短路时即可停止递归。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n = <span class="number">10</span>;</span><br><span class="line">    System.out.println(sum(n));</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//右式中的"==0"是因为java不支持int值代表boolean,因此通过==判断符将右式结果类型变成boolean</span></span><br><span class="line">    <span class="keyword">boolean</span> flag = n &gt; <span class="number">0</span> &amp;&amp; (sum = sum(n - <span class="number">1</span>) + n) == <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​        用逻辑或也能达到同样的效果,在此不再写出。</p>
+]]></content>
+      <categories>
+        <category>Hexo+NexT</category>
+      </categories>
+      <tags>
+        <tag>踩坑</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
